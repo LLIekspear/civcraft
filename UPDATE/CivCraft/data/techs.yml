@@ -1,0 +1,821 @@
+
+# This file contains all of the information about technologies.
+#
+# 1 beaker = 1 min worth of research with no extra perks.
+# For beta phase 2, starting off the first technologies at 3 hours. (180 mins)
+# 
+# ---- Tech restricted items
+# This is a list of items and which techs they are craftable at
+items:
+    - id: 417
+      name: 'Железная конская броня'
+      require_tech: 'tech_stirrups'
+    - id: 418
+      name: 'Золотая конская броня'
+      require_tech: 'tech_stirrups'
+    - id: 419
+      name: 'Алмазная конская броня'
+      require_tech: 'tech_stirrups'
+
+potions:
+   - name: 'Огнестойкость'
+     effect: 'FIRE_RESISTANCE'
+     amp: 1
+     require_tech: 'tech_chemistry'
+
+   - name: 'Скорость'
+     effect: 'SPEED'
+     amp: 1
+     require_tech: 'tech_beer' 
+
+   - name: 'Исцеление I'
+     effect: 'HEAL'
+     amp: 1
+     require_tech: 'tech_wine'
+
+   - name: 'Исцеление II'
+     effect: 'HEAL'
+     amp: 2
+     require_tech: 'tech_fermentation'
+
+# ------------------------------------------
+# the amount to multiply cottage coins once taxation is researched
+taxation_cottage_buff: 2.0
+
+# Definitions for technologies.
+#Ancient era
+techs:
+    - id: 'tech_agriculture'
+      name: 'Земледелие'
+      beaker_cost: 500.0
+      cost: 5000.0
+      points: 125
+      require_techs:
+      era: 0
+
+    - id: 'tech_pottery'
+      name: 'Гончарное дело'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_techs: 'tech_agriculture'
+      era: 0
+
+    - id: 'tech_hunting'
+      name: 'Животноводство'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_techs: 'tech_agriculture'
+      era: 0
+
+    - id: 'tech_mining'
+      name: 'Горное дело'
+      beaker_cost: 500.0
+      cost: 5000.0
+      points: 125
+      require_techs: 'tech_agriculture'
+      era: 0
+
+#    - id: 'tech_armory'
+#      name: 'Арсенал'
+#      beaker_cost: 500.0
+#      cost: 5000.0
+#      points: 125
+#      require_techs: 'tech_agriculture'
+#      era: 0
+
+    - id: 'tech_religion'
+      name: 'Религия'
+      beaker_cost: 500.0
+      cost: 5000.0
+      points: 125
+      require_techs: 'tech_agriculture'
+      era: 0
+
+    - id: 'tech_priesthood'
+      name: 'Церковь'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_techs: 'tech_religion:tech_writing:tech_astrology'
+      era: 0
+
+    - id: 'tech_laws'
+      name: 'Законодательство'
+      beaker_cost: 2000.0
+      cost: 10000.0
+      points: 325
+      require_techs: 'tech_writing:tech_religion'
+      era: 0
+
+    - id: 'tech_writing'
+      name: 'Письменность'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_techs: 'tech_pottery:tech_religion'
+      era: 0
+      
+    - id: 'tech_irrigation'
+      name: 'Орошение'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_tech: 'tech_pottery'
+      era: 0
+      
+    - id: 'tech_astrology'
+      name: 'Астрология'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_tech: 'tech_agriculture'
+      era: 0
+      
+    - id: 'tech_sailing'
+      name: 'Мореходство'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_tech: 'tech_agriculture'
+      era: 0
+
+    - id: 'tech_archery'
+      name: 'Стрельба из лука'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_tech: 'tech_hunting'
+      era: 0
+
+    - id: 'tech_masonry'
+      name: 'Каменная кладка'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_tech: 'tech_mining'
+      era: 0
+
+    - id: 'tech_wheel'
+      name: 'Колесо'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_tech: 'tech_mining'
+      era: 0
+      
+    - id: 'tech_bronze_working'
+      name: 'Обработка бронзы'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_tech: 'tech_mining'
+      era: 0
+#Classical era
+    - id: 'tech_iron_working'
+      name: 'Обработка железа'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_techs: 'tech_bronze_working'
+      era: 1
+
+    - id: 'tech_currency'
+      name: 'Деньги'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_techs: 'tech_writing'
+      era: 1
+      
+    - id: 'tech_horseback_riding'
+      name: 'Верховая езда'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_techs: 'tech_mining'
+      era: 1
+
+    - id: 'tech_celestial_navigation'
+      name: 'Навигация по звёздам'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 250
+      require_techs: 'tech_astrology:tech_sailing'
+      era: 1
+
+    - id: 'tech_wine'
+      name: 'Виноделие'
+      beaker_cost: 2000.0
+      cost: 10000.0
+      points: 325
+      require_techs: 'tech_priesthood'
+      era: 1
+
+    - id: 'tech_despotism'
+      name: 'Деспотизм'
+      beaker_cost: 2000.0
+      cost: 10000.0
+      points: 325
+      require_techs: 'tech_mining:tech_bronze_working:tech_currency:tech_laws'
+      era: 1
+
+    - id: 'tech_shipbuilding'
+      name: 'Судостроение'
+      beaker_cost: 1000.0
+      cost: 10000.0
+      points: 375
+      require_techs: 'tech_sailing'
+      era: 1
+
+    - id: 'tech_mathematics'
+      name: 'Математика'
+      beaker_cost: 1000.0
+      cost: 10000.0
+      points: 375
+      require_techs: 'tech_currency'
+      era: 1
+      
+    - id: 'tech_construction'
+      name: 'Строительство'
+      beaker_cost: 1000.0
+      cost: 10000.0
+      points: 375
+      require_techs: 'tech_masonry:tech_horseback_riding'
+      era: 1
+
+    - id: 'tech_engineering'
+      name: 'Инженерное дело'
+      beaker_cost: 1000.0
+      cost: 7500.0
+      points: 375
+      require_techs: 'tech_wheel'
+      era: 1
+      
+#Medieval era
+    - id: 'tech_fermentation'
+      name: 'Ферментанция'
+      beaker_cost: 5000.0
+      cost: 15000.0
+      points: 625
+      require_techs: 'tech_wine:tech_education'
+      era: 2
+
+    - id: 'tech_beer'
+      name: 'Пивоварение'
+      beaker_cost: 10000.0
+      cost: 40000.0
+      points: 725
+      require_techs: 'tech_fermentation'
+      era: 2
+
+    - id: 'tech_monarchy'
+      name: 'Монархия'
+      beaker_cost: 10000.0
+      cost: 40000.0
+      points: 725
+      require_techs: 'tech_castles:tech_apprenticeship:tech_laws'
+      era: 2
+
+    - id: 'tech_machinery'
+      name: 'Машиностроение'
+      beaker_cost: 5000.0
+      cost: 15000.0
+      points: 625
+      require_techs: 'tech_engineering:tech_iron_working'
+      era: 2
+
+    - id: 'tech_stirrups'
+      name: 'Стремя'
+      beaker_cost: 5000.0
+      cost: 15000.0
+      points: 625
+      require_techs: 'tech_horseback_riding'
+      era: 2
+
+    - id: 'tech_apprenticeship'
+      name: 'Ученичество'
+      beaker_cost: 5000.0
+      cost: 15000.0
+      points: 625
+      require_techs: 'tech_currency:tech_horseback_riding'
+      era: 2
+
+    - id: 'tech_military_tactics'
+      name: 'Военная тактика'
+      beaker_cost: 5000.0
+      cost: 15000.0
+      points: 625
+      require_techs: 'tech_mathematics'
+      era: 2
+
+    - id: 'tech_education'
+      name: 'Образование'
+      beaker_cost: 10000.0
+      cost: 40000.0
+      points: 2500
+      require_techs: 'tech_apprenticeship:tech_mathematics'
+      era: 2
+
+    - id: 'tech_military_engineering'
+      name: 'Военная инженерия'
+      beaker_cost: 10000.0
+      cost: 40000.0
+      points: 2500
+      require_techs: 'tech_construction'
+      era: 2
+
+    - id: 'tech_castles'
+      name: 'Замки'
+      beaker_cost: 10000.0
+      cost: 40000.0
+      points: 2500
+      require_techs: 'tech_construction'
+      era: 2
+
+#Renaissance era
+    - id: 'tech_cartography'
+      name: 'Картография'
+      beaker_cost: 17500.0
+      cost: 75000.0
+      points: 4375
+      require_techs: 'tech_shipbuilding'
+      era: 3
+
+    - id: 'tech_mass_production'
+      name: 'Массовое производство'
+      beaker_cost: 17500.0
+      cost: 75000.0
+      points: 4375
+      require_techs: 'tech_shipbuilding:tech_education'
+      era: 3
+
+    - id: 'tech_banking'
+      name: 'Банковское дело'
+      beaker_cost: 17500.0
+      cost: 75000.0
+      points: 4375
+      require_techs: 'tech_education:tech_apprenticeship'
+      era: 3
+
+    - id: 'tech_gunpowder'
+      name: 'Порох'
+      beaker_cost: 17500.0
+      cost: 75000.0
+      points: 4375
+      require_techs: 'tech_military_engineering:tech_stirrups:tech_apprenticeship'
+      era: 3
+
+    - id: 'tech_printing'
+      name: 'Книгопечатание'
+      beaker_cost: 17500.0
+      cost: 75000.0
+      points: 4375
+      require_techs: 'tech_machinery'
+      era: 3
+
+    - id: 'tech_square_rigging'
+      name: 'Прямые паруса'
+      beaker_cost: 35000.0
+      cost: 150000.0
+      points: 8750
+      require_techs: 'tech_cartography'
+      era: 3
+
+    - id: 'tech_astronomy'
+      name: 'Астрономия'
+      beaker_cost: 35000.0
+      cost: 150000.0
+      points: 8750
+      require_techs: 'tech_education'
+      era: 3
+
+    - id: 'tech_metal_casting'
+      name: 'Литьё'
+      beaker_cost: 35000.0
+      cost: 150000.0
+      points: 8750
+      require_techs: 'tech_gunpowder'
+      era: 3
+
+    - id: 'tech_siege_tactics'
+      name: 'Осадная тактика'
+      beaker_cost: 35000.0
+      cost: 150000.0
+      points: 8750
+      require_techs: 'tech_castles'
+      era: 3
+      
+    - id: 'tech_mercantilism'
+      name: 'Меркантилизм'
+      beaker_cost: 35000.0
+      cost: 150000.0
+      points: 8750
+      require_techs: 'tech_monarchy:tech_mass_production:tech_banking:tech_square_rigging'
+      era: 3
+
+#
+#Industrial era
+    - id: 'tech_nationalism'
+      name: 'Национализм'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_monarchy:tech_industrialization:tech_military_science'
+      era: 4
+
+    - id: 'tech_respublic'
+      name: 'Республика'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_monarchy:tech_scientific_theory:tech_printing'
+      era: 4
+
+    - id: 'tech_socialism'
+      name: 'Социализм'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_monarchy:tech_industrialization'
+      era: 4
+
+    - id: 'tech_democracity'
+      name: 'Демократия'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_monarchy:tech_scientific_theory:tech_industrialization'
+      era: 4
+
+    - id: 'tech_technocracity'
+      name: 'Технократия'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_monarchy:tech_industrialization:tech_economics:tech_steam_power'
+      era: 4
+      
+    - id: 'tech_industrialization'
+      name: 'Индустриализация'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_mass_production'
+      era: 4
+
+    - id: 'tech_scientific_theory'
+      name: 'Научная теория'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_astronomy'
+      era: 4
+
+    - id: 'tech_ballistics'
+      name: 'Баллистика'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_metal_casting'
+      era: 4
+      
+    - id: 'tech_military_science'
+      name: 'Военная наука'
+      beaker_cost: 100000.0
+      cost: 1500000.0
+      points: 50000
+      require_techs: 'tech_siege_tactics:tech_printing'
+      era: 4
+      
+    - id: 'tech_steam_power'
+      name: 'Паровой двигатель'
+      beaker_cost: 100000.0
+      cost: 2000000.0
+      points: 50000
+      require_techs: 'tech_square_rigging:tech_industrialization'
+      era: 4
+
+    - id: 'tech_sanitation'
+      name: 'Канализация'
+      beaker_cost: 100000.0
+      cost: 2000000.0
+      points: 50000
+      require_techs: 'tech_scientific_theory'
+      era: 4
+
+    - id: 'tech_economics'
+      name: 'Экономика'
+      beaker_cost: 100000.0
+      cost: 2000000.0
+      points: 50000
+      require_techs: 'tech_scientific_theory:tech_banking'
+      era: 4
+
+    - id: 'tech_rifling'
+      name: 'Нарезные стволы'
+      beaker_cost: 100000.0
+      cost: 2000000.0
+      points: 50000
+      require_techs: 'tech_ballistics:tech_military_science'
+      era: 4
+
+#Modern era
+    - id: 'tech_flight'
+      name: 'Авиация'
+      beaker_cost: 175000.0
+      cost: 2500000.0
+      points: 43750
+      require_techs: 'tech_scientific_theory:tech_industrialization'
+      era: 5
+
+    - id: 'tech_replaceable_parts'
+      name: 'Стандартизация'
+      beaker_cost: 175000.0
+      cost: 2500000.0
+      points: 43750
+      require_techs: 'tech_economics'
+      era: 5
+
+    - id: 'tech_steel'
+      name: 'Сталеварение'
+      beaker_cost: 175000.0
+      cost: 2500000.0
+      points: 43750
+      require_techs: 'tech_ballistics'
+      era: 5
+
+    - id: 'tech_electricity'
+      name: 'Электричество'
+      beaker_cost: 250000.0
+      cost: 3000000.0
+      points: 60000
+      require_techs: 'tech_steam_power'
+      era: 5
+
+    - id: 'tech_radio'
+      name: 'Радио'
+      beaker_cost: 250000.0
+      cost: 3000000.0
+      points: 60000
+      require_techs: 'tech_flight:tech_steam_power'
+      era: 5
+
+    - id: 'tech_chemistry'
+      name: 'Химия'
+      beaker_cost: 250000.0
+      cost: 3000000.0
+      points: 60000
+      require_techs: 'tech_sanitation'
+      era: 5
+
+    - id: 'tech_combustion'
+      name: 'Двигатель ВС'
+      beaker_cost: 250000.0
+      cost: 3000000.0
+      points: 60000
+      require_techs: 'tech_rifling:tech_steel'
+      era: 5
+
+#Atomic era
+    - id: 'tech_advanced_flight'
+      name: 'Улучшенная авиация'
+      beaker_cost: 325000.0
+      cost: 3500000.0
+      points: 80000
+      require_techs: 'tech_radio'
+      era: 6
+
+    - id: 'tech_rocketry'
+      name: 'Ракетостроение'
+      beaker_cost: 325000.0
+      cost: 3500000.0
+      points: 80000
+      require_techs: 'tech_radio:tech_chemistry'
+      era: 6
+
+    - id: 'tech_advanced_ballistics'
+      name: 'Улучшенная баллистика'
+      beaker_cost: 325000.0
+      cost: 3500000.0
+      points: 80000
+      require_techs: 'tech_steel:tech_replaceable_parts'
+      era: 6
+
+    - id: 'tech_combined_arms'
+      name: 'Общевойсковая бригада'
+      beaker_cost: 325000.0
+      cost: 3500000.0
+      points: 80000
+      require_techs: 'tech_steel'
+      era: 6
+
+    - id: 'tech_plastics'
+      name: 'Пластмассы'
+      beaker_cost: 325000.0
+      cost: 3500000.0
+      points: 80000
+      require_techs: 'tech_combustion'
+      era: 6
+
+    - id: 'tech_computers'
+      name: 'Компьютеры'
+      beaker_cost: 400000.0
+      cost: 4000000.0
+      points: 90000
+      require_techs: 'tech_electricity'
+      era: 6
+
+    - id: 'tech_nuclear_fission'
+      name: 'Ядерное деление'
+      beaker_cost: 400000.0
+      cost: 4000000.0
+      points: 90000
+      require_techs: 'tech_advanced_ballistics:tech_combined_arms'
+      era: 6
+
+    - id: 'tech_synthetic_materials'
+      name: 'Синтетические материалы'
+      beaker_cost: 400000.0
+      cost: 4000000.0
+      points: 90000
+      require_techs: 'tech_plastics'
+      era: 6
+#Information era
+    - id: 'tech_telecommunications'
+      name: 'Телекоммуникации'
+      beaker_cost: 600000.0
+      cost: 5000000.0
+      points: 95000
+      require_techs: 'tech_computers'
+      era: 7
+
+    - id: 'tech_satellites'
+      name: 'Спутники'
+      beaker_cost: 600000.0
+      cost: 5000000.0
+      points: 95000
+      require_techs: 'tech_advanced_flight:tech_rocketry'
+      era: 7
+
+    - id: 'tech_guidance_systems'
+      name: 'Системы наведения'
+      beaker_cost: 600000.0
+      cost: 5000000.0
+      points: 95000
+      require_techs: 'tech_rocketry:tech_advanced_ballistics'
+      era: 7
+
+    - id: 'tech_lasers'
+      name: 'Лазеры'
+      beaker_cost: 600000.0
+      cost: 5000000.0
+      points: 95000
+      require_techs: 'tech_nuclear_fission'
+      era: 7
+
+    - id: 'tech_composites'
+      name: 'Композиты'
+      beaker_cost: 600000.0
+      cost: 5000000.0
+      points: 95000
+      require_techs: 'tech_synthetic_materials'
+      era: 7
+
+    - id: 'tech_stealth_technology'
+      name: 'Стелс-технологии'
+      beaker_cost: 600000.0
+      cost: 5000000.0
+      points: 95000
+      require_techs: 'tech_synthetic_materials'
+      era: 7
+
+    - id: 'tech_robotics'
+      name: 'Робототехника'
+      beaker_cost: 800000.0
+      cost: 5500000.0
+      points: 100000
+      require_techs: 'tech_computers'
+      era: 7
+
+    - id: 'tech_nuclear_fusion'
+      name: 'Ядерный синтез'
+      beaker_cost: 800000.0
+      cost: 5500000.0
+      points: 100000
+      require_techs: 'tech_lasers'
+      era: 7
+
+    - id: 'tech_nanotechnology'
+      name: Нанотехнологии''
+      beaker_cost: 800000.0
+      cost: 5500000.0
+      points: 100000
+      require_techs: 'tech_composites'
+      era: 7
+
+    - id: 'tech_enlightenment'
+      name: 'Технология будущего'
+      beaker_cost: 3500000.0
+      cost: 15000000.0
+      points: 375000
+      require_techs: 'tech_nuclear_fusion:tech_nanotechnology:tech_robotics'
+      era: 7
+
+#Wonders
+    - id: 'tech_great_pyramid'
+      name: 'Великая пирамида'
+      beaker_cost: 75000.0
+      cost: 75000.0
+      points: 18750
+      require_techs: 'tech_sailing:tech_masonry:tech_engineering:tech_mathematics'
+      era: 0
+
+    - id: 'tech_hanging_gardens'
+      name: 'Висячие Сады'
+      beaker_cost: 100000.0
+      cost: 100000.0
+      points: 25000
+      require_techs: 'tech_irrigation:tech_engineering:tech_currency:tech_mathematics'
+      era: 0
+
+    - id: 'tech_colossus'
+      name: 'Колосс'
+      beaker_cost: 75000.0
+      cost: 75000.0
+      points: 18750
+      require_techs: 'tech_construction:tech_mathematics:tech_shipbuilding'
+      era: 0
+
+    - id: 'tech_chichen_itza'
+      name: 'Чичен-Ица'
+      beaker_cost: 100000.0
+      cost: 100000.0
+      points: 40000
+      require_techs: 'tech_military_tactics:tech_machinery:tech_stirrups:tech_gunpowder:tech_military_science'
+      era: 0
+
+    - id: 'tech_great_library'
+      name: 'Великая Библиотека'
+      beaker_cost: 200000.0
+      cost: 200000.0
+      points: 12500
+      require_techs: 'tech_writing:tech_mathematics:tech_construction:tech_celestial_navigation'
+      era: 0
+
+    - id: 'tech_notre_dame'
+      name: 'Нотр-Дамм'
+      beaker_cost: 175000.0
+      cost: 175000.0
+      points: 43750
+      require_techs: 'tech_construction:tech_banking:tech_mass_production:tech_education'
+      era: 0
+
+    - id: 'tech_council_of_eight'
+      name: 'Совет Восьми'
+      beaker_cost: 250000.0
+      cost: 375000.0
+      points: 43750
+      require_techs: 'tech_computers:tech_radio:tech_chemistry:tech_combustion' 
+      era: 0
+
+    - id: 'tech_colosseum'
+      name: 'Колизей'
+      beaker_cost: 25000.0
+      cost: 50000.0
+      points: 10000
+      require_techs: 'tech_writing:tech_currency:tech_construction:tech_apprenticeship:tech_mathematics' 
+      era: 0
+
+    - id: 'tech_globe_theatre'
+      name: 'Театр Глобус'
+      beaker_cost: 150000.0
+      cost: 150000.0
+      points: 40000
+      require_techs: 'tech_printing:tech_economics:tech_scientific_theory'
+      era: 0
+
+    - id: 'tech_great_lighthouse'
+      name: 'Александрийский Маяк'
+      beaker_cost: 75000.0
+      cost: 75000.0
+      points: 18750
+      require_techs: 'tech_celestial_navigation:tech_mathematics'
+      era: 0
+
+    - id: 'tech_mother_tree'
+      name: 'Древо Жизни'
+      beaker_cost: 75000.0
+      cost: 75000.0
+      points: 18750
+      require_techs: 'tech_machinery:tech_apprenticeship:tech_agriculture'
+      era: 0
+
+    - id: 'tech_grand_ship_ingermanland'
+      name: 'Флагман Ингерманланд'
+      beaker_cost: 200000.0
+      cost: 200000.0
+      points: 80000
+      require_techs: 'tech_square_rigging:tech_economics:tech_military_science'
+      era: 0
