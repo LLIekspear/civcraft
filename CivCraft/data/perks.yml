@@ -1,0 +1,2257 @@
+# This controls all of the available perks 
+# 
+# Each perk has an ID which is correlated with the website.
+# 
+# When the user logs in, we async fetch the list of perks from the cake database
+# Then display them in a list to the user. (icon list?)
+# The user then selects a perk to use, and "activates" it, once it is activated
+# the perk is marked "used" in the cake DB and cannot be activated again.
+#
+# Each perk has a component that runs on it's activation. For now the only
+# component will be the CustomTemplate component which will confirm the town
+# they want to bind the perk to. 
+#
+# We will use the SessionDB which will have a key-value entry with the perk id
+# so that the same perk isnt bound twice, and so we can lookup the perks when we build.
+#
+
+system:
+    # Enables the perk/platinum/registration system.
+    enabled: 'false'
+
+    # The legacy perk system used by AvRGaming, this is likely to be non-functional only enable this
+    # If you know what you're doing.
+    legacy_enabled: 'false'
+
+    # Enables free perks for all users. Even if the system is disabled above, setting this
+    # to true will give all users perks of each type.
+    free_perks: 'true'
+
+    # For each perk, give this many copies.
+    free_perk_count: 100
+
+    # Gives free perks only to players who have the 'civ.admin' permission node.
+    free_admin_perks: 'true'
+
+    # Registration URL to direct users to when they are detected as not registered with the perk system
+    register_url: 'http://www.minetexas.com/minetexas-store-usd-bitcoin.html'
+
+    # URL of your online store to sell perks to users. 
+    store_url: 'http://www.minetexas.com/minetexas-store-usd-bitcoin.html'
+
+perks:
+########### Personal Perks
+#    - id: 'perk_rename_civ_town'
+#      display_name: 'Rename Civ or Town'
+#      item_id: 421
+#      data: 0
+#      components:
+#         - name: 'RenameCivOrTown'
+
+    - id: 'perk_sunny_weather'
+      display_name: 'Солнечная погода!'
+      item_id: 347
+      data: 0
+      components:
+         - name: 'ChangeWeather'
+
+    - id: 'perk_haunted_camp'
+      display_name: 'Призрачный лагерь'
+      item_id: 91
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'haunted'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'perk_viking_camp'
+      display_name: 'Лагерь викингов'
+      item_id: 170
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'viking'
+            template: 'camp'
+            id: 'camp'
+
+# ===== Lightz TEMPLATES
+    - id: 'perk_lightz_monument'
+      display_name: 'Шаблон монумента Лайцца'
+      item_id: 35
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'lightz'
+            template: 'monument'
+
+# ===== Holoska TEMPLATES
+    - id: 'perk_holoska_monument'
+      display_name: 'Шаблон монумента Холоска'
+      item_id: 35
+      data: 7
+      components:
+          - name: 'CustomTemplate'
+            theme: 'holoska'
+            template: 'monument'
+
+# ===== Eureka TEMPLATES
+    - id: 'perk_ea_monument'
+      display_name: 'Шаблон монумента Эврика'
+      item_id: 288
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'eureka'
+            template: 'monument'
+
+# ===== CoreEmpire TEMPLATES
+    - id: 'perk_ce_monument'
+      display_name: 'Шаблон монументальной империи'
+      item_id: 314
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'coreempire'
+            template: 'monument'
+
+# ===== Template Sets
+    - id: 'template_arctic'
+      display_name: 'Арктический стиль'
+      simple_name: "arctic"
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_aztec'
+      display_name: 'Ацтекский стиль'
+      simple_name: "aztec"
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_egyptian'
+      display_name: 'Египетский стиль'
+      simple_name: "egyptian"
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_roman'
+      display_name: 'Римский стиль'
+      simple_name: "roman"
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_hell'
+      display_name: 'Адский стиль'
+      simple_name: "hell"
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_atlantean'
+      display_name: 'Атлантический стиль'
+      simple_name: "atlantean"
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_elven'
+      display_name: 'Эльфийский стиль'
+      simple_name: "elven"
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_cultist'
+      display_name: 'Культийский стиль'
+      simple_name: "cultist"
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_medieval'
+      display_name: 'Средневековый стиль'
+      simple_name: "medieval"
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+
+    - id: 'template_japanese'
+      display_name: 'Японский стиль'
+      simple_name: "japanese"
+      item_id: 1
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+############ ARCTIC THEME
+    - id: 'tpl_arctic_camp'
+      display_name: 'Арктический лагерь'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'arctic'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_arctic_arrow_tower'
+      display_name: 'Арктическая башня лучников'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'arrow_tower'
+    
+    - id: 'tpl_arctic_bank'
+      display_name: 'Арктический банк'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'bank'
+
+    - id: 'tpl_arctic_barracks'
+      display_name: 'Арктические бараки'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'barracks'
+
+    - id: 'tpl_arctic_cannon_tower'
+      display_name: 'Арктическая бшня пушкарей'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'cannon_tower'
+   
+    - id: 'tpl_arctic_capitol'
+      display_name: 'Арктический капитолий'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'arctic'
+            template: 'capitol' 
+            id: 's_capitol'
+    
+    - id: 'tpl_arctic_cottage'
+      display_name: 'Арктический коттедж'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'cottage'
+    
+    - id: 'tpl_arctic_granary'
+      display_name: 'Арктический амбар'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'granary'
+
+    - id: 'tpl_arctic_grocer'
+      display_name: 'Арктическая бакалея'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'grocer'
+
+    - id: 'tpl_arctic_library'
+      display_name: 'Арктическая библиотека'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'library'
+    
+    - id: 'tpl_arctic_market'
+      display_name: 'Арктический рынок'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'market'
+    
+    - id: 'tpl_arctic_mine'
+      display_name: 'Арктическая шахта'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'mine'
+
+    - id: 'tpl_arctic_monument'
+      display_name: 'Арктический монумент'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'monument'
+
+    - id: 'tpl_arctic_pasture'
+      display_name: 'Арктическое пастбище'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'pasture'
+
+    - id: 'tpl_arctic_scout_tower'
+      display_name: 'Арктическая башня скаутов'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'scout_tower'
+    
+    - id: 'tpl_arctic_shipyard'
+      display_name: 'Арктический верфь'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'shipyard'
+    
+    - id: 'tpl_arctic_stable'
+      display_name: 'Арктическая конюшня'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'stable'
+    
+    - id: 'tpl_arctic_temple'
+      display_name: 'Арктический храм'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'temple'
+
+    - id: 'tpl_arctic_trommel'
+      display_name: 'Арктическая дробилка'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'trommel'
+    
+    - id: 'tpl_arctic_town_hall'
+      display_name: 'Арктическая ратуша'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'arctic'
+            template: 'town_hall'
+            id: 's_townhall'
+    
+    - id: 'tpl_arctic_windmill'
+      display_name: 'Арктическая мельница'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'windmill'
+
+    - id: 'tpl_arctic_blacksmith'
+      display_name: 'Арктическая кузница'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'blacksmith'
+
+    - id: 'tpl_arctic_store'
+      display_name: 'Арктический магазин'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'store'
+
+    - id: 'tpl_arctic_fortified_wall'
+      display_name: 'Арктическая укрепленная стена'
+      item_id: 79
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'arctic'
+            template: 'fortified_wall'
+
+
+############ AZTEC THEME
+
+    - id: 'tpl_aztec_camp'
+      display_name: 'Ацтекский лагерь'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'aztec'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_aztec_arrow_tower'
+      display_name: 'Ацтекская башня лучников'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'arrow_tower'
+
+    - id: 'tpl_aztec_blacksmith'
+      display_name: 'Ацтекская кузница'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'blacksmith'
+    
+    - id: 'tpl_aztec_bank'
+      display_name: 'Ацтекский банк'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'bank'
+
+    - id: 'tpl_aztec_barracks'
+      display_name: 'Ацтекские бараки'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'barracks'
+
+    - id: 'tpl_aztec_cannon_tower'
+      display_name: 'Ацтекская башня пушкарей'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'cannon_tower'
+   
+    - id: 'tpl_aztec_capitol'
+      display_name: 'Ацтекский капитолий'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'aztec'
+            template: 'capitol' 
+            id: 's_capitol'
+    
+    - id: 'tpl_aztec_cottage'
+      display_name: 'Ацтекский коттедж'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'cottage'
+    
+    - id: 'tpl_aztec_granary'
+      display_name: 'Ацтекский амбар'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'granary'
+
+    - id: 'tpl_aztec_grocer'
+      display_name: 'Ацтекская бакалея'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'grocer'
+
+    - id: 'tpl_aztec_library'
+      display_name: 'Ацтекская библиотека'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'library'
+    
+    - id: 'tpl_aztec_market'
+      display_name: 'Ацтекский рынок'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'market'
+    
+    - id: 'tpl_aztec_mine'
+      display_name: 'Ацтекская шахта'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'mine'
+
+    - id: 'tpl_aztec_monument'
+      display_name: 'Ацтекский монумент'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'monument'
+
+    - id: 'tpl_aztec_pasture'
+      display_name: 'Ацтекское пастбище'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'pasture'
+
+    - id: 'tpl_aztec_scout_tower'
+      display_name: 'Ацтекская башня скаутов'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'scout_tower'
+    
+    - id: 'tpl_aztec_shipyard'
+      display_name: 'Ацтекский верфь'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'shipyard'
+    
+    - id: 'tpl_aztec_stable'
+      display_name: 'Ацтекская конюшня'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'stable'
+    
+    - id: 'tpl_aztec_temple'
+      display_name: 'Ацтекский храм'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'temple'
+
+    - id: 'tpl_aztec_trommel'
+      display_name: 'Ацтекская дробилка'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'trommel'
+    
+    - id: 'tpl_aztec_town_hall'
+      display_name: 'Ацтекская ратуша'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'aztec'
+            template: 'town_hall'
+            id: 's_townhall'
+    
+    - id: 'tpl_aztec_windmill'
+      display_name: 'Ацтекская мельница'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'windmill'
+
+    - id: 'tpl_aztec_store'
+      display_name: 'Ацтекский магазин'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'store'
+
+    - id: 'tpl_aztec_fortified_wall'
+      display_name: 'Ацтекская укрепленная стена'
+      item_id: 98
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'aztec'
+            template: 'fortified_wall'
+
+
+# ===== EGYPTIAN TEMPLATES
+
+    - id: 'tpl_egyptian_camp'
+      display_name: 'Египетский лагерь'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'egyptian'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_egyptian_arrow_tower'
+      display_name: 'Египетская башня лучников'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'arrow_tower'
+    
+    - id: 'tpl_egyptian_bank'
+      display_name: 'Египетский банк'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'bank'
+
+    - id: 'tpl_egyptian_barracks'
+      display_name: 'Египетские бараки'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'barracks'
+
+    - id: 'tpl_egyptian_cannon_tower'
+      display_name: 'Египетская башня пушкарей'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'cannon_tower'
+   
+    - id: 'tpl_egyptian_capitol'
+      display_name: 'Египетский капитолий'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'egyptian'
+            template: 'capitol' 
+            id: 's_capitol'
+    
+    - id: 'tpl_egyptian_cottage'
+      display_name: 'Египетский коттедж'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'cottage'
+    
+    - id: 'tpl_egyptian_granary'
+      display_name: 'Египетский амбар'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'granary'
+
+    - id: 'tpl_egyptian_grocer'
+      display_name: 'Египетская бакалея'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'grocer'
+
+    - id: 'tpl_egyptian_library'
+      display_name: 'Египетская библиотека'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'library'
+    
+    - id: 'tpl_egyptian_market'
+      display_name: 'Египетский рынок'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'market'
+    
+    - id: 'tpl_egyptian_mine'
+      display_name: 'Египетская шахта'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'mine'
+
+    - id: 'tpl_egyptian_monument'
+      display_name: 'Египетский монумент'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'monument'
+
+    - id: 'tpl_egyptian_pasture'
+      display_name: 'Египетское пастбище'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'pasture'
+
+    - id: 'tpl_egyptian_scout_tower'
+      display_name: 'Египетская башня скаутов'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'scout_tower'
+    
+    - id: 'tpl_egyptian_shipyard'
+      display_name: 'Египетский верфь'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'shipyard'
+    
+    - id: 'tpl_egyptian_stable'
+      display_name: 'Египетская конюшня'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'stable'
+    
+    - id: 'tpl_egyptian_temple'
+      display_name: 'Египетский храм'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'temple'
+
+    - id: 'tpl_egyptian_trommel'
+      display_name: 'Египетская дробилка'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'trommel'
+    
+    - id: 'tpl_egyptian_town_hall'
+      display_name: 'Египетская ратуша'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'egyptian'
+            template: 'town_hall'
+            id: 's_townhall'
+    
+    - id: 'tpl_egyptian_windmill'
+      display_name: 'Египетская мельница'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'windmill'
+
+    - id: 'tpl_egyptian_blacksmith'
+      display_name: 'Египетская кузница'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'blacksmith'
+
+    - id: 'tpl_egyptian_store'
+      display_name: 'Египетский магазин'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'store'
+
+    - id: 'tpl_egyptian_fortified_wall'
+      display_name: 'Египетская укрепленная стена'
+      item_id: 24
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'egyptian'
+            template: 'fortified_wall'
+
+# ===== ROMAN TEMPLATES
+
+    - id: 'tpl_roman_camp'
+      display_name: 'Римский лагерь'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'roman'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_roman_arrow_tower'
+      display_name: 'Римская башня лучников'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'arrow_tower'
+    
+    - id: 'tpl_roman_bank'
+      display_name: 'Римский банк'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'bank'
+
+    - id: 'tpl_roman_barracks'
+      display_name: 'Римские бараки'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'barracks'
+
+    - id: 'tpl_roman_cannon_tower'
+      display_name: 'Римская башня пушкарей'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'cannon_tower'
+   
+    - id: 'tpl_roman_capitol'
+      display_name: 'Римский капитолий'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'roman'
+            template: 'capitol' 
+            id: 's_capitol'
+    
+    - id: 'tpl_roman_cottage'
+      display_name: 'Римский коттедж'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'cottage'
+    
+    - id: 'tpl_roman_granary'
+      display_name: 'Римский амбар'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'granary'
+
+    - id: 'tpl_roman_grocer'
+      display_name: 'Римская бакалея'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'grocer'
+
+    - id: 'tpl_roman_library'
+      display_name: 'Римская библиотека'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'library'
+    
+    - id: 'tpl_roman_market'
+      display_name: 'Римский рынок'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'market'
+    
+    - id: 'tpl_roman_mine'
+      display_name: 'Римская шахта'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'mine'
+
+    - id: 'tpl_roman_monument'
+      display_name: 'Римский монумент'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'monument'
+
+    - id: 'tpl_roman_pasture'
+      display_name: 'Римское пастбище'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'pasture'
+
+    - id: 'tpl_roman_scout_tower'
+      display_name: 'Римская башня скаутов'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'scout_tower'
+    
+    - id: 'tpl_roman_shipyard'
+      display_name: 'Римский верфь'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'shipyard'
+    
+    - id: 'tpl_roman_stable'
+      display_name: 'Римская конюшня'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'stable'
+    
+    - id: 'tpl_roman_temple'
+      display_name: 'Roman храм'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'temple'
+
+    - id: 'tpl_roman_trommel'
+      display_name: 'Римская дробилка'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'trommel'
+    
+    - id: 'tpl_roman_town_hall'
+      display_name: 'Римская ратуша'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'roman'
+            template: 'town_hall'
+            id: 's_townhall'
+    
+    - id: 'tpl_roman_windmill'
+      display_name: 'Римская мельница'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'windmill'
+
+    - id: 'tpl_roman_blacksmith'
+      display_name: 'Римская кузница'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'blacksmith'
+
+    - id: 'tpl_roman_store'
+      display_name: 'Римский магазин'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'store'
+
+    - id: 'tpl_roman_fortified_wall'
+      display_name: 'Римская укрепленная стена'
+      item_id: 155
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'roman'
+            template: 'fortified_wall'
+
+# ===== HELL TEMPLATES
+    - id: 'tpl_hell_camp'
+      display_name: 'Адский лагерь'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'hell'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_hell_fish_hatchery'
+      display_name: 'Адская рыбная ферма'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'fish_hatchery'
+
+    - id: 'tpl_hell_arrow_tower'
+      display_name: 'Адская башня лучников'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'arrow_tower'
+    
+    - id: 'tpl_hell_bank'
+      display_name: 'Адский банк'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'bank'
+
+    - id: 'tpl_hell_barracks'
+      display_name: 'Адские бараки'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'barracks'
+
+    - id: 'tpl_hell_cannon_tower'
+      display_name: 'Адская башня пушкарей'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'cannon_tower'
+   
+    - id: 'tpl_hell_capitol'
+      display_name: 'Адский капитолий'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'hell'
+            template: 'capitol' 
+            id: 's_capitol'
+    
+    - id: 'tpl_hell_cottage'
+      display_name: 'Адский коттедж'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'cottage'
+    
+    - id: 'tpl_hell_granary'
+      display_name: 'Адский амбар'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'granary'
+
+    - id: 'tpl_hell_grocer'
+      display_name: 'Адская бакалея'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'grocer'
+
+    - id: 'tpl_hell_library'
+      display_name: 'Адская библиотека'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'library'
+
+    - id: 'tpl_hell_lighthouse'
+      display_name: 'Адский маяк'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'lighthouse'
+    
+    - id: 'tpl_hell_market'
+      display_name: 'Адский рынок'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'market'
+    
+    - id: 'tpl_hell_mine'
+      display_name: 'Адская шахта'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'mine'
+
+    - id: 'tpl_hell_monument'
+      display_name: 'Адский монумент'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'monument'
+
+    - id: 'tpl_hell_pasture'
+      display_name: 'Адское пастбище'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'pasture'
+
+    - id: 'tpl_hell_scout_tower'
+      display_name: 'Адская башня скаутов'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'scout_tower'
+    
+    - id: 'tpl_hell_shipyard'
+      display_name: 'Адский верфь'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'shipyard'
+    
+    - id: 'tpl_hell_stable'
+      display_name: 'Адская конюшня'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'stable'
+    
+    - id: 'tpl_hell_temple'
+      display_name: 'Адский храм'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'temple'
+
+    - id: 'tpl_hell_trommel'
+      display_name: 'Адская дробилка'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'trommel'
+    
+    - id: 'tpl_hell_town_hall'
+      display_name: 'Адская ратуша'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'hell'
+            template: 'town_hall'
+            id: 's_townhall'
+    
+    - id: 'tpl_hell_quarry'
+      display_name: 'Адский карьер'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'quarry'
+    
+    - id: 'tpl_hell_windmill'
+      display_name: 'Адская мельница'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'windmill'
+
+    - id: 'tpl_hell_blacksmith'
+      display_name: 'Адская кузница'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'blacksmith'
+
+    - id: 'tpl_hell_store'
+      display_name: 'Адский магазин'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'store'
+
+    - id: 'tpl_hell_fortified_wall'
+      display_name: 'Адская укрепленная стена'
+      item_id: 87
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'hell'
+            template: 'fortified_wall'
+
+# ===== Elven TEMPLATES
+
+    - id: 'tpl_elven_camp'
+      display_name: 'Эльфийский лагерь'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'elven'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_elven_arrow_tower'
+      display_name: 'Эльфийская башня лучников'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'arrow_tower'
+
+    - id: 'tpl_elven_bank'
+      display_name: 'Эльфийский банк'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'bank'
+
+    - id: 'tpl_elven_barracks'
+      display_name: 'Эльфийские бараки'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'barracks'
+
+    - id: 'tpl_elven_cannon_tower'
+      display_name: 'Эльфийская башня пушкарей'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'cannon_tower'
+
+    - id: 'tpl_elven_capitol'
+      display_name: 'Эльфийский капитолий'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'elven'
+            template: 'capitol' 
+            id: 's_capitol'
+
+    - id: 'tpl_elven_cottage'
+      display_name: 'Эльфийский коттедж'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'cottage'
+
+    - id: 'tpl_elven_granary'
+      display_name: 'Эльфийский амбар'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'granary'
+
+    - id: 'tpl_elven_grocer'
+      display_name: 'Эльфийская бакалея'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'grocer'
+
+    - id: 'tpl_elven_library'
+      display_name: 'Эльфийская библиотека'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'library'
+
+    - id: 'tpl_elven_market'
+      display_name: 'Эльфийский рынок'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'market'
+
+    - id: 'tpl_elven_mine'
+      display_name: 'Эльфийская шахта'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'mine'
+
+    - id: 'tpl_elven_monument'
+      display_name: 'Эльфийский монумент'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'monument'
+
+    - id: 'tpl_elven_pasture'
+      display_name: 'Эльфийское пастбище'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'pasture'
+
+    - id: 'tpl_elven_scout_tower'
+      display_name: 'Эльфийская башня скаутов'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'scout_tower'
+
+    - id: 'tpl_elven_shipyard'
+      display_name: 'Эльфийский верфь'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'shipyard'
+
+    - id: 'tpl_elven_stable'
+      display_name: 'Эльфийская конюшня'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'stable'
+
+    - id: 'tpl_elven_temple'
+      display_name: 'Эльфийский храм'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'temple'
+
+    - id: 'tpl_elven_trommel'
+      display_name: 'Эльфийская дробилка'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'trommel'
+
+    - id: 'tpl_elven_town_hall'
+      display_name: 'Эльфийская ратуша'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'elven'
+            template: 'town_hall'
+            id: 's_townhall'
+
+    - id: 'tpl_elven_windmill'
+      display_name: 'Эльфийская мельница'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'windmill'
+
+    - id: 'tpl_elven_blacksmith'
+      display_name: 'Эльфийская кузница'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'blacksmith'
+
+    - id: 'tpl_elven_store'
+      display_name: 'Эльфийский магазин'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'store'
+
+    - id: 'tpl_elven_trade_outpost'
+      display_name: 'Эльфийский торгоый пост'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'trade_outpost'
+
+    - id: 'tpl_elven_fortified_wall'
+      display_name: 'Эльфийская укрепленная стена'
+      item_id: 18
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'elven'
+            template: 'fortified_wall'
+
+# # ===== Cultist TEMPLATES
+    - id: 'tpl_cultist_camp'
+      display_name: 'Культийский лагерь'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'cultist'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_cultist_arrow_tower'
+      display_name: 'Культийская башня лучников'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'arrow_tower'
+
+    - id: 'tpl_cultist_bank'
+      display_name: 'Культийский банк'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'bank'
+
+    - id: 'tpl_cultist_barracks'
+      display_name: 'Культийские бараки'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'barracks'
+
+    - id: 'tpl_cultist_cannon_tower'
+      display_name: 'Культийская башня пушкарей'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'cannon_tower'
+
+    - id: 'tpl_cultist_capitol'
+      display_name: 'Культийский капитолий'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'cultist'
+            template: 'capitol' 
+            id: 's_capitol'
+
+    - id: 'tpl_cultist_cottage'
+      display_name: 'Культийский коттедж'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'cottage'
+
+    - id: 'tpl_cultist_granary'
+      display_name: 'Культийский амбар'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'granary'
+
+    - id: 'tpl_cultist_grocer'
+      display_name: 'Культийская бакалея'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'grocer'
+
+    - id: 'tpl_cultist_library'
+      display_name: 'Культийская библиотека'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'library'
+
+    - id: 'tpl_cultist_market'
+      display_name: 'Культийский рынок'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'market'
+
+    - id: 'tpl_cultist_mine'
+      display_name: 'Культийская шахта'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'mine'
+
+    - id: 'tpl_cultist_monument'
+      display_name: 'Культийский монумент'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'monument'
+
+    - id: 'tpl_cultist_pasture'
+      display_name: 'Культийское пастбище'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'pasture'
+
+    - id: 'tpl_cultist_scout_tower'
+      display_name: 'Культийская башня скаутов'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'scout_tower'
+
+    - id: 'tpl_cultist_shipyard'
+      display_name: 'Культийский верфь'
+      item_id: 397
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'shipyard'
+
+    - id: 'tpl_cultist_stable'
+      display_name: 'Культийская конюшня'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'stable'
+
+    - id: 'tpl_cultist_temple'
+      display_name: 'Культийский храм'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'temple'
+
+    - id: 'tpl_cultist_trommel'
+      display_name: 'Культийская дробилка'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'trommel'
+
+    - id: 'tpl_cultist_town_hall'
+      display_name: 'Культийская ратуша'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'cultist'
+            template: 'town_hall'
+            id: 's_townhall'
+
+    - id: 'tpl_cultist_windmill'
+      display_name: 'Культийская мельница'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'windmill'
+
+    - id: 'tpl_cultist_blacksmith'
+      display_name: 'Культийская кузница'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'blacksmith'
+
+    - id: 'tpl_cultist_store'
+      display_name: 'Культийский магазин'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'store'
+
+    - id: 'tpl_cultist_trade_outpost'
+      display_name: 'Культийский торгоый пост'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'trade_outpost'
+
+    - id: 'tpl_cultist_fortified_wall'
+      display_name: 'Культийская укрепленная стена'
+      item_id: 397
+      data: 1
+      components:
+          - name: 'CustomTemplate'
+            theme: 'cultist'
+            template: 'fortified_wall'
+
+# # ===== Atlantean TEMPLATES
+    - id: 'tpl_atlantean_camp'
+      display_name: 'Атлантический лагерь'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'atlantean'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_atlantean_arrow_tower'
+      display_name: 'Атлантическая башня лучников'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'arrow_tower'
+
+    - id: 'tpl_atlantean_bank'
+      display_name: 'Атлантический банк'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'bank'
+
+    - id: 'tpl_atlantean_barracks'
+      display_name: 'Атлантические бараки'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'barracks'
+
+    - id: 'tpl_atlantean_cannon_tower'
+      display_name: 'Атлантическая башня пушкарей'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'cannon_tower'
+
+    - id: 'tpl_atlantean_capitol'
+      display_name: 'Атлантический капитолий'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'atlantean'
+            template: 'capitol' 
+            id: 's_capitol'
+
+    - id: 'tpl_atlantean_cottage'
+      display_name: 'Атлантический коттедж'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'cottage'
+
+    - id: 'tpl_atlantean_granary'
+      display_name: 'Атлантический амбар'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'granary'
+
+    - id: 'tpl_atlantean_grocer'
+      display_name: 'Атлантическая бакалея'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'grocer'
+
+    - id: 'tpl_atlantean_library'
+      display_name: 'Атлантический библиотека'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'library'
+
+    - id: 'tpl_atlantean_market'
+      display_name: 'Атлантический рынок'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'market'
+
+    - id: 'tpl_atlantean_mine'
+      display_name: 'Атлантическая шахта'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'mine'
+
+    - id: 'tpl_atlantean_monument'
+      display_name: 'Атлантический монумент'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'monument'
+
+    - id: 'tpl_atlantean_pasture'
+      display_name: 'Атлантическое пастбище'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'pasture'
+
+    - id: 'tpl_atlantean_scout_tower'
+      display_name: 'Атлантическая башня скаутов'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'scout_tower'
+
+    - id: 'tpl_japanese_arrow_tower'
+      display_name: 'Японская башня лучников'
+      item_id: 1
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'arrow_tower'
+    - id: 'tpl_japanese_library'
+      display_name: 'Японская библиотека'
+      item_id: 1
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'library'
+
+    - id: 'tpl_atlantean_shipyard'
+      display_name: 'Атлантический верфь'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'shipyard'
+
+    - id: 'tpl_atlantean_stable'
+      display_name: 'Атлантическая конюшня'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'stable'
+
+    - id: 'tpl_atlantean_temple'
+      display_name: 'Атлантический храм'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'temple'
+
+    - id: 'tpl_atlantean_trommel'
+      display_name: 'Атлантическая дробилка'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'trommel'
+
+    - id: 'tpl_atlantean_town_hall'
+      display_name: 'Атлантическая ратуша'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'atlantean'
+            template: 'town_hall'
+            id: 's_townhall'
+
+    - id: 'tpl_atlantean_windmill'
+      display_name: 'Атлантическая мельница'
+      item_id: 169
+      data: 3
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'windmill'
+
+    - id: 'tpl_atlantean_blacksmith'
+      display_name: 'Атлантическая кузница'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'blacksmith'
+
+    - id: 'tpl_atlantean_store'
+      display_name: 'Атлантический магазин'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'store'
+
+    - id: 'tpl_atlantean_trade_outpost'
+      display_name: 'Атлантический торгоый пост'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'trade_outpost'
+
+    - id: 'tpl_atlantean_fortified_wall'
+      display_name: 'Атлантическая укрепленная стена'
+      item_id: 169
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'atlantean'
+            template: 'fortified_wall'
+
+    - id: 'perk_haunted_camp'
+      display_name: 'Призрачный лагерь'
+      item_id: 91
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'haunted'
+            template: 'camp'
+            id: 'camp'
+
+# # ===== Medieval TEMPLATES
+
+    - id: 'tpl_medieval_camp'
+      display_name: 'Средневековый лагерь'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'medieval'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_medieval_arrow_tower'
+      display_name: 'Средневековая башня лучников'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'arrow_tower'
+
+    - id: 'tpl_medieval_bank'
+      display_name: 'Средневековый банк'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'bank'
+
+    - id: 'tpl_medieval_blacksmith'
+      display_name: 'Средневековая кузница'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'blacksmith'
+
+    - id: 'tpl_medieval_camp'
+      display_name: 'Средневековый лагерь'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'medieval'
+            template: 'camp'
+            id: 'camp'
+
+    - id: 'tpl_medieval_cannon_tower'
+      display_name: 'Средневековая башня пушкарей'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'cannon_tower'
+
+    - id: 'tpl_medieval_capitol'
+      display_name: 'Средневековый капитолий'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'medieval'
+            template: 'capitol'
+            id: 's_capitol'
+
+    - id: 'tpl_medieval_cottage'
+      display_name: 'Средневековый коттедж'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'cottage'
+
+    - id: 'tpl_medieval_granary'
+      display_name: 'Средневековый амбар'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'granary'
+
+    - id: 'tpl_medieval_grocer'
+      display_name: 'Средневековая бакалея'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'grocer'
+
+    - id: 'tpl_medieval_library'
+      display_name: 'Средневековая библиотека'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'library'
+
+    - id: 'tpl_medieval_market'
+      display_name: 'Средневековый рынок'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'market'
+
+    - id: 'tpl_medieval_mine'
+      display_name: 'Средневековая шахта'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'mine'
+
+
+    - id: 'tpl_medieval_monument'
+      display_name: 'Средневековый монумент'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'monument'
+
+    - id: 'tpl_medieval_pasture'
+      display_name: 'Средневековое пастбище'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'pasture'
+
+    - id: 'tpl_medieval_quarry'
+      display_name: 'Средневековый карьер'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'quarry'
+
+    - id: 'tpl_medieval_scout_tower'
+      display_name: 'Средневековая башня скаутов'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'scout_tower'
+
+    - id: 'tpl_medieval_shipyard'
+      display_name: 'Средневековый верфь'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'shipyard'
+
+    - id: 'tpl_medieval_temple'
+      display_name: 'Средневековый храм'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'temple'
+
+    - id: 'tpl_medieval_town_hall'
+      display_name: 'Средневековая ратуша'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'medieval'
+            template: 'town_hall'
+            id: 's_townhall'
+
+    - id: 'tpl_medieval_trade_outpost'
+      display_name: 'Средневековый торгоый пост'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'trade_outpost'
+
+    - id: 'tpl_medieval_trommel'
+      display_name: 'Средневековая дробилка'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'trommel'
+
+    - id: 'tpl_medieval_windmill'
+      display_name: 'Средневековая мельница'
+      item_id: 267
+      data: 0
+      components:
+          - name: 'CustomTemplate'
+            theme: 'medieval'
+            template: 'windmill'
