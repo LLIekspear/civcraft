@@ -124,12 +124,19 @@ hemispheres:
 #
 #
 land_goods:
-    # - id: 'good_sugar'
-    #   name: Сахар
-    #   value: 250.0
-    #   buffs: 'buff_hedonism, buff_year_of_plenty'
-    #   material: 353
-    #   material_data: 0
+    - id: 'good_sugar'
+      name: Сахар
+      value: 300.0
+      buffs: 'buff_monopoly, buff_hedonism'
+      material: 353
+      material_data: 0
+
+    - id: 'good_salt'
+      name: Соль
+      value: 300.0
+      buffs: 'buff_monopoly, buff_preservative'
+      material: 216
+      material_data: 0
 
     # - id: 'good_diamond'
     #   name: Алмаз
@@ -285,12 +292,12 @@ land_goods:
     #   material: 296 # wheat
     #   material_data: 0
 
-    # - id: 'good_rice'
-    #   name: Рис
-    #   value: 125.0
-    #   buffs: 'buff_year_of_plenty'
-    #   material: 361 # pumpkin's seeds
-    #   material_data: 0
+    - id: 'good_rice'
+      name: Рис
+      value: 125.0
+      buffs: 'buff_year_of_plenty'
+      material: 361 # pumpkin's seeds
+      material_data: 0
 
     - id: 'good_copper'
       name: Медь

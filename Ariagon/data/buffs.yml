@@ -20,13 +20,6 @@ buffs:
       stackable: true
       parent:
 
-    - id: 'buff_innovation'
-      name: 'Инновация'
-      description: 'Увеличивает скорость науки для цивилизации на <lightgreen>10%<r> <gold>Складывается<r>'
-      value: '0.1'
-      stackable: true
-      parent:
-
     - id: 'buff_monopoly'
       name: 'Монополия'
       description: 'Увеличивает количество монет из всех торговых товаров на <lightgreen>15%<r> <gold>Складывается<r>'
@@ -49,7 +42,7 @@ buffs:
       parent:
 
     - id: 'buff_barricade'
-      name: 'Barricade'
+      name: 'Баррикады'
       description: 'Увеличивает здоровье оборонительных структур на <lightgreen>50%<r> <red>Не складывается<r>'
       value: '0.5'
       stackable: false
@@ -136,7 +129,14 @@ buffs:
       name: 'Совместное использование прибыли'
       description: 'Снижает стоимость всех технологических исследований на <lightgreen>5%<r> <red>Не складывается<r>'
       value: '0.05'
-      stackable: false
+      stackable: true
+      parent:
+
+    - id: 'buff_innovation'
+      name: 'Инновация'
+      description: 'Увеличивает скорость науки для цивилизации на <lightgreen>5%<r> <gold>Складывается<r>'
+      value: '0.05'
+      stackable: true
       parent:
   
     - id: 'buff_sabotage'
@@ -153,19 +153,19 @@ buffs:
       stackable: true
       parent:
 
-    - id: 'buff_noanarchy'
-      name: 'Нет анархии'
-      description: 'Цивилизация уменьшает на 50% времени нахождения в анархии, макс. 2ч.<r> <red>Не складывается<r>'
-      value: '0'
-      stackable: false
-      parent:
+    # - id: 'buff_noanarchy'
+    #   name: 'Нет анархии'
+    #   description: 'Цивилизация уменьшает на 50% времени нахождения в анархии, макс. 2ч.<r> <red>Не складывается<r>'
+    #   value: '0'
+    #   stackable: false
+    #   parent:
 
-    - id: 'buff_reduced_anarchy'
-      name: 'Анархия'
-      description: 'Цивилизация увеличивает нахождение в анархии на 50%.<r> <red>Не складывается<r>'
-      value: '0.5'
-      stackable: false
-      parent:
+    # - id: 'buff_reduced_anarchy'
+    #   name: 'Анархия'
+    #   description: 'Цивилизация увеличивает нахождение в анархии на 50%.<r> <red>Не складывается<r>'
+    #   value: '0.5'
+    #   stackable: false
+    #   parent:
 
 # PYRAMID BUFFS
     - id: 'buff_pyramid_cottage_consume'
