@@ -208,12 +208,12 @@ land_goods:
       material: 265 # iron ingot
       material_data: 0
 
-    - id: 'good_poison_ivy'
-      name: "Ядовитый плющ"
-      value: 375.0
-      buffs: 'buff_espionage, buff_sabotage, buff_dirty_money'
-      material: 106 # vines
-      material_data: 0
+    # - id: 'good_poison_ivy'
+    #   name: "Ядовитый плющ"
+    #   value: 375.0
+    #   buffs: 'buff_espionage, buff_sabotage, buff_dirty_money'
+    #   material: 106 # vines
+    #   material_data: 0
 
     - id: 'good_ivory'
       name: Слоновая кость
@@ -236,12 +236,12 @@ land_goods:
       material: 31 # tall grass
       material_data: 2 # fern
 
-    - id: 'good_hemlock'
-      name: Болиголов
-      value: 375.0
-      buffs: 'buff_espionage, buff_sabotage, buff_dirty_money'
-      material: 31 # tall grass
-      material_data: 0
+    # - id: 'good_hemlock'
+    #   name: Болиголов
+    #   value: 375.0
+    #   buffs: 'buff_espionage, buff_sabotage, buff_dirty_money'
+    #   material: 31 # tall grass
+    #   material_data: 0
 
     - id: 'good_guarana'
       name: Гуарана

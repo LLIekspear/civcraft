@@ -6,7 +6,7 @@
 
 buffs:
     - id: 'buff_construction'
-      name: 'Строительство'
+      name: 'Хороший материал'
       description: 'Увеличивает производительность на <lightgreen>100<r>. <gold>Складывается<r>'
 #      value: '0.25'
       value: '100'
@@ -14,7 +14,7 @@ buffs:
       parent:
    
     - id: 'buff_year_of_plenty'
-      name: 'Год изобилия '
+      name: 'Эффективный компост'
       description: 'Увеличивает темпы роста фермерских хозяйств на <lightgreen>20%<r>. <gold>Складывается<r>'
       value: '0.2'
       stackable: true
@@ -35,7 +35,7 @@ buffs:
       parent:
 
     - id: 'buff_advanced_tooling'
-      name: 'Расширенный инструмент'
+      name: 'Улучшение для инструментов добычи'
       description: 'Увеличивает добычу полезных ископаемых на <lightgreen>50%<r> <gold>Складывается<r>'
       value: '0.5'
       stackable: true
@@ -56,28 +56,28 @@ buffs:
       parent:
 
     - id: 'buff_fine_art'
-      name: 'Изобразительное искусство'
+      name: 'Предмет для вдохновления'
       description: 'Увеличивает культуру на <lightgreen>25%<r> <red>Не складывается<r>'
       value: '0.25'
       stackable: false
       parent:
 
-    - id: 'buff_art_appreciation'
-      name: 'Оценка искусства'
-      description: 'Увеличивает производство культуры города на <lightgreen>20%<r> <red>Не складывается<r>'
-      value: '0.20'
-      stackable: false
-      parent:
+    # - id: 'buff_art_appreciation'
+    #   name: 'Оценка искусства'
+    #   description: 'Увеличивает производство культуры города на <lightgreen>20%<r> <red>Не складывается<r>'
+    #   value: '0.20'
+    #   stackable: false
+    #   parent:
 
     - id: 'buff_extraction'
-      name: 'Добыча'
+      name: 'Улучшение для инструментов поиск полезных ископаевых'
       description: 'Увеличивает вероятность троммеля производить драгоценные минералы на <lightgreen>50%<r> <red>Не складывается<r>'
       value: '0.5'
       stackable: false
       parent:
 
     - id: 'buff_fire_bomb'
-      name: 'Огненная бомба'
+      name: 'Воспламеняющееся вещество'
       description: 'Увеличивает урон стрелковой/пушечными башнями на <lightgreen>50%<r> Также теперь будут горящие стрелы <red>Не складывается<r>'
       value: '0.5'
       stackable: false
@@ -98,56 +98,56 @@ buffs:
       parent:
 
     - id: 'buff_medicine'
-      name: 'Медицина'
-      description: 'Уменьшает время респауна во время войны на <lightgreen>50<r> сек.<r> <red>Не складывается<r>'
+      name: 'Лечебные травы'
+      description: 'Уменьшает время респауна во время войны на <lightgreen>50<r> секунд<r> <red>Не складывается<r>'
       value: '50'
       stackable: false
       parent:
     
     - id: 'buff_dirty_money'
-      name: 'Грязные деньги'
+      name: 'Средство проникновения'
       description: 'Increases the chances of Steal Treasury by <lightgreen>50%<r> <red>Not Stackable<r>'
       value: '0.5'
       stackable: false
       parent:
 
     - id: 'buff_espionage'
-      name: 'Отравление амбаров'
+      name: 'Яд'
       description: 'Увеличивает шанс успешного выполнения миссии "Отравление амбара" на <lightgreen>50%<r> <red>Не cкладывается<r>'
       value: '0.5'
       stackable: false
       parent:
     
     - id: 'buff_rush'
-      name: 'Суета'
+      name: 'Энергетик'
       description: 'Уменьшает необходимое количество производительности, требуемое на строения на <lightgreen>15%<r> <red>Не складывается<r>'
       value: '0.15'
       stackable: false
       parent:
 
     - id: 'buff_profit_sharing'
-      name: 'Совместное использование прибыли'
+      name: 'Инновационное открытие'
       description: 'Снижает стоимость всех технологических исследований на <lightgreen>5%<r> <red>Не складывается<r>'
       value: '0.05'
       stackable: true
       parent:
 
     - id: 'buff_innovation'
-      name: 'Инновация'
+      name: 'Предмет для исследования'
       description: 'Увеличивает скорость науки для цивилизации на <lightgreen>5%<r> <gold>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
   
     - id: 'buff_sabotage'
-      name: 'Саботаж'
+      name: 'Инструмент эффективного разрушения'
       description: 'Увеличивает шанс успешного выполнения миссии "Саботаж" на <lightgreen>50%<r> <red>Не складывается<r>'
       value: '0.5'
       stackable: false
       parent:
 
     - id: 'buff_hedonism'
-      name: 'Наслаждение'
+      name: 'Изысканный предмет'
       description: 'Дает <lightgreen>3<r> счастья<r> <gold>Складывается<r>'
       value: '3.0'
       stackable: true
