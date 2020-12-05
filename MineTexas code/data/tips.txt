@@ -1,0 +1,7 @@
+Join the Discussion: http://www.MineTexas.com/forum/
+Need a place to store your stuff? Try building a camp! Camps can be built using materials. See under the 'Special' category in your tutorial book. (/res book)
+Need to know how to craft something? Use '/res book' to get a tutorial book and open the crafting recipe guide!
+It's dangerous to go alone. Building a civilization on your own is hard! Team up other players to make the job easier.
+Use '/civ time' to see when the next war, upkeep, or trade goodie repo time will occur.
+Have more questions? Read the wiki: http://wiki.minetexas.com/index.php/Civcraft_Wiki
+Having trouble with a staff member or player? Report them on the forums! http://www.minetexas.com/forum

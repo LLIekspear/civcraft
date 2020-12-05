@@ -1,0 +1,3 @@
+pex group default parents remove teleport
+pex group Member parents remove home
+broadcast Teleporation is now disabled for War Time.

@@ -1,0 +1,25 @@
+spawnAtStartup: true
+enablePluginMetrics: true
+debug: false
+languageFile: en_US
+worldSpawnerTickSpeed: 5
+spawnAtStartupDelay: 100
+worldSpawnFrequency: 10
+worldSpawnThreshold: 256
+spawnerRange: 16
+useFullControl: false
+removeLimitedMobsOnChunkUnload: true
+removeCustomMobsOnChunkUnload: true
+leashViolationTolerance: 100
+respectWorldGuardDenySpawnFlag: true
+respectWorldGuardMobSpawningFlag: true
+bannedMobCommands:
+- pex
+- restart
+- stop
+- reload
+- op
+- sudo
+spawnlimitResetCommands:
+- butcher
+- killall

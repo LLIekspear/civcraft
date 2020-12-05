@@ -1,0 +1,258 @@
+groups:
+  default:
+    options:
+      default: true
+      suffix: '&f'
+    permissions:
+    - jobs.petpay
+    - jobs.command.info
+    - jobs.command.stats
+    - jobs.command.top
+    - jobs.use
+    - jobs.autojoin.explorer
+    - jobs.autojoin.miner
+    - jobs.autojoin.woodcutter
+    - jobs.autojoin.hunter
+    - jobs.autojoin.farmer
+    - jobs.autojoin.digger
+    - jobs.autojoin.builder
+    - jobs.autojoin.weaponsmith
+    - jobs.autojoin.crafter
+    - jobs.autojoin.fisherman
+    - playerlink.map
+    - playerlink.website
+    - playerlink.vote
+    - modifyworld.*
+    - essentials.kit
+    - civ.tp.ally
+    - essentials.kits.new
+    - -essentials.kits.daily
+    - essentials.warps
+    - essentials.warp
+    - essentials.list
+    - essentials.msg
+    - essentials.ignore
+    - essentials.helpop
+    - -essentials.home
+    - essentials.home.bed
+    - essentials.afk.kickexempt
+    - essentials.mute.notify
+    - essentials.spawn
+    - chatex.chat.global
+    - chatex.allowchat
+    - civ.perk.egyptian
+    - civ.perk.roman
+    - essentials.help
+    - shopkeeper.trade
+    - -bukkit.command.plugins
+    - -bukkit.command.me
+    - -minecraft.command.me
+    - -essentials.afk
+    - -essentials.afk.auto
+  homeender:
+    options:
+      default: false
+      suffix: '&f'
+    permissions:
+    - essentials.sethome
+    - essentials.home
+    - essentials.enderchest
+    - essentials.enderchest.use
+    inheritance:
+    - default
+  enderchest:
+    options:
+      default: false
+      suffix: '&f'
+    permissions:
+    - essentials.enderchest
+    - essentials.enderchest.use
+    inheritance:
+    - default
+  home:
+    options:
+      default: false
+      suffix: '&f'
+    permissions:
+    - essentials.sethome
+    - essentials.home
+    - essentials.delhome
+    inheritance:
+    - default
+  secondhome:
+    options:
+      default: false
+      suffix: '&f'
+    permissions:
+    - essentials.sethome
+    - essentials.home
+    - essentials.delhome
+    - essentials.sethome.multiple.vip
+    inheritance:
+    - default
+  vip:
+    options:
+      default: false
+      prefix: '&8[&4VIP&8]&c'
+      suffix: '&f'
+    permissions:
+    - essentials.kit
+    - essentials.joinfullserver
+    - essentials.ptime
+    - essentials.workbench
+    - essentials.home.multiple.vip
+    - civ.perk.atlantean
+    - civ.perk.arctic
+    - civ.perk.aztec
+    - essentials.tpa
+    - essentials.kits.vip
+    - civ.perk.elven
+    - civ.perk.hell
+    - civ.perk.cultist
+    inheritance:
+    - default
+  vipp:
+    options:
+      default: false
+      prefix: '&8[&6VIP&f+&8]&e'
+      suffix: '&f'
+    permissions:
+    - essentials.afk.kickexempt
+    - essentials.kits.vipp
+    - civ.freeperks
+    inheritance:
+    - vip
+  helper_arges:
+    options:
+      default: false
+      prefix: '&8[&2Helper&8]&a'
+      suffix: '&f'
+    permissions:
+    - essentials.mute
+    - essentials.tppos
+    - essentials.home
+    - essentials.sethome
+    - essentials.enderchest
+    - essentials.helpop.receive
+    - essentials.god
+    - essentials.fly
+    - essentials.togglejail
+    - essentials.vanish
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.tphere
+    - essentials.invsee
+    - essentials.enderchest.others
+    - essentials.weather
+    - essentials.back
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.afk.kickexempt
+    - civ.moderator
+    - civ.tp.*
+    - essentials.top
+    - essentials.silentjoin
+    - essentials.day
+    - essentials.night
+    - essentials.sun
+    - essentials.timeset
+    - essentials.timeset.*
+    - essentials.weather
+    - essentials.weather.*
+    inheritance:
+    - default
+    - homeender
+  helper:
+    options:
+      default: false
+      prefix: '&8[&5Helper&8]&d'
+      suffix: '&f'
+    permissions:
+    - essentials.mute
+    - essentials.top
+    - essentials.helpop.receive
+    - essentials.god
+    - essentials.fly
+    - essentials.togglejail
+    - essentials.vanish
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.tphere
+    - essentials.invsee
+    - essentials.enderchest.others
+    - essentials.weather
+    - essentials.back
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.afk.kickexempt
+    - civ.moderator
+    - civ.tp.*
+    - essentials.silentjoin
+    - essentials.timeset
+    - essentials.timeset.*
+    - essentials.weather
+    - essentials.weather.*
+    inheritance:
+    - default
+  Moderator:
+    options:
+      default: false
+      prefix: '&8[&5Модератор&8]&d'
+      suffix: '&f'
+    permissions:
+    - civ.moderator
+    - essentials.mute
+    - essentials.togglejail
+    - essentials.helpop.receive
+    - essentials.fly
+    - essentials.god
+    inheritance:
+    - vipp
+  Admin:
+    options:
+      default: false
+      prefix: '&8[&6Администратор&8]'
+      suffix: '&f'
+    permissions:
+    - '*'
+    - essentials.silentjoin.vanish
+    - -bukkit.command.reload
+  Player:
+    options:
+      default: false
+      suffix: '&f'
+    permissions:
+    - '*'
+schema-version: 1
+users:
+  1854bce2-0881-31cd-9e6c-569c75340b63:
+    group:
+    - default
+    options:
+      name: Cheshirko
+  d4f17f95-6676-34c3-83b6-49754cf5be8a:
+    group:
+    - helper_arges
+    options:
+      name: _Arges_
+    permissions:
+    - homeender
+  1b7fcc84-3e25-3a76-b666-6e2c6fa8868b:
+    group:
+    - Admin
+    options:
+      name: Overlo
+  4f28785e-2970-3fba-8ab2-d19d9f339037:
+    group:
+    - Admin
+    options:
+      name: LLIekspear
+  5ea0d84d-49d7-368d-8a8a-8dd0275058f2:
+    group: []
+    options:
+      name: ElderActor69
+  75ce7a75-3da9-35e0-a9ba-ec58cb7bd5ba:
+    group:
+    - secondhome
+    options:
+      name: ChelovekF
