@@ -198,8 +198,8 @@ land_goods:
       name: Папирус
       value: 125.0
       buffs: 'buff_innovation'
-      material: 351 # Ink sack
-      material_data: 2 # green
+      material: 339 # Ink sack
+      material_data: 0 # gree
 
     - id: 'good_silver'
       name: Серебро
@@ -225,7 +225,7 @@ land_goods:
     - id: 'good_incense'
       name: Ладан
       value: 250.0
-      buffs: 'buff_fine_art, buff_innovation'
+      buffs: 'buff_fine_art, buff_hedonism'
       material: 362 # melon seed
       material_data: 0
     
@@ -309,9 +309,9 @@ land_goods:
     - id: 'good_coffee'
       name: Кофе
       value: 375.0
-      buffs: 'buff_innovation, buff_extraction, buff_rush'
-      material: 372 # nether wart seed
-      material_data: 0
+      buffs: 'buff_monopoly, buff_rush'
+      material: 351 # nether wart seed
+      material_data: 3
       hemispheres: 'hemi_northwest'
 
     - id: 'good_limestone'
@@ -348,6 +348,7 @@ land_goods:
       buffs: 'buff_innovation, profit_sharing'
       material: 352 # bone
       material_data: 0
+
 water_goods: 
     - id: 'good_crabs'
       name: Крабы
@@ -373,7 +374,7 @@ water_goods:
     - id: 'good_whale'
       name: Киты
       value: 500.0
-      buffs: 'buff_innovation, buff_advanced_tooling, buff_fine_art, buff_extraction'
+      buffs: 'buff_advanced_tooling, buff_fine_art, buff_extraction'
       material: 345 # compass
       material_data: 0
 
