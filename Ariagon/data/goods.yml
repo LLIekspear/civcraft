@@ -124,47 +124,47 @@ hemispheres:
 #
 #
 land_goods:
-    - id: 'good_sugar'
-      name: Сахар
-      value: 250.0
-      buffs: 'buff_hedonism, buff_year_of_plenty'
-      material: 353
-      material_data: 0
+    # - id: 'good_sugar'
+    #   name: Сахар
+    #   value: 250.0
+    #   buffs: 'buff_hedonism, buff_year_of_plenty'
+    #   material: 353
+    #   material_data: 0
 
-    - id: 'good_diamond'
-      name: Алмаз
-      value: 350.0
-      buffs: 'buff_barter, buff_greed'
-      material: 264
-      material_data: 0
+    # - id: 'good_diamond'
+    #   name: Алмаз
+    #   value: 350.0
+    #   buffs: 'buff_barter, buff_greed'
+    #   material: 264
+    #   material_data: 0
 
-    - id: 'good_truffels'
-      name: Трюфели
-      value: 275.0
-      buffs: 'buff_medicine, buff_hedonism'
-      material: 39
-      material_data: 0
+    # - id: 'good_truffels'
+    #   name: Трюфели
+    #   value: 275.0
+    #   buffs: 'buff_medicine, buff_hedonism'
+    #   material: 39
+    #   material_data: 0
     
-    - id: 'good_blagovoniya'
-      name: Благовония
-      value: 375.0
-      buffs: 'buff_hedonism, buff_rush'
-      material: 282
-      material_data: 0
+    # - id: 'good_blagovoniya'
+    #   name: Благовония
+    #   value: 375.0
+    #   buffs: 'buff_hedonism, buff_rush'
+    #   material: 282
+    #   material_data: 0
       
-    - id: 'good_gold'
-      name: Золото
-      value: 350.0
-      buffs: 'buff_hedonism, buff_barter, buff_greed'
-      material: 266
-      material_data: 0
+    # - id: 'good_gold'
+    #   name: Золото
+    #   value: 350.0
+    #   buffs: 'buff_hedonism, buff_barter, buff_greed'
+    #   material: 266
+    #   material_data: 0
       
-    - id: 'good_citrus'
-      name: Цитрус
-      value: 250.0
-      buffs: 'buff_hedonism, buff_year_of_plenty'
-      material: 378
-      material_data: 0
+    # - id: 'good_citrus'
+    #   name: Цитрус
+    #   value: 250.0
+    #   buffs: 'buff_hedonism, buff_year_of_plenty'
+    #   material: 378
+    #   material_data: 0
       
     - id: 'good_pelts'
       name: Кожа
@@ -180,9 +180,9 @@ land_goods:
       material: 329 # saddle
       material_data: 0 
 
-    - id: 'good_oil'
+    - id: 'good_oil_e'
       name: Нефть
-      value: 375.0
+      value: 500.0
       buffs: 'buff_advanced_tooling, buff_extraction, buff_fire_bomb'
       material: 351 # ink sack
       material_data: 0
@@ -278,19 +278,19 @@ land_goods:
       material: 371 # gold nugget
       material_data: 0
 
-    - id: 'good_pshenica'
-      name: Пшеница
-      value: 125.0
-      buffs: 'buff_year_of_plenty'
-      material: 296 # wheat
-      material_data: 0
+    # - id: 'good_pshenica'
+    #   name: Пшеница
+    #   value: 125.0
+    #   buffs: 'buff_year_of_plenty'
+    #   material: 296 # wheat
+    #   material_data: 0
 
-    - id: 'good_rice'
-      name: Рис
-      value: 125.0
-      buffs: 'buff_year_of_plenty'
-      material: 361 # pumpkin's seeds
-      material_data: 0
+    # - id: 'good_rice'
+    #   name: Рис
+    #   value: 125.0
+    #   buffs: 'buff_year_of_plenty'
+    #   material: 361 # pumpkin's seeds
+    #   material_data: 0
 
     - id: 'good_copper'
       name: Медь
@@ -377,5 +377,10 @@ water_goods:
       buffs: 'buff_year_of_plenty, buff_fishing'
       material: 349 # fish
       material_data: 0
-      
 
+    - id: 'good_oil_w'
+      name: Нефть
+      value: 500.0
+      buffs: 'buff_advanced_tooling, buff_extraction, buff_fire_bomb'
+      material: 351 # ink sack
+      material_data: 0
