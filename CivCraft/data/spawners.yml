@@ -1,0 +1,196 @@
+#
+# This file contains information about the mob spawners.
+#
+# The mob spawners are divided into two lists, land spawners and water spawners.
+# Configuration for them is identical, however as you might expect... water 
+# spawners never spawn on land and land spawners never spawn on water.
+#
+#
+#
+#Master Flag. If this is false, custom mobs are disabled
+enable: true
+
+########### Mob Spawner Generation Options #######
+generation:
+    # Minimum number of chunks mob spawners can be apart
+    chunks_min: 15
+
+    # Maximum number of chunks mob spawners should be apart
+    chunks_max: 30
+
+    # World size in x chunks (radius)
+    chunks_x: 625
+#    chunks_x: 100 
+    # World size in z chunks (radius)
+    chunks_z: 625
+#    chunks_z: 100
+    
+    # Random seed for mob spawner locations
+    seed: 150009142016
+
+########## Mob Spawner Types #######
+# id - unquie ID to identify this spawner
+# name - Display name shown on spawners and messages
+# rarity - The rarity of the spawner, used during random generation
+#
+land_spawners:
+    - id: 'yobo_lesser'
+      name: 'Малый дебошир'
+      rarity: 1.0
+
+    - id: 'yobo_greater'
+      name: 'Большой дебошир'
+      rarity: 0.3
+
+    - id: 'yobo_elite'
+      name: 'Элитный дебошир'
+      rarity: 0.1
+
+    - id: 'yobo_brutal'
+      name: 'Брутальный дебошир'
+      rarity: 0.05
+
+    - id: 'ruffian_lesser'
+      name: 'Малый головорез'
+      rarity: 1.0
+
+    - id: 'ruffian_greater'
+      name: 'Большой головорез'
+      rarity: 0.3
+
+    - id: 'ruffian_elite'
+      name: 'Элитный головорез'
+      rarity: 0.1
+
+    - id: 'ruffian_brutal'
+      name: 'Брутальный головорез'
+      rarity: 0.05
+
+    - id: 'savage_lesser'
+      name: 'Малый дикарь'
+      rarity: 1.0
+
+    - id: 'savage_greater'
+      name: 'Большой дикарь'
+      rarity: 0.3
+
+    - id: 'savage_elite'
+      name: 'Элитный дикарь'
+      rarity: 0.1
+
+    - id: 'savage_brutal'
+      name: 'Брутальный дикарь'
+      rarity: 0.05
+
+    - id: 'behemoth_lesser'
+      name: 'Малый бегемот'
+      rarity: 1.0
+
+    - id: 'behemoth_greater'
+      name: 'Большой бегемот'
+      rarity: 0.3
+
+    - id: 'behemoth_elite'
+      name: 'Элитный бегемот'
+      rarity: 0.1
+
+    - id: 'behemoth_brutal'
+      name: 'Брутальный бегемот'
+      rarity: 0.05
+
+    - id: 'undead_lesser'
+      name: 'Малый нежить'
+      rarity: 1.0
+
+    - id: 'undead_greater'
+      name: 'Большой нежить'
+      rarity: 0.3
+
+    - id: 'undead_elite'
+      name: 'Элитный нежить'
+      rarity: 0.1
+
+    - id: 'undead_brutal'
+      name: 'Брутальный нежить'
+      rarity: 0.05
+
+    - id: 'kodiac_lesser'
+      name: 'Малый кодиак'
+      rarity: 1.0
+
+    - id: 'kodiac_greater'
+      name: 'Большой кодиак'
+      rarity: 0.3
+
+    - id: 'kodiac_elite'
+      name: 'Элитный кодиак'
+      rarity: 0.1
+
+    - id: 'kodiac_brutal'
+      name: 'Брутальный кодиак'
+      rarity: 0.05
+
+    - id: 'cube_lesser'
+      name: 'Малый желатиновый куб'
+      rarity: 1.0
+
+    - id: 'cube_greater'
+      name: 'Большой желатиновый куб'
+      rarity: 0.3
+
+    - id: 'cube_elite'
+      name: 'Элитный желатиновый куб'
+      rarity: 0.1
+
+    - id: 'cube_brutal'
+      name: 'Брутальный желатиновый куб'
+      rarity: 0.05
+
+    - id: 'arachne_lesser'
+      name: 'Малая арахна'
+      rarity: 1.0
+
+    - id: 'arachne_greater'
+      name: 'Большая арахна'
+      rarity: 0.3
+
+    - id: 'arachne_elite'
+      name: 'Элитная арахна'
+      rarity: 0.1
+
+    - id: 'arachne_brutal'
+      name: 'Брутальная арахна'
+      rarity: 0.05
+
+    - id: 'direwolf_lesser'
+      name: 'Малый темный волк'
+      rarity: 1.0
+
+    - id: 'direwolf_greater'
+      name: 'Большой темный волк'
+      rarity: 0.3
+
+    - id: 'direwolf_elite'
+      name: 'Элитный темный волк'
+      rarity: 0.1
+
+    - id: 'direwolf_brutal'
+      name: 'Брутальный темный волк'
+      rarity: 0.05
+
+water_spawners:
+    - id: 'kraken_lesser'
+      name: 'Малый левиафан'
+      rarity: 1.0
+
+    - id: 'kraken_greater'
+      name: 'Большой левиафан'
+      rarity: 0.3
+
+    - id: 'kraken_elite'
+      name: 'Элитный левиафан'
+      rarity: 0.1
+
+    - id: 'kraken_brutal'
+      name: 'Брутальный левиафан'
+      rarity: 0.05
