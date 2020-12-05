@@ -328,13 +328,19 @@ land_goods:
       material: 295 # seeds
       material_data: 0
 
-    - id: 'good_Marble'
+    - id: 'good_marble'
       name: Мрамор
       value: 250.0
       buffs: 'buff_fine_art, buff_construction'
       material: 155 # quartz block
       material_data: 0
-    
+
+    - id: 'good_fossil'
+      name: Окаменелость
+      value: 150.0
+      buffs: 'buff_innovation, profit_sharing'
+      material: 352 # bone
+      material_data: 0
 water_goods: 
     - id: 'good_crabs'
       name: Крабы
