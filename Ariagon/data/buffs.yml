@@ -14,7 +14,7 @@ buffs:
       parent:
    
     - id: 'buff_year_of_plenty'
-      name: 'Эффективный компост'
+      name: 'Легкообрабатываемая культура'
       description: 'Увеличивает темпы роста фермерских хозяйств на <lightgreen>20%<r>. <gold>Складывается<r>'
       value: '0.2'
       stackable: true
@@ -35,7 +35,7 @@ buffs:
       parent:
 
     - id: 'buff_advanced_tooling'
-      name: 'Улучшение для инструментов добычи'
+      name: 'Обновление способа добычи'
       description: 'Увеличивает добычу полезных ископаемых на <lightgreen>50%<r> <gold>Складывается<r>'
       value: '0.5'
       stackable: true
@@ -70,7 +70,7 @@ buffs:
     #   parent:
 
     - id: 'buff_extraction'
-      name: 'Улучшение для инструментов поиск полезных ископаевых'
+      name: 'Обновление способа поиска руды'
       description: 'Увеличивает вероятность троммеля производить драгоценные минералы на <lightgreen>50%<r> <red>Не складывается<r>'
       value: '0.5'
       stackable: false
@@ -98,7 +98,7 @@ buffs:
       parent:
 
     - id: 'buff_medicine'
-      name: 'Лечебные травы'
+      name: 'Лечебные свойства'
       description: 'Уменьшает время респауна во время войны на <lightgreen>50<r> секунд<r> <red>Не складывается<r>'
       value: '50'
       stackable: false
