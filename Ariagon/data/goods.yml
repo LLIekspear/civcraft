@@ -124,14 +124,14 @@ hemispheres:
 #
 #
 land_goods:
-    - id: 'good_sugar'
-      name: Сахар
-      value: 300.0
-      buffs: 'buff_monopoly, buff_hedonism'
-      material: 353
-      material_data: 0
+    # - id: 'good_sugar'
+    #   name: Сахар
+    #   value: 300.0
+    #   buffs: 'buff_monopoly, buff_hedonism'
+    #   material: 353
+    #   material_data: 0
 
-    - id: 'good_salt'
+    - id: 'good_salt_e'
       name: Соль
       value: 300.0
       buffs: 'buff_monopoly, buff_preservative'
@@ -166,12 +166,19 @@ land_goods:
     #   material: 266
     #   material_data: 0
       
-    # - id: 'good_citrus'
-    #   name: Цитрус
-    #   value: 250.0
-    #   buffs: 'buff_hedonism, buff_year_of_plenty'
-    #   material: 378
-    #   material_data: 0
+    - id: 'good_citrus'
+      name: Цитрусы
+      value: 300.0
+      buffs: 'buff_year_of_plenty, buff_hedonism'
+      material: 378
+      material_data: 0
+
+    - id: 'good_bananas'
+      name: Бананы
+      value: 300.0
+      buffs: 'buff_monopoly, buff_hedonism'
+      material: 396
+      material_data: 0
       
     - id: 'good_pelts'
       name: Кожа
@@ -203,8 +210,8 @@ land_goods:
 
     - id: 'good_silver'
       name: Серебро
-      value: 125.0
-      buffs: 'buff_barter, buff_hedonism'
+      value: 150.0
+      buffs: 'buff_barter, buff_greed'
       material: 265 # iron ingot
       material_data: 0
 
@@ -218,7 +225,7 @@ land_goods:
     - id: 'good_ivory'
       name: Слоновая кость
       value: 250.0
-      buffs: 'buff_fine_art, buff_monopoly'
+      buffs: 'buff_advanced_tooling, buff_monopoly'
       material: 406 # nether quartz
       material_data: 0
 
@@ -267,7 +274,7 @@ land_goods:
     - id: 'good_olives'
       name: Оливки
       value: 125.0
-      buffs: 'buff_hedonism'
+      buffs: 'buff_year_of_plenty, buff_hedonism'
       material: 375 # seeds
       material_data: 0
 
@@ -313,13 +320,6 @@ land_goods:
       material: 351 # nether wart seed
       material_data: 3
       hemispheres: 'hemi_northwest'
-
-    - id: 'good_limestone'
-      name: Известняк
-      value: 250.0
-      buffs: 'buff_construction, buff_barricade'
-      material: 351 # light grey dye
-      material_data: 7
     
     - id: 'good_tobacco'
       name: Табак
@@ -329,9 +329,9 @@ land_goods:
       material_data: 0
 
     - id: 'good_spice'
-      name: Пряность
+      name: Пряности
       value: 125.0
-      buffs: 'buff_preservative'
+      buffs: 'buff_hedonism, buff_monopoly'
       material: 295 # seeds
       material_data: 0
 
@@ -341,6 +341,20 @@ land_goods:
       buffs: 'buff_fine_art, buff_construction'
       material: 155 # quartz block
       material_data: 0
+
+    - id: 'good_limestone'
+      name: Известняк
+      value: 250.0
+      buffs: 'buff_construction, buff_barricade'
+      material: 351 # light grey dye
+      material_data: 7
+
+    - id: 'good_granite'
+      name: Гранит
+      value: 250.0
+      buffs: 'buff_construction, buff_ine_art'
+      material: 1 # light grey dye
+      material_data: polished_granite
 
     - id: 'good_fossil'
       name: Окаменелость
@@ -353,7 +367,7 @@ water_goods:
     - id: 'good_crabs'
       name: Крабы
       value: 250.0
-      buffs: 'buff_year_of_plenty, buff_fishing'
+      buffs: 'buff_hedonism, buff_barter'
       material: 376 # fermented spider eye
       material_data: 0
 
@@ -374,14 +388,14 @@ water_goods:
     - id: 'good_whale'
       name: Киты
       value: 500.0
-      buffs: 'buff_advanced_tooling, buff_fine_art, buff_extraction'
+      buffs: 'buff_advanced_tooling, buff_fishing, buff_extraction'
       material: 345 # compass
       material_data: 0
 
     - id: 'good_shrimp'
       name: Креветки
       value: 250.0
-      buffs: 'buff_year_of_plenty, buff_fishing'
+      buffs: 'buff_hedonism, buff_barter'
       material: 375 # Spider Eye
       material_data: 0 
 
@@ -397,4 +411,11 @@ water_goods:
       value: 500.0
       buffs: 'buff_advanced_tooling, buff_extraction, buff_fire_bomb'
       material: 351 # ink sack
+      material_data: 0
+
+    - id: 'good_salt_w'
+      name: Соль
+      value: 300.0
+      buffs: 'buff_monopoly, buff_preservative'
+      material: 216
       material_data: 0
