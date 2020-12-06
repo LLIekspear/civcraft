@@ -66,7 +66,3 @@ fishing_drops:
     - craftMatId: ''
       type_id: 263
       drop_chance: 0.1
-
-    - craftMatId: 'mat_legendary_defense_catalyst'
-      type_id: 0
-      drop_chance: 0.0001

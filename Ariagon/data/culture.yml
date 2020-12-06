@@ -26,7 +26,7 @@ culture_levels:
       chunks: 10
 
     - level: 3
-      amount: 20000
+      amount: 25000
       chunks: 12
 
     - level: 4
@@ -38,7 +38,7 @@ culture_levels:
       chunks: 16
 
     - level: 6
-      amount: 200000
+      amount: 250000
       chunks: 18
 
     - level: 7
@@ -46,40 +46,40 @@ culture_levels:
       chunks: 20
 
     - level: 8
-      amount: 800000
+      amount: 1000000
       chunks: 22
 
     - level: 9
-      amount: 1200000
+      amount: 1500000
       chunks: 24
 
-    - level: 10
-      amount: 1700000
-      chunks: 26
+    # - level: 10
+    #   amount: 1700000
+    #   chunks: 26
 
-    - level: 11
-      amount: 2450000
-      chunks: 28
+    # - level: 11
+    #   amount: 2450000
+    #   chunks: 28
 
-    - level: 12
-      amount: 3000000
-      chunks: 30
+    # - level: 12
+    #   amount: 3000000
+    #   chunks: 30
 
-    - level: 13
-      amount: 3700000
-      chunks: 32
+    # - level: 13
+    #   amount: 3700000
+    #   chunks: 32
 
-    - level: 14
-      amount: 4550000
-      chunks: 35
+    # - level: 14
+    #   amount: 4550000
+    #   chunks: 35
       
-    - level: 15
-      amount: 5550000
-      chunks: 38
+    # - level: 15
+    #   amount: 5550000
+    #   chunks: 38
       
-    - level: 16
-      amount: 6750000
-      chunks: 40
+    # - level: 16
+    #   amount: 6750000
+    #   chunks: 40
 culture_biomes:
     - name: OCEAN
       coins: 0.0
@@ -507,7 +507,3 @@ culture_biomes:
       growth: 0.2
       happiness: 0.01
       beakers: 0.2
-
-
-
-

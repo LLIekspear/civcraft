@@ -11,19 +11,19 @@ enchants:
 
    - id: 'ench_fire_protection'
      name: 'Защита от огня'
-     cost: 25000.0
+     cost: 20000.0
      description: 'Добавляет защиту от огня к вашей броне.'
      enchant_id: 'PROTECTION_FIRE'  
  
    - id: 'ench_flame'
-     name: 'Огонь (Лук)'
+     name: 'Воспламенение (лук)'
      cost: 50000.0
      description: 'Добавляет зачарование пламени на ваш лук.'
      enchant_id: 'ARROW_FIRE'
    
    - id: 'ench_punchout'
-     name: 'Панч-Аут'
-     cost: 20000.0
+     name: 'Дробление'
+     cost: 25000.0
      description: '% шанс нанести дополнительный урон конструкции.'
      enchant_id: 'LoreEnhancementPunchout'
 

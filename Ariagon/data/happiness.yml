@@ -19,10 +19,10 @@ happiness:
     distance_base: 0.01
 
     # Distance Multiplier to use when town's culture is touching
-    distance_multiplier: 0.75
+    distance_multiplier: 0.25
 
     # Dstaince Multiplier to use when town's culture is NOT touching
-    distance_multiplier_outside_culture: 1.05
+    distance_multiplier_outside_culture: 1.15
 
     # Maximum amount of distance unhappiness
     distance_max: 15.0
@@ -41,28 +41,31 @@ happiness:
           happiness: 12.0
  
         - level: 2
-          happiness: 12.0
+          happiness: 13.0
 
         - level: 3
-          happiness: 12.0
+          happiness: 14.0
 
         - level: 4
-          happiness: 12.0
+          happiness: 15.0
 
         - level: 5
-          happiness: 12.0
+          happiness: 16.0
 
         - level: 6
-          happiness: 12.0
+          happiness: 17.0
 
         - level: 7
-          happiness: 12.0
+          happiness: 18.0
         
         - level: 8
-          happiness: 12.0
+          happiness: 19.0
 
         - level: 9
-          happiness: 12.0
+          happiness: 20.0
+
+        # - level: 10
+        #   happiness: 20.0
 
     # Happiness States
     #
@@ -76,8 +79,8 @@ happiness:
     #
     states:
         - level: 0
-          name: 'Бунт'
-          color: 'Red'
+          name: 'бунт'
+          color: 'Black'
           amount: 0.0
           beaker_rate: 0.20
           coin_rate: 0.20
@@ -85,65 +88,55 @@ happiness:
           hammer_rate: 0.20
 
         - level: 1
-          name: 'Недовольство'
-          color: 'Rose'
-          amount: 0.2
+          name: 'недовольство'
+          color: 'Red'
+          amount: 0.15
           beaker_rate: 0.5
           coin_rate: 0.5
           culture_rate: 0.5
           hammer_rate: 0.5
 
         - level: 2
-          name: 'Несчастье'
-          color: 'Gold'
-          amount: 0.4
+          name: 'несчастье'
+          color: 'Rose'
+          amount: 0.3
           beaker_rate: 0.75
           coin_rate: 0.75
           culture_rate: 0.75
           hammer_rate: 0.75
 
         - level: 3
-          name:  'Удовлетворение'
+          name:  'обычная жизнь'
           color: 'White'
-          amount: 0.5
+          amount: 0.48
           beaker_rate: 1.0
           coin_rate: 1.0
           culture_rate: 1.0
           hammer_rate: 1.0
 
         - level: 4
-          name:  'Счастливый'
+          name:  'счастье'
           color: 'LightGreen'
-          amount: 0.7
+          amount: 0.66
           beaker_rate: 1.15
           coin_rate: 1.15
           culture_rate: 1.15
           hammer_rate: 1.15
 
         - level: 5
-          name:  'Ликование'
-          color: 'LightBlue'
-          amount: 0.85
+          name:  'ликование'
+          color: 'LightGreen'
+          amount: 0.81
           beaker_rate: 1.30
           coin_rate: 1.30
           culture_rate: 1.30
           hammer_rate: 1.30
 
         - level: 6
-          name:  'Экстаз'
-          color: 'LightPurple'
-          amount: 0.92
+          name:  'экстаз'
+          color: 'Blue'
+          amount: 0.91
           beaker_rate: 1.5
           coin_rate: 1.5
           culture_rate: 1.5
           hammer_rate: 1.5
-
-
-
-
-
-
-
-
-
-    
