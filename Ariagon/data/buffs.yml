@@ -134,14 +134,14 @@ buffs:
 
     - id: 'buff_profit_sharing'
       name: 'Инновационное открытие'
-      description: 'Количество пробирок, необходимых для выполнения изучений, уменьшается на <lightgreen>5%<r> <gold>Складывается<r>'
+      description: 'Количество пробирок, необходимых для изучения техологий, уменьшается на <lightgreen>5%<r> <gold>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
 
     - id: 'buff_innovation'
       name: 'Предмет для исследования'
-      description: 'Количество монет, необходимых для выполнения изучений, уменьшается на<lightgreen>5%<r> <gold>Складывается<r>'
+      description: 'Количество монет, необходимых для изучения технологий, уменьшается на<lightgreen>5%<r> <gold>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
