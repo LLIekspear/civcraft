@@ -32,7 +32,7 @@ global:
    regen_spawn_hour: 0
 
    # Exchange rate you get using /resident exchange instead of using a bank.
-   exchange_rate: 0.3
+   exchange_rate: 0.25
 
    starting_coins: 250.0
 
@@ -43,7 +43,7 @@ global:
    distance_from_spawn: 1000.0
 
    # max distance players can be apart for trading
-   max_trade_distance: 10.0
+   max_trade_distance: 8.0
 
    # catalyst free amount
    free_catalyst_amount: 3
@@ -73,7 +73,7 @@ global:
    speed_check_chunks: true
 
    # Minimum Build Height for Structures, Walls, and Roads. Default: 1
-   min_build_height: 1
+   min_build_height: 5
 
    #Use Experience as currency. Default: true
    #If true, disables EXP enchanting and repair.
@@ -100,10 +100,10 @@ civ:
     town_distance_base_upkeep: 100.0
 
     # Multiplier used to make distance upkeep expoential, greater = higher upkeep
-    town_distance_multiplier: 0.3
+    town_distance_multiplier: 0.25
 
     # Multiplier used when a town's culture doesnt connect to the capitals culture.
-    town_distance_multiplier_outside_culture: 0.9
+    town_distance_multiplier_outside_culture: 1.25
 
     # Maximum amount of distance upkeep anybody can pay per town
     town_distance_upkeep_max: 500000.0
@@ -123,7 +123,7 @@ civ:
     revolution_cooldown: 2
 
     # Number of days a leader must be inactive before being able to be reclaimed
-    leader_inactive_days: 7
+    leader_inactive_days: 5
 
     # Number of days a civ must be around before it can merge or gift towns.
     min_gift_age: 14
@@ -144,28 +144,28 @@ ore_rates:
 end_conditions:
     - id: 'end_culture'
       class: 'EndConditionCulture'
-      name: 'Культурной'
+      name: 'культурной'
       culture_level: '10'
       towns: '3'
       wonders: '1'
-      days_held: '21'
+      days_held: '14'
 
     - id: 'end_conquest'
       class: 'EndConditionConquest'
-      name: 'Военной'
+      name: 'военной'
       percent_captured: '0.75'
       percent_captured_with_wonder: '0.50'
-      days_after_start: '28'
-      days_held: '21'
+      days_after_start: '21'
+      days_held: '14'
     
     - id: 'end_science'
       class: 'EndConditionScience'
-      name: 'Научной'
+      name: 'научной'
       tech: 'tech_enlightenment'
-      days_held: '21'
+      days_held: '14'
     
     - id: 'end_diplomacy'
       class: 'EndConditionDiplomacy'
-      name: 'Дипломатической'
+      name: 'дипломатической'
       vote_cooldown_hours: '24'
-      days_held: '21'
+      days_held: '14'

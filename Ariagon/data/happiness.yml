@@ -22,7 +22,7 @@ happiness:
     distance_multiplier: 0.25
 
     # Dstaince Multiplier to use when town's culture is NOT touching
-    distance_multiplier_outside_culture: 1.15
+    distance_multiplier_outside_culture: 1.25
 
     # Maximum amount of distance unhappiness
     distance_max: 15.0

@@ -7,7 +7,7 @@
 buffs:
     - id: 'buff_construction'
       name: 'Хороший материал'
-      description: 'Увеличивает производительность на <lightgreen>100<r>. <gold>Складывается<r>'
+      description: 'Количество молотков увеличивается на <lightgreen>100<r>. <gold>Складывается<r>'
 #      value: '0.25'
       value: '100'
       stackable: true
@@ -15,49 +15,49 @@ buffs:
    
     - id: 'buff_year_of_plenty'
       name: 'Легкообрабатываемая культура'
-      description: 'Увеличивает темпы роста фермерских хозяйств на <lightgreen>20%<r>. <gold>Складывается<r>'
+      description: 'Растительность увеличивается на <lightgreen>20%<r>. <gold>Складывается<r>'
       value: '0.2'
       stackable: true
       parent:
 
     - id: 'buff_monopoly'
       name: 'Монополия'
-      description: 'Увеличивает количество монет из всех торговых товаров на <lightgreen>15%<r> <gold>Складывается<r>'
+      description: 'Доход с торговых ресурсов увеличивается <lightgreen>15%<r> <gold>Складывается<r>'
       value: '0.15'
       stackable: true
       parent:
     
     - id: 'buff_preservative'
       name: 'Консервант'
-      description: 'Снижает потребление коттеджей на <lightgreen>50%<r> <red>Не складывается<r>'
+      description: 'Потребление еды коттеджами уменьшается на <lightgreen>50%<r> <red>Не складывается<r>'
       value: '0.5'
       stackable: false
       parent:
 
     - id: 'buff_advanced_tooling'
       name: 'Обновление способа добычи'
-      description: 'Увеличивает добычу полезных ископаемых на <lightgreen>50%<r> <gold>Складывается<r>'
+      description: 'Молотки, добываемые шахтами,увеличиваются на <lightgreen>50%<r> <gold>Складывается<r>'
       value: '0.5'
       stackable: true
       parent:
 
     - id: 'buff_barricade'
       name: 'Баррикады'
-      description: 'Увеличивает здоровье оборонительных структур на <lightgreen>50%<r> <red>Не складывается<r>'
+      description: 'Прочность оборонительных строений увеличивается на <lightgreen>50%<r> <red>Не складывается<r>'
       value: '0.5'
       stackable: false
       parent:
 
     - id: 'buff_barter'
       name: 'Бартер'
-      description: 'Увеличивает обменный курс полезных ископаемых, обмениваемых в банке <lightgreen>5%<r> <gold>Складывается<r>'
+      description: 'Курс обмена полезных ископаемых в банке увличивается нахождение <lightgreen>5%<r> <gold>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
 
     - id: 'buff_fine_art'
       name: 'Предмет для вдохновления'
-      description: 'Увеличивает культуру на <lightgreen>25%<r> <red>Не складывается<r>'
+      description: 'Прирост культуры увеличивается на <lightgreen>25%<r> <red>Не складывается<r>'
       value: '0.25'
       stackable: false
       parent:
@@ -70,22 +70,22 @@ buffs:
     #   parent:
 
     - id: 'buff_extraction'
-      name: 'Обновление способа поиска руды'
-      description: 'Увеличивает вероятность троммеля производить драгоценные минералы на <lightgreen>50%<r> <red>Не складывается<r>'
+      name: 'Обновление для инструмента'
+      description: 'Добыча полезных ископаемых дробилкой и карьером увеличивается на <lightgreen>50%<r> <red>Не складывается<r>'
       value: '0.5'
       stackable: false
       parent:
 
     - id: 'buff_fire_bomb'
       name: 'Воспламеняющееся вещество'
-      description: 'Увеличивает урон стрелковой/пушечными башнями на <lightgreen>50%<r> Также теперь будут горящие стрелы <red>Не складывается<r>'
+      description: 'Урон от башен и кораблей лучников и пушкарей увеличивается на<lightgreen>50%<r> Стрелы от башен и кораблей лучников воспламеняются. <red>Не складывается<r>'
       value: '0.5'
       stackable: false
       parent:
 
     - id: 'buff_fishing'
       name: 'Рыбалка'
-      description: 'Позволяет сырой рыбе заменить потребность в хлебе. <lightgreen>1 рыба = 2 хлеб<r> <red>Не складывается<r>'
+      description: 'Возможность заменить потребление коттеджами хлеба на потребление рыбы по курсу: <lightgreen>1 рыба = 2 хлеба<r> <red>Не складывается<r>'
       value: '2'
       stackable: false
       parent:
@@ -99,56 +99,56 @@ buffs:
 
     - id: 'buff_medicine'
       name: 'Лечебные свойства'
-      description: 'Уменьшает время респауна во время войны на <lightgreen>50<r> секунд<r> <red>Не складывается<r>'
+      description: 'Время для возможности возрождения во время войны уменьшается на <lightgreen>50<r> секунд<r> <red>Не складывается<r>'
       value: '50'
       stackable: false
       parent:
     
-    - id: 'buff_dirty_money'
-      name: 'Средство проникновения'
-      description: 'Increases the chances of Steal Treasury by <lightgreen>50%<r> <red>Not Stackable<r>'
-      value: '0.5'
-      stackable: false
-      parent:
+    # - id: 'buff_dirty_money'
+    #   name: 'Средство проникновения'
+    #   description: 'Increases the chances of Steal Treasury by <lightgreen>50%<r> <red>Not Stackable<r>'
+    #   value: '0.5'
+    #   stackable: false
+    #   parent:
 
-    - id: 'buff_espionage'
-      name: 'Яд'
-      description: 'Увеличивает шанс успешного выполнения миссии "Отравление амбара" на <lightgreen>50%<r> <red>Не cкладывается<r>'
-      value: '0.5'
-      stackable: false
-      parent:
+    # - id: 'buff_espionage'
+    #   name: 'Яд'
+    #   description: 'Увеличивает шанс успешного выполнения миссии "Отравление амбара" на <lightgreen>50%<r> <red>Не cкладывается<r>'
+    #   value: '0.5'
+    #   stackable: false
+    #   parent:
+
+    # - id: 'buff_sabotage'
+    #   name: 'Инструмент эффективного разрушения'
+    #   description: 'Увеличивает шанс успешного выполнения миссии "Саботаж" на <lightgreen>50%<r> <red>Не складывается<r>'
+    #   value: '0.5'
+    #   stackable: false
+    #   parent:
     
     - id: 'buff_rush'
       name: 'Энергетик'
-      description: 'Уменьшает необходимое количество производительности, требуемое на строения на <lightgreen>15%<r> <red>Не складывается<r>'
+      description: 'Количество молотков, необходимых для постройки Чудес Света и строений, уменьшается на <lightgreen>15%<r> <red>Не складывается<r>'
       value: '0.15'
       stackable: false
       parent:
 
     - id: 'buff_profit_sharing'
       name: 'Инновационное открытие'
-      description: 'Снижает стоимость всех технологических исследований на <lightgreen>5%<r> <red>Не складывается<r>'
+      description: 'Количество пробирок, необходимых для выполнения изучений, уменьшается на <lightgreen>5%<r> <gold>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
 
     - id: 'buff_innovation'
       name: 'Предмет для исследования'
-      description: 'Увеличивает скорость науки для цивилизации на <lightgreen>5%<r> <gold>Складывается<r>'
+      description: 'Количество монет, необходимых для выполнения изучений, уменьшается на<lightgreen>5%<r> <gold>Складывается<r>'
       value: '0.05'
       stackable: true
-      parent:
-  
-    - id: 'buff_sabotage'
-      name: 'Инструмент эффективного разрушения'
-      description: 'Увеличивает шанс успешного выполнения миссии "Саботаж" на <lightgreen>50%<r> <red>Не складывается<r>'
-      value: '0.5'
-      stackable: false
       parent:
 
     - id: 'buff_hedonism'
       name: 'Изысканный предмет'
-      description: 'Дает <lightgreen>3<r> счастья<r> <gold>Складывается<r>'
+      description: 'Количество счастья увеличивается на <lightgreen>3<r> <gold>Складывается<r>'
       value: '3.0'
       stackable: true
       parent:
