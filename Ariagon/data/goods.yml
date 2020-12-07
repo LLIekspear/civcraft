@@ -131,6 +131,7 @@ land_goods:
       buffs: 'buff_monopoly, buff_preservative'
       material: 216
       material_data: 0
+      rarity: 0.10
 
     # - id: 'good_truffels'
     #   name: Трюфели
@@ -145,6 +146,7 @@ land_goods:
       buffs: 'buff_hedonism'
       material: 378
       material_data: 0
+      rarity: 0.40
 
     - id: 'good_grapes'
       name: Виноград
@@ -152,6 +154,7 @@ land_goods:
       buffs: 'buff_hedonism'
       material: 372 # nether wart seed
       material_data: 0
+      rarity: 0.40
 
     - id: 'good_bananas'
       name: Бананы
@@ -159,6 +162,7 @@ land_goods:
       buffs: 'buff_hedonism'
       material: 396
       material_data: 0
+      rarity: 0.40
 
     - id: 'good_olives'
       name: Оливки
@@ -166,6 +170,7 @@ land_goods:
       buffs: 'buff_fire_bomb, buff_hedonism'
       material: 375 # seeds
       material_data: 0
+      rarity: 0.20
 
     - id: 'good_corn'
       name: Кукуруза
@@ -173,6 +178,7 @@ land_goods:
       buffs: 'buff_year_of_plenty'
       material: 371 # gold nugget
       material_data: 0
+      rarity: 0.50
 
     - id: 'good_rice'
       name: Рис
@@ -180,6 +186,7 @@ land_goods:
       buffs: 'buff_year_of_plenty'
       material: 361 # pumpkin's seeds
       material_data: 0
+      rarity: 0.50
 
     - id: 'good_cotton'
       name: Хлопок
@@ -187,6 +194,7 @@ land_goods:
       buffs: 'buff_year_of_plenty'
       material: 387 # string
       material_data: 0
+      rarity: 0.50
 
     # - id: 'good_poison_ivy'
     #   name: "Ядовитый плющ"
@@ -201,6 +209,7 @@ land_goods:
       buffs: 'buff_medicine, buff_hedonism'
       material: 31 # tall grass
       material_data: 2 # fern
+      rarity: 0.10
 
     # - id: 'good_hemlock'
     #   name: Болиголов
@@ -215,6 +224,7 @@ land_goods:
       buffs: 'buff_hedonism, buff_rush, buff_medicine'
       material: 351 # ink sack
       material_data: 1 # red
+      rarity: 0.05
 
     - id: 'good_coffee'
       name: Кофе
@@ -223,6 +233,7 @@ land_goods:
       material: 351 # nether wart seed
       material_data: 3
       hemispheres: 'hemi_northwest'
+      rarity: 0.05
 
     - id: 'good_spice'
       name: Пряности
@@ -230,6 +241,7 @@ land_goods:
       buffs: 'buff_hedonism, buff_monopoly'
       material: 295 # seeds
       material_data: 0
+      rarity: 0.10
 
    - id: 'good_incense'
       name: Благовония
@@ -237,6 +249,7 @@ land_goods:
       buffs: 'buff_fine_art, buff_hedonism, buff_medicine'
       material: 362 # melon seed
       material_data: 0
+      rarity: 0.10
     
     - id: 'good_tobacco'
       name: Табак
@@ -244,6 +257,7 @@ land_goods:
       buffs: 'buff_fine_art, buff_greed, buff_monopoly'
       material: 338 # sugar canes
       material_data: 0
+      rarity: 0.10
 
     - id: 'good_pelts'
       name: Кожа
@@ -251,6 +265,7 @@ land_goods:
       buffs: 'buff_advanced_tooling'
       material: 334 # leather
       material_data: 0
+      rarity: 0.30
 
     - id: 'good_ivory'
       name: Слоновая кость
@@ -258,13 +273,15 @@ land_goods:
       buffs: 'buff_advanced_tooling, buff_monopoly'
       material: 406 # nether quartz
       material_data: 0
+      rarity: 0.10
      
     - id: 'good_horses'
       name: Лошади
       value: 500.0
       buffs: 'buff_advanced_tooling'
       material: 329 # saddle
-      material_data: 0 
+      material_data: 0
+      rarity: 0.40
 
     - id: 'good_oil_e'
       name: Нефть
@@ -272,6 +289,7 @@ land_goods:
       buffs: 'buff_advanced_tooling, buff_extraction, buff_fire_bomb'
       material: 351 # ink sack
       material_data: 0
+      rarity: 0.10
 
     - id: 'good_silver'
       name: Серебро
@@ -279,6 +297,7 @@ land_goods:
       buffs: 'buff_barter, buff_greed'
       material: 265 # iron ingot
       material_data: 0
+      rarity: 0.15
 
     - id: 'good_copper'
       name: Медь
@@ -286,6 +305,7 @@ land_goods:
       buffs: 'buff_advanced_tooling'
       material: 369 # blaze rod
       material_data: 0
+      rarity: 0.40
 
     - id: 'good_gems'
       name: Кристаллы
@@ -293,13 +313,15 @@ land_goods:
       buffs: 'buff_barter, buff_greed, buff_monopoly'
       material: 388 # emerald
       material_data: 0
+      rarity: 0.15
 
     - id: 'good_marble'
       name: Мрамор
-      value: 250.0
+      value: 300.0
       buffs: 'buff_fine_art, buff_construction'
       material: 155 # quartz block
       material_data: 0
+      rarity: 0.15
 
     - id: 'good_granite'
       name: Гранит
@@ -307,6 +329,7 @@ land_goods:
       buffs: 'buff_construction, buff_ine_art'
       material: 1 # light grey dye
       material_data: polished_granite
+      rarity: 0.15
 
     - id: 'good_limestone'
       name: Известняк
@@ -314,6 +337,7 @@ land_goods:
       buffs: 'buff_construction, buff_barricade'
       material: 351 # light grey dye
       material_data: 7
+      rarity: 0.20
 
     - id: 'good_fossil'
       name: Окаменелость
@@ -321,6 +345,7 @@ land_goods:
       buffs: 'buff_innovation, profit_sharing'
       material: 352 # bone
       material_data: 0
+      rarity: 0.10
 
     - id: 'good_papyrus'
       name: Папирус
@@ -328,6 +353,7 @@ land_goods:
       buffs: 'buff_innovation'
       material: 339 # Ink sack
       material_data: 0 # gree
+      rarity: 0.30
 
 water_goods: 
     - id: 'good_crabs'
@@ -336,6 +362,7 @@ water_goods:
       buffs: 'buff_hedonism, buff_barter'
       material: 376 # fermented spider eye
       material_data: 0
+      rarity: 0.15
 
     - id: 'good_salmon'
       name: Лосось
@@ -343,6 +370,7 @@ water_goods:
       buffs: 'buff_year_of_plenty, buff_fishing'
       material: 350 # cooked fish
       material_data: 0
+      rarity: 0.50
 
     - id: 'good_pearls'
       name: Жемчуг
@@ -350,6 +378,7 @@ water_goods:
       buffs: 'buff_monopoly, buff_greed'
       material: 332 # Snow ball
       material_data: 0
+      rarity: 0.10
     
     - id: 'good_whale'
       name: Киты
@@ -357,6 +386,7 @@ water_goods:
       buffs: 'buff_advanced_tooling, buff_fishing, buff_extraction'
       material: 345 # compass
       material_data: 0
+      rarity: 0.05
 
     - id: 'good_shrimp'
       name: Креветки
@@ -364,6 +394,7 @@ water_goods:
       buffs: 'buff_hedonism, buff_barter'
       material: 375 # Spider Eye
       material_data: 0 
+      rarity: 0.15
 
     - id: 'good_tuna'
       name: Тунец
@@ -371,6 +402,7 @@ water_goods:
       buffs: 'buff_year_of_plenty, buff_fishing'
       material: 349 # fish
       material_data: 0
+      rarity: 0.50
 
     - id: 'good_oil_w'
       name: Нефть
@@ -378,6 +410,7 @@ water_goods:
       buffs: 'buff_advanced_tooling, buff_extraction, buff_fire_bomb'
       material: 351 # ink sack
       material_data: 0
+      rarity: 0.10
 
     - id: 'good_salt_w'
       name: Соль
@@ -385,3 +418,4 @@ water_goods:
       buffs: 'buff_monopoly, buff_preservative'
       material: 216
       material_data: 0
+      rarity: 0.10
