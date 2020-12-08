@@ -1010,7 +1010,7 @@ perks:
             template: 'stable'
     
     - id: 'tpl_roman_temple'
-      display_name: 'Roman храм'
+      display_name: 'Римский храм'
       item_id: 155
       data: 2
       components:

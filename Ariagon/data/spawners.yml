@@ -35,162 +35,162 @@ generation:
 #
 land_spawners:
     - id: 'yobo_lesser'
-      name: 'Малый дебошир'
+      name: 'Lesser Yobo'
       rarity: 1.0
 
     - id: 'yobo_greater'
-      name: 'Большой дебошир'
+      name: 'Greater Yobo'
       rarity: 0.3
 
     - id: 'yobo_elite'
-      name: 'Элитный дебошир'
+      name: 'Elite Yobo'
       rarity: 0.1
 
     - id: 'yobo_brutal'
-      name: 'Брутальный дебошир'
+      name: 'Brutal Yobo'
       rarity: 0.05
 
     - id: 'ruffian_lesser'
-      name: 'Малый головорез'
+      name: 'Lesser Ruffian'
       rarity: 1.0
 
     - id: 'ruffian_greater'
-      name: 'Большой головорез'
+      name: 'Greater Ruffian'
       rarity: 0.3
 
     - id: 'ruffian_elite'
-      name: 'Элитный головорез'
+      name: 'Elite Ruffian'
       rarity: 0.1
 
     - id: 'ruffian_brutal'
-      name: 'Брутальный головорез'
+      name: 'Brutal Ruffian'
       rarity: 0.05
 
     - id: 'savage_lesser'
-      name: 'Малый дикарь'
+      name: 'Lesser Savage'
       rarity: 1.0
 
     - id: 'savage_greater'
-      name: 'Большой дикарь'
+      name: 'Greater Savage'
       rarity: 0.3
 
     - id: 'savage_elite'
-      name: 'Элитный дикарь'
+      name: 'Elite Savage'
       rarity: 0.1
 
     - id: 'savage_brutal'
-      name: 'Брутальный дикарь'
+      name: 'Brutal Savage'
       rarity: 0.05
 
     - id: 'behemoth_lesser'
-      name: 'Малый бегемот'
+      name: 'Lesser Behemoth'
       rarity: 1.0
 
     - id: 'behemoth_greater'
-      name: 'Большой бегемот'
+      name: 'Greater Behemoth'
       rarity: 0.3
 
     - id: 'behemoth_elite'
-      name: 'Элитный бегемот'
+      name: 'Elite Behemoth'
       rarity: 0.1
 
     - id: 'behemoth_brutal'
-      name: 'Брутальный бегемот'
+      name: 'Brutal Behemoth'
       rarity: 0.05
 
     - id: 'undead_lesser'
-      name: 'Малый нежить'
+      name: 'Lesser Undead'
       rarity: 1.0
 
     - id: 'undead_greater'
-      name: 'Большой нежить'
+      name: 'Greater Undead'
       rarity: 0.3
 
     - id: 'undead_elite'
-      name: 'Элитный нежить'
+      name: 'Elite Undead'
       rarity: 0.1
 
     - id: 'undead_brutal'
-      name: 'Брутальный нежить'
+      name: 'Brutal Undead'
       rarity: 0.05
 
     - id: 'kodiac_lesser'
-      name: 'Малый кодиак'
+      name: 'Lesser Kodiac'
       rarity: 1.0
 
     - id: 'kodiac_greater'
-      name: 'Большой кодиак'
+      name: 'Greater Kodiac'
       rarity: 0.3
 
     - id: 'kodiac_elite'
-      name: 'Элитный кодиак'
+      name: 'Elite Kodiac'
       rarity: 0.1
 
     - id: 'kodiac_brutal'
-      name: 'Брутальный кодиак'
+      name: 'Brutal Kodiac'
       rarity: 0.05
 
     - id: 'cube_lesser'
-      name: 'Малый желатиновый куб'
+      name: 'Lesser Gelatinous Cube'
       rarity: 1.0
 
     - id: 'cube_greater'
-      name: 'Большой желатиновый куб'
+      name: 'Greater Gelatinous Cube'
       rarity: 0.3
 
     - id: 'cube_elite'
-      name: 'Элитный желатиновый куб'
+      name: 'Elite Gelatinous Cube'
       rarity: 0.1
 
     - id: 'cube_brutal'
-      name: 'Брутальный желатиновый куб'
+      name: 'Brutal Gelatinous Cube'
       rarity: 0.05
 
     - id: 'arachne_lesser'
-      name: 'Малая арахна'
+      name: 'Lesser Arachne'
       rarity: 1.0
 
     - id: 'arachne_greater'
-      name: 'Большая арахна'
+      name: 'Greater Arachne'
       rarity: 0.3
 
     - id: 'arachne_elite'
-      name: 'Элитная арахна'
+      name: 'Elite Arachne'
       rarity: 0.1
 
     - id: 'arachne_brutal'
-      name: 'Брутальная арахна'
+      name: 'Brutal Arachne'
       rarity: 0.05
 
     - id: 'direwolf_lesser'
-      name: 'Малый темный волк'
+      name: 'Lesser Direwolf'
       rarity: 1.0
 
     - id: 'direwolf_greater'
-      name: 'Большой темный волк'
+      name: 'Greater Direwolf'
       rarity: 0.3
 
     - id: 'direwolf_elite'
-      name: 'Элитный темный волк'
+      name: 'Elite Direwolf'
       rarity: 0.1
 
     - id: 'direwolf_brutal'
-      name: 'Брутальный темный волк'
+      name: 'Brutal Direwolf'
       rarity: 0.05
 
 water_spawners:
     - id: 'kraken_lesser'
-      name: 'Малый левиафан'
+      name: 'Lesser Leviathan'
       rarity: 1.0
 
     - id: 'kraken_greater'
-      name: 'Большой левиафан'
+      name: 'Greater Leviathan'
       rarity: 0.3
 
     - id: 'kraken_elite'
-      name: 'Элитный левиафан'
+      name: 'Elite Leviathan'
       rarity: 0.1
 
     - id: 'kraken_brutal'
-      name: 'Брутальный левиафан'
+      name: 'Brutal Leviathan'
       rarity: 0.05

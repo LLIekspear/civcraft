@@ -10,7 +10,7 @@
 # plus this extra stuff.
 town_scores:
     # How many points is each town chunk worth
-    town_chunk: 200
+    town_chunk: 250
 
     # How many points is each culture chunk this town owns is worth
     culture_chunk: 100
