@@ -229,6 +229,44 @@ wonders:
     max_hitpoints: 2000
     regen_rate: 3
 
+  - id: w_tokyo_tower
+    template: tokyo_tower
+    template_y_shift: -1
+    displayName: Телевизионная башня Токио
+    require_tech: 
+    require_upgrade:
+    check_event:
+    effect_event:
+    update_event:
+    onBuild_event:
+    ignore_floating: false
+    limit: 1
+    cost: 1000000.0
+    upkeep: 0.0
+    hammer_cost: 500000.0
+    points: 250000
+    max_hitpoints: 5000
+    regen_rate: 6
+
+  - id: w_oracle
+    template: oracle
+    template_y_shift: -1
+    displayName: Оракул
+    require_tech: 
+    require_upgrade:
+    check_event:
+    effect_event:
+    update_event:
+    onBuild_event:
+    ignore_floating: false
+    limit: 1
+    cost: 1000000.0
+    upkeep: 0.0
+    hammer_cost: 500000.0
+    points: 250000
+    max_hitpoints: 5000
+    regen_rate: 6
+
   # - id: w_battledome
   #   template: battledome
   #   template_y_shift: -1
@@ -315,3 +353,12 @@ wonder_buffs:
          - buff_ingermanland_fishing_boat_immunity
          - buff_ingermanland_trade_ship_income
          - buff_ingermanland_water_range
+
+   - id: w_tokyo_tower
+     buffs:
+         - buff_tokyo_tower_spy
+         - buff_tokyo_tower_radio
+
+   - id: w_oracle
+     buffs:
+         - buff_oracle_spy

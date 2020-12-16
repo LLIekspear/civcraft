@@ -1189,6 +1189,56 @@ structures:
           attribute: 'HAMMERS'
           value: '200'
 
+  - id: s_seaport
+    template: seaport
+    template_y_shift: -3
+    displayName: Торговый порт
+    require_tech: 'tech_trade'
+    require_upgrade:
+    require_structure:
+    check_event:
+    effect_event:
+    update_event:
+    onBuild_event:
+    limit: 1
+    cost: 35000
+    upkeep: 1500
+    hammer_cost: 2000
+    max_hitpoints: 300
+    destroyable: true
+    allow_outside_town: false
+    regen_rate: 1
+    isWonder: false
+    points: 7000
+    ignore_floating: true
+    tile_improvement: false
+    allow_demolish: yes
+
+  - id: ti_yard
+    template: yard
+    template_y_shift: 0
+    displayName: Монетный двор
+    require_tech: 'tech_money'
+    require_upgrade:
+    require_structure:
+    check_event:
+    effect_event:
+    update_event:
+    onBuild_event:
+    limit: 1
+    cost: 50000
+    upkeep: 25000
+    hammer_cost: 1000
+    max_hitpoints: 250
+    destroyable: true
+    allow_outside_town: false
+    regen_rate: 1
+    isWonder: false
+    points: 10000
+    ignore_floating: false
+    tile_improvement: false
+    allow_demolish: yes
+
   - id: ti_mine
     template: mine
     template_y_shift: -6
