@@ -204,7 +204,7 @@ land_goods:
     #   material_data: 0
     
     - id: 'good_herbs'
-      name: Лечебные травы
+      name: 'Лечебные травы'
       value: 250.0
       buffs: 'buff_medicine, buff_hedonism'
       material: 31 # tall grass
@@ -268,7 +268,7 @@ land_goods:
       rarity: 0.30
 
     - id: 'good_ivory'
-      name: Слоновая кость
+      name: 'Слоновая кость'
       value: 250.0
       buffs: 'buff_advanced_tooling, buff_monopoly'
       material: 406 # nether quartz
