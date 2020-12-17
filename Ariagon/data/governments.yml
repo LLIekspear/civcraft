@@ -63,7 +63,7 @@ governments:
 
         - id: gov_despotism
           displayName: Деспотизм
-          require_tech: 'tech_despotism' 
+          require_tech: 'tech_productivity' 
           trade_rate: 0.75
           upkeep_rate: 1.25
           cottage_rate: 0.75
@@ -89,7 +89,7 @@ governments:
 
         - id: gov_theocracy
           displayName: Олигархия
-          require_tech: 'tech_priesthood'
+          require_tech: 'tech_trade'
           trade_rate: 1.85
           upkeep_rate: 1.0
           cottage_rate: 1.25
@@ -102,7 +102,7 @@ governments:
 
         - id: gov_aristocracy
           displayName: Аристократия
-          require_tech: 'tech_socialism'
+          require_tech: 'tech_economics'
           trade_rate: 1.0
           upkeep_rate: 1.0
           cottage_rate: 1.0
@@ -115,7 +115,7 @@ governments:
 
         - id: gov_communism
           displayName: Коммунизм
-          require_tech: 'tech_socialism'
+          require_tech: 'tech_fertilizer'
           trade_rate: 0.0
           upkeep_rate: 0.75
           cottage_rate: 0.0

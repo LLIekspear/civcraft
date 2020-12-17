@@ -43,7 +43,7 @@ units:
   - id: 'u_spy'
     name: "Шпион"
     class_name: 'com.avrgaming.civcraft.items.units.Spy'
-    require_tech: 'tech_military_science'
+    require_tech: 'tech_nationalism'
     require_struct:
     require_upgrade:
     cost: 5000.0

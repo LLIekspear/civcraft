@@ -1366,8 +1366,8 @@ materials:
 # Специальные Recipes  ===========================================            
         # Checked 10/8/13
         - id: 'mat_found_civ'
-          item_id: 369
-          item_data: 0
+          item_id: 425
+          item_data: 15
           name: 'Флаг основания цивилизации'
           craftable: true
           shaped: true
@@ -1396,9 +1396,9 @@ materials:
           # XXX mat ID hard coded for camp refund. with /camp undo 
         # Checked 10/8/13
         - id: 'mat_found_camp'
-          item_id: 324
+          item_id: 61
           item_data: 0
-          name: 'Лагерь'
+          name: 'Костровище установки лагеря'
           craftable: true
           shaped: true
           category: 'Специальные'
@@ -1427,7 +1427,7 @@ materials:
           name: 'Военный лагерь'
           craftable: true
           shaped: true
-          required_techs: 'tech_siege_tactics'
+          required_techs: 'tech_machinery'
           category: 'Специальные'
           components:
               - name: 'FoundWarCamp'
@@ -1455,7 +1455,7 @@ materials:
           name: 'Пушка'
           craftable: true
           shaped: true
-          required_techs: 'tech_ballistics'
+          required_techs: 'tech_advanced_artillery'
           category: 'Специальные'
           components:
               - name: 'BuildCannon'
@@ -1480,7 +1480,7 @@ materials:
         - id: 'mat_wood_sword'
           item_id: 268
           item_data: 0
-          name: 'Тренировочный меч'
+          name: 'Деревянный меч'
           craftable: true
           shaped: true
           category: '<lightgreen>Механизм 1 уровня'
@@ -1594,7 +1594,7 @@ materials:
           item_data: 0
           name: 'Изысканный кожаный шлем'
           craftable: true
-          required_techs: 'tech_military_engineering'
+          required_techs: 'tech_leather_refinement'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -1622,7 +1622,7 @@ materials:
           item_data: 0
           name: 'Изысканный кожаный нагрудник'
           craftable: true
-          required_techs: 'tech_military_engineering'
+          required_techs: 'tech_leather_refinement'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -1650,7 +1650,7 @@ materials:
           item_data: 0
           name: 'Изысканные кожаные штаны'
           craftable: true
-          required_techs: 'tech_military_engineering'
+          required_techs: 'tech_leather_refinement'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -1678,7 +1678,7 @@ materials:
           item_data: 0
           name: 'Изысканные кожаные ботинки'
           craftable: true
-          required_techs: 'tech_military_engineering'
+          required_techs: 'tech_leather_refinement'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -1708,7 +1708,7 @@ materials:
           item_data: 0
           name: 'Закаленный кожаный шлем'
           craftable: true
-          required_techs: 'tech_military_science'
+          required_techs: 'tech_tanning'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -1736,7 +1736,7 @@ materials:
           item_data: 0
           name: 'Закаленный кожаный нагрудник'
           craftable: true
-          required_techs: 'tech_military_science'
+          required_techs: 'tech_tanning'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -1764,7 +1764,7 @@ materials:
           item_data: 0
           name: 'Закаленные кожаные штаны'
           craftable: true
-          required_techs: 'tech_military_science'
+          required_techs: 'tech_tanning'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -1792,7 +1792,7 @@ materials:
           item_data: 0
           name: 'Закаленные кожаные ботинки'
           craftable: true
-          required_techs: 'tech_military_science'
+          required_techs: 'tech_tanning'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -1822,7 +1822,7 @@ materials:
           item_data: 0
           name: 'Композитный кожаный шлем'
           craftable: true
-          required_techs: 'tech_stealth_technology'
+          required_techs: 'tech_composites'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -1850,7 +1850,7 @@ materials:
           item_data: 0
           name: 'Композитный кожаный нагрудник'
           craftable: true
-          required_techs: 'tech_stealth_technology'
+          required_techs: 'tech_composites'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -1878,7 +1878,7 @@ materials:
           item_data: 0
           name: 'Композитные кожаные штаны'
           craftable: true
-          required_techs: 'tech_stealth_technology'
+          required_techs: 'tech_composites'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -1906,7 +1906,7 @@ materials:
           item_data: 0
           name: 'Композитные кожаные ботинки'
           craftable: true
-          required_techs: 'tech_stealth_technology'
+          required_techs: 'tech_composites'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -1963,7 +1963,7 @@ materials:
           item_data: 0
           name: 'Олимпийский лук'
           craftable: true
-          required_techs: 'tech_machinery'
+          required_techs: 'tech_fletching'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -1992,7 +1992,7 @@ materials:
           item_data: 0
           name: 'Длинный лук'
           craftable: true
-          required_techs: 'tech_rifling'
+          required_techs: 'tech_tillering'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -2021,7 +2021,7 @@ materials:
           item_data: 0
           name: 'Композитный лук'
           craftable: true
-          required_techs: 'tech_advanced_ballistics'
+          required_techs: 'tech_laminates'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -2080,7 +2080,7 @@ materials:
           item_data: 0
           name: 'Железный меч'
           craftable: true
-          required_techs: 'tech_iron_working'
+          required_techs: 'tech_metal_casting'
           shaped: true
           category: '<lightgreen>Механизм 1 уровня'
           components:
@@ -2107,7 +2107,7 @@ materials:
           item_data: 0
           name: 'Железный шлем'
           craftable: true
-          required_techs: 'tech_iron_working'
+          required_techs: 'tech_blacksmithing'
           shaped: true
           category: '<lightgreen>Механизм 1 уровня'
           components:
@@ -2131,7 +2131,7 @@ materials:
           item_data: 0
           name: 'Железный нагрудник'
           craftable: true
-          required_techs: 'tech_iron_working'
+          required_techs: 'tech_blacksmithing'
           shaped: true
           category: '<lightgreen>Механизм 1 уровня'
           components:
@@ -2155,7 +2155,7 @@ materials:
           item_data: 0
           name: 'Железные штаны'
           craftable: true
-          required_techs: 'tech_iron_working'
+          required_techs: 'tech_blacksmithing'
           shaped: true
           category: '<lightgreen>Механизм 1 уровня'
           components:
@@ -2180,7 +2180,7 @@ materials:
           item_data: 0
           name: 'Железные ботинки'
           craftable: true
-          required_techs: 'tech_iron_working'
+          required_techs: 'tech_blacksmithing'
           shaped: true
           category: '<lightgreen>Механизм 1 уровня'
           components:
@@ -2207,7 +2207,7 @@ materials:
           item_data: 0
           name: 'Стальной шлем'
           craftable: true
-          required_techs: 'tech_metal_casting'
+          required_techs: 'tech_alloys'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -2232,7 +2232,7 @@ materials:
           item_data: 0
           name: 'Стальные ботинки'
           craftable: true
-          required_techs: 'tech_metal_casting'
+          required_techs: 'tech_alloys'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -2257,7 +2257,7 @@ materials:
           item_data: 0
           name: 'Стальной нагрудник'
           craftable: true
-          required_techs: 'tech_metal_casting'
+          required_techs: 'tech_alloys'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -2282,7 +2282,7 @@ materials:
           item_data: 0
           name: 'Стальные штаны'
           craftable: true
-          required_techs: 'tech_metal_casting'
+          required_techs: 'tech_alloys'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -2307,7 +2307,7 @@ materials:
           item_data: 0
           name: 'Стальной меч'
           craftable: true
-          required_techs: 'tech_gunpowder'
+          required_techs: 'tech_sword_smithing'
           shaped: true
           category: '<lightblue>Механизм 2 уровня'
           components:
@@ -2338,7 +2338,7 @@ materials:
           item_data: 0
           name: 'Карбидный меч'
           craftable: true
-          required_techs: 'tech_advanced_ballistics'
+          required_techs: 'tech_folded_steel'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -2367,7 +2367,7 @@ materials:
           item_data: 0
           name: 'Карбидный шлем'
           craftable: true
-          required_techs: 'tech_replaceable_parts'
+          required_techs: 'tech_chemical_bonding'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -2392,7 +2392,7 @@ materials:
           item_data: 0
           name: 'Карбидный нагрудник'
           craftable: true
-          required_techs: 'tech_replaceable_parts'
+          required_techs: 'tech_chemical_bonding'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -2417,7 +2417,7 @@ materials:
           item_data: 0
           name: 'Карбидные штаны'
           craftable: true
-          required_techs: 'tech_replaceable_parts'
+          required_techs: 'tech_chemical_bonding'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -2442,7 +2442,7 @@ materials:
           item_data: 0
           name: 'Карбидные ботинки'
           craftable: true
-          required_techs: 'tech_replaceable_parts'
+          required_techs: 'tech_chemical_bonding'
           shaped: true
           category: '<lightpurple>Механизм 3 уровня'
           components:
@@ -2470,7 +2470,7 @@ materials:
           item_data: 0
           name: 'Вольфрамовый меч'
           craftable: true
-          required_techs: 'tech_lasers'
+          required_techs: 'tech_tempering'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -2499,7 +2499,7 @@ materials:
           item_data: 0
           name: 'Вольфрамовые ботинки'
           craftable: true
-          required_techs: 'tech_composites'
+          required_techs: 'tech_forging'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -2524,7 +2524,7 @@ materials:
           item_data: 0
           name: 'Вольфрамовый нагрудник'
           craftable: true
-          required_techs: 'tech_composites'
+          required_techs: 'tech_forging'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -2549,7 +2549,7 @@ materials:
           item_data: 0
           name: 'Вольфрамовые штаны'
           craftable: true
-          required_techs: 'tech_composites'
+          required_techs: 'tech_forging'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -2574,7 +2574,7 @@ materials:
           item_data: 0
           name: 'Вольфрамовый шлем'
           craftable: true
-          required_techs: 'tech_composites'
+          required_techs: 'tech_forging'
           shaped: true
           category: '<gold>Механизм 4 уровня'
           components:
@@ -2595,44 +2595,152 @@ materials:
 
 
 #Seciri
-        - id: 'mat_wood_axe'
-          item_id: 271
-          item_data: 0
-          name: 'Тренировочный топор'
-          craftable: true
-          shaped: true
-          category: '<lightgreen>Механизм 1 уровня'
-          components:
-              - name: 'Attack'
-                value: '5'
-              - name: 'NoVanillaDurability'
-              - name: 'DurabilityOnDeath'
-                value: '0.1'
-          ingredients:
-              - type_id: 5
-                data: -1
-                letter: 'p'
-              - type_id: 280
-                data: 0
-                letter: 's'
-          shape:
-              - "ppp"
-              - "psp"
-              - " s "
+        # - id: 'mat_wood_axe'
+        #   item_id: 271
+        #   item_data: 0
+        #   name: 'Тренировочный топор'
+        #   craftable: true
+        #   shaped: true
+        #   category: '<lightgreen>Механизм 1 уровня'
+        #   components:
+        #       - name: 'Attack'
+        #         value: '5'
+        #       - name: 'NoVanillaDurability'
+        #       - name: 'DurabilityOnDeath'
+        #         value: '0.1'
+        #   ingredients:
+        #       - type_id: 5
+        #         data: -1
+        #         letter: 'p'
+        #       - type_id: 280
+        #         data: 0
+        #         letter: 's'
+        #   shape:
+        #       - "ppp"
+        #       - "psp"
+        #       - " s "
               
-        - id: 'mat_stone_axe'
-          item_id: 275
-          item_data: 0
-          name: 'Каменное рубило'
-          craftable: true
-          shaped: true
-          category: '<lightgreen>Механизм 1 уровня'
-          components:
-              - name: 'Attack'
-                value: '6'
-              - name: 'NoVanillaDurability'
-              - name: 'DurabilityOnDeath'
-                value: '0.1'
+        # - id: 'mat_stone_axe'
+        #   item_id: 275
+        #   item_data: 0
+        #   name: 'Каменное рубило'
+        #   craftable: true
+        #   shaped: true
+        #   category: '<lightgreen>Механизм 1 уровня'
+        #   components:
+        #       - name: 'Attack'
+        #         value: '6'
+        #       - name: 'NoVanillaDurability'
+        #       - name: 'DurabilityOnDeath'
+        #         value: '0.1'        # - id: 'mat_iron_axe'
+        #   item_id: 258
+        #   item_data: 0
+        #   name: 'Железный топор'
+        #   craftable: true
+        #   required_techs: 'tech_metal_casting'
+        #   shaped: true
+        #   category: '<lightgreen>Механизм 1 уровня'
+        #   components:
+        #       - name: 'Attack'
+        #         value: '12'
+        #       - name: 'NoVanillaDurability'
+        #       - name: 'DurabilityOnDeath'
+        #         value: '0.1'
+        #   ingredients:
+        #       - type_id: 265
+        #         data: 0
+        #         letter: 'i'
+        #       - type_id: 280
+        #         data: 0
+        #         letter: 's'
+        #   shape:
+        #       - "iii"
+        #       - "isi"
+        #       - " s "
+              
+        # - id: 'mat_steel_axe'
+        #   item_id: 258
+        #   item_data: 0
+        #   name: 'Стальная секира'
+        #   craftable: true
+        #   required_techs: 'tech_military_tactics'
+        #   shaped: true
+        #   category: '<lightblue>Механизм 2 уровня'
+        #   components:
+        #       - name: 'Attack'
+        #         value: '20'
+        #       - name: 'NoVanillaDurability'
+        #       - name: 'DurabilityOnDeath'
+        #         value: '0.1'
+        #   ingredients:
+        #       - type_id: 0
+        #         data: 0
+        #         custom_id: 'mat_steel_sword_blade'
+        #         letter: 'b'
+        #       - type_id: 0
+        #         data: 0
+        #         custom_id: 'mat_steel_sword_hilt'
+        #         letter: 'h'
+        #   shape:
+        #       - "bbb"
+        #       - "bhb"
+        #       - " h "
+              
+        # - id: 'mat_carbide_steel_axe'
+        #   item_id: 286
+        #   item_data: 0
+        #   name: 'Карбидная секира'
+        #   craftable: true
+        #   required_techs: 'tech_chemistry'
+        #   shaped: true
+        #   category: '<lightpurple>Механизм 3 уровня'
+        #   components:
+        #       - name: 'Attack'
+        #         value: '26'
+        #       - name: 'NoVanillaDurability'
+        #       - name: 'DurabilityOnDeath'
+        #         value: '0.1'
+        #   ingredients:
+        #       - type_id: 0
+        #         data: 0
+        #         custom_id: 'mat_carbide_steel_sword_blade'
+        #         letter: 'b'
+        #       - type_id: 0
+        #         data: 0
+        #         custom_id: 'mat_carbide_steel_sword_hilt'
+        #         letter: 'h'
+        #   shape:
+        #       - "bbb"
+        #       - "bhb"
+        #       - " h "
+              
+        # - id: 'mat_tungsten_axe'
+        #   item_id: 279
+        #   item_data: 0
+        #   name: 'Вольфрамовый секира'
+        #   craftable: true
+        #   required_techs: 'tech_guidance_systems'
+        #   shaped: true
+        #   category: '<gold>Механизм 4 уровня'
+        #   components:
+        #       - name: 'Attack'
+        #         value: '32'
+        #       - name: 'NoVanillaDurability'
+        #       - name: 'DurabilityOnDeath'
+        #         value: '0.1'
+        #   ingredients:
+        #       - type_id: 0
+        #         data: 0
+        #         custom_id: 'mat_tungsten_sword_blade'
+        #         letter: 'b'
+        #       - type_id: 0
+        #         data: 0
+        #         custom_id: 'mat_tungsten_sword_hilt'
+        #         letter: 'h'
+        #   shape:
+        #       - "bbb"
+        #       - "bhb"
+        #       - " h "
           ingredients:
               - type_id: 4
                 data: 0
@@ -2645,115 +2753,7 @@ materials:
               - "csc"
               - " s "
               
-        - id: 'mat_iron_axe'
-          item_id: 258
-          item_data: 0
-          name: 'Железный топор'
-          craftable: true
-          required_techs: 'tech_metal_casting'
-          shaped: true
-          category: '<lightgreen>Механизм 1 уровня'
-          components:
-              - name: 'Attack'
-                value: '12'
-              - name: 'NoVanillaDurability'
-              - name: 'DurabilityOnDeath'
-                value: '0.1'
-          ingredients:
-              - type_id: 265
-                data: 0
-                letter: 'i'
-              - type_id: 280
-                data: 0
-                letter: 's'
-          shape:
-              - "iii"
-              - "isi"
-              - " s "
-              
-        - id: 'mat_steel_axe'
-          item_id: 258
-          item_data: 0
-          name: 'Стальная секира'
-          craftable: true
-          required_techs: 'tech_military_tactics'
-          shaped: true
-          category: '<lightblue>Механизм 2 уровня'
-          components:
-              - name: 'Attack'
-                value: '20'
-              - name: 'NoVanillaDurability'
-              - name: 'DurabilityOnDeath'
-                value: '0.1'
-          ingredients:
-              - type_id: 0
-                data: 0
-                custom_id: 'mat_steel_sword_blade'
-                letter: 'b'
-              - type_id: 0
-                data: 0
-                custom_id: 'mat_steel_sword_hilt'
-                letter: 'h'
-          shape:
-              - "bbb"
-              - "bhb"
-              - " h "
-              
-        - id: 'mat_carbide_steel_axe'
-          item_id: 286
-          item_data: 0
-          name: 'Карбидная секира'
-          craftable: true
-          required_techs: 'tech_chemistry'
-          shaped: true
-          category: '<lightpurple>Механизм 3 уровня'
-          components:
-              - name: 'Attack'
-                value: '26'
-              - name: 'NoVanillaDurability'
-              - name: 'DurabilityOnDeath'
-                value: '0.1'
-          ingredients:
-              - type_id: 0
-                data: 0
-                custom_id: 'mat_carbide_steel_sword_blade'
-                letter: 'b'
-              - type_id: 0
-                data: 0
-                custom_id: 'mat_carbide_steel_sword_hilt'
-                letter: 'h'
-          shape:
-              - "bbb"
-              - "bhb"
-              - " h "
-              
-        - id: 'mat_tungsten_axe'
-          item_id: 279
-          item_data: 0
-          name: 'Вольфрамовый секира'
-          craftable: true
-          required_techs: 'tech_guidance_systems'
-          shaped: true
-          category: '<gold>Механизм 4 уровня'
-          components:
-              - name: 'Attack'
-                value: '32'
-              - name: 'NoVanillaDurability'
-              - name: 'DurabilityOnDeath'
-                value: '0.1'
-          ingredients:
-              - type_id: 0
-                data: 0
-                custom_id: 'mat_tungsten_sword_blade'
-                letter: 'b'
-              - type_id: 0
-                data: 0
-                custom_id: 'mat_tungsten_sword_hilt'
-                letter: 'h'
-          shape:
-              - "bbb"
-              - "bhb"
-              - " h "
+
               
         - id: 'mat_skeklo'
           item_id: 20
