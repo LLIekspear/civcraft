@@ -68,12 +68,12 @@ upgrades:
       action: 'enable_sifter'
       require_upgrade:
     - id: 'camp_upgrade_longhouse'
-      name: 'Длинный дом'
+      name: 'Большой дом'
       cost: 500.0
       action: 'enable_longhouse'
       require_upgrade:
     - id: 'camp_upgrade_garden'
-      name: 'Сад'
+      name: 'Огород'
       cost: 500.0
       action: 'enable_garden'
       require_upgrade:
