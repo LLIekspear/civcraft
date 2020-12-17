@@ -1013,28 +1013,28 @@ structures:
     points: 2500
     max_hitpoints: 200
 
-  - id: s_master
-    template: rinok
-    template_y_shift: 0
-    displayName: Мастерская
-    require_upgrade:
-    require_tech: 'tech_currency'
-    effect_event:
-    check_event:
-    update_event:
-    allow_outside_town: true
-    limit: 1
-    onBuild_event:
-    cost: 7500.0
-    upkeep: 100.0
-    hammer_cost: 100.0
-    points: 1500
-    max_hitpoints: 200
-    components:
-        - name: 'AttributeStatic'
-          type: 'direct'
-          attribute: 'HAMMERS'
-          value: '50.0'
+  # - id: s_master
+  #   template: rinok
+  #   template_y_shift: 0
+  #   displayName: Мастерская
+  #   require_upgrade:
+  #   require_tech: 'tech_currency'
+  #   effect_event:
+  #   check_event:
+  #   update_event:
+  #   allow_outside_town: true
+  #   limit: 1
+  #   onBuild_event:
+  #   cost: 7500.0
+  #   upkeep: 100.0
+  #   hammer_cost: 100.0
+  #   points: 1500
+  #   max_hitpoints: 200
+  #   components:
+  #       - name: 'AttributeStatic'
+  #         type: 'direct'
+  #         attribute: 'HAMMERS'
+  #         value: '50.0'
 
   - id: s_blacksmith
     template: blacksmith
@@ -1193,7 +1193,7 @@ structures:
     template: seaport
     template_y_shift: -3
     displayName: Торговый порт
-    require_tech: 'tech_trade'
+    require_tech: 'tech_sailing'
     require_upgrade:
     require_structure:
     check_event:
@@ -1218,7 +1218,7 @@ structures:
     template: yard
     template_y_shift: 0
     displayName: Монетный двор
-    require_tech: 'tech_money'
+    require_tech: 'tech_currency'
     require_upgrade:
     require_structure:
     check_event:
@@ -1286,10 +1286,10 @@ structures:
   - id: ti_fishing_boat
     template: fishingboats
     template_y_shift: -3
-    displayName: Рыболовное судно
+    displayName: Торговая лодка
     require_upgrade:
     require_tech: 'tech_square_rigging'
-    require_structure: 's_shipyard'
+    require_structure: 's_seaport'
     effect_event:
     check_event:
     update_event:
