@@ -885,6 +885,10 @@ structures:
         - name: 'AttributeRate'
           attribute: 'TRADE'
           value: '0.10'
+        - name: 'AttributeStatic'
+          type: 'direct'
+          attribute: 'COINS'
+          value: '4000.0'
 
   # - id: s_rinok
   #   template: rinok
@@ -1100,7 +1104,7 @@ structures:
     upkeep: 2500.0
     hammer_cost: 2500.0
     points: 5000
-    max_hitpoints: 350
+    max_hitpoints: 400
     ignore_floating: false
     components:
         - name: 'AttributeStatic'
@@ -1127,7 +1131,7 @@ structures:
     hammer_cost: 2500.0
     tile_improvement: true
     points: 2500
-    max_hitpoints: 500
+    max_hitpoints: 300
     ignore_floating: true
 
   - id: ti_fishing_boat
@@ -1147,7 +1151,7 @@ structures:
     hammer_cost: 2500.0
     tile_improvement: true
     points: 2500
-    max_hitpoints: 500
+    max_hitpoints: 300
     ignore_floating: true
 
   - id: ti_fish_hatchery
@@ -1167,7 +1171,7 @@ structures:
     upkeep: 1500.0
     hammer_cost: 2500.0
     points: 1500
-    max_hitpoints: 100
+    max_hitpoints: 250
 
   - id: ti_trade_ship
     template: trade_ship
@@ -1254,6 +1258,11 @@ structures:
           type: 'direct'
           attribute: 'GROWTH'
           value: '150.0'
+        - name: 'AttributeTradeGood'
+          type: 'direct'
+          attribute: 'GROWTH'
+          value: '50.0'
+          goods: 'good_corn,good_rice,good_cotton'
 
   - id: ti_pasture
     template: pasture
@@ -1371,19 +1380,19 @@ structures:
     onBuild_event:
     limit: 1
     cost: 10000.0
-    upkeep: 1500.0
-    hammer_cost: 1500.0
-    points: 1500
+    upkeep: 1000.0
+    hammer_cost: 1000.0
+    points: 1000
     max_hitpoints: 250
     components:
         - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'HAPPINESS'
-          value: '3.0'
+          value: '1.5'
         - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'CULTURE'
-          value: '200.0'
+          value: '100.0'
         - name: 'AttributeRate'
           attribute: 'COTTAGE'
           value: '0.05'
@@ -1392,6 +1401,7 @@ structures:
     template: temple
     template_y_shift: 0
     displayName: Храм
+    require_structure: 's_monument'
     require_upgrade:
     require_tech: 'tech_priesthood'
     effect_event: temple_Culture
@@ -1399,24 +1409,24 @@ structures:
     update_event: 
     onBuild_event:
     limit: 1
-    cost: 30000.0
+    cost: 25000.0
     upkeep: 2500.0
-    hammer_cost: 2000.0
-    points: 4700
+    hammer_cost: 2500.0
+    points: 2500
     max_hitpoints: 500
     components:
         - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'CULTURE'
-          value: '200.0'
+          value: '250.0'
         - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'HAPPINESS'
-          value: '5.0'
+          value: '3.0'
         - name: 'ConsumeLevelComponent'
         - name: 'AttributeRate'
           attribute: 'COTTAGE'
-          value: '0.05'
+          value: '0.025'
 
   - id: s_theatre
     template: theatre
@@ -1427,46 +1437,21 @@ structures:
     allow_outside_town: false
     effect_event:
     limit: 1
-    cost: 175000.0
-    upkeep: 10000.0
-    hammer_cost: 7500.0
-    points: 16000
+    cost: 50000.0
+    upkeep: 5000.0
+    hammer_cost: 5000.0
+    points: 5000
     max_hitpoints: 1000
     ignore_floating: false
     components:
         - name: 'AttributeStatic'
-        type: 'direct'
-        attribute: 'HAPPINESS'
-        value: '2.0'
-        - name: 'AttributeStatic'
-        type: 'direct'
-        attribute: 'UNHAPPINESS'
-        value: '-2.0'
-        - name: 'AttributeRate'
-        attribute: 'COTTAGE'
-        value: '0.10'
-
-  - id: s_broadcast_tower
-    template: broadcast_tower
-    template_y_shift: -1
-    displayName: Радиовышка
-    require_upgrade:
-    require_tech: 'tech_radio'
-    effect_event:
-    check_event: 
-    update_event: 
-    onBuild_event:
-    limit: 1
-    cost: 200000.0
-    upkeep: 2000.0
-    hammer_cost: 10000.0
-    points: 25000
-    max_hitpoints: 1500
-    components:
-        - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'CULTURE'
-          value: '200.0'
+          value: '500.0'
+        - name: 'AttributeStatic'
+          type: 'direct'
+          attribute: 'HAPPINESS'
+          value: '7.5'
         - name: 'AttributeRate'
           attribute: 'COTTAGE'
           value: '0.10'
@@ -1480,38 +1465,40 @@ structures:
     effect_event:
     limit: 1
     cost: 75000.0
-    upkeep: 1000.0
-    hammer_cost: 3600.0
-    points: 8000
+    upkeep: 7500.0
+    hammer_cost: 7500.0
+    points: 7500
     max_hitpoints: 1000
     ignore_floating: false
     components:
         - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'HAPPINESS'
-          value: '1.0'
+          value: '10.0'
         - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'CULTURE'
-          value: '300.0'
+          value: '750.0'
         - name: 'AttributeRate'
           attribute: 'COTTAGE'
           value: '0.10'
 
-  - id: s_stadium
-    template: stadium
-    template_y_shift: 0
-    displayName: Стадион
-    require_tech: 'tech_refrigeration'
-    require_structure: 
+  - id: s_broadcast_tower
+    template: broadcast_tower
+    template_y_shift: -1
+    displayName: Радиовышка
+    require_upgrade:
+    require_tech: 'tech_radio'
     effect_event:
+    check_event: 
+    update_event: 
+    onBuild_event:
     limit: 1
     cost: 100000.0
-    upkeep: 2000.0
-    hammer_cost: 7000.0
-    points: 9000
+    upkeep: 10000.0
+    hammer_cost: 10000.0
+    points: 10000
     max_hitpoints: 1000
-    ignore_floating: false
     components:
         - name: 'AttributeStatic'
           type: 'direct'
@@ -1519,8 +1506,39 @@ structures:
           value: '-2.0'
         - name: 'AttributeStatic'
           type: 'direct'
+          attribute: 'CULTURE'
+          value: '150.0'
+        - name: 'AttributeStatic'
+          type: 'direct'
+          attribute: 'COINS'
+          value: '8000.0'
+
+  - id: s_stadium
+    template: stadium
+    template_y_shift: 0
+    displayName: Стадион
+    require_tech: 'tech_military_science'
+    require_structure: 
+    effect_event:
+    limit: 1
+    cost: 150000.0
+    upkeep: 15000.0
+    hammer_cost: 15000.0
+    points: 15000
+    max_hitpoints: 1000
+    ignore_floating: false
+    components:
+        - name: 'AttributeStatic'
+          type: 'direct'
+          attribute: 'UNHAPPINESS'
+          value: '-2.5'
+        - name: 'AttributeStatic'
+          type: 'direct'
           attribute: 'HAPPINESS'
-          value: '2.0'
+          value: '2.5'
+        - name: 'AttributeRate'
+          attribute: 'COTTAGE'
+          value: '0.10'
 
   - id: ti_hospital
     template: hospital
@@ -1531,13 +1549,21 @@ structures:
     allow_outside_town: false
     effect_event:
     limit: 1
-    cost: 75000.0
-    upkeep: 1000.0
-    hammer_cost: 5000.0
-    points: 5000
-    max_hitpoints: 2000
+    cost: 100000.0
+    upkeep: 10000.0
+    hammer_cost: 10000.0
+    points: 10000
+    max_hitpoints: 1500
     ignore_floating: false
     tile_improvement: false
+    components:
+        - name: 'AttributeRate'
+          attribute: 'COTTAGE'
+          value: '0.10'
+        - name: 'AttributeStatic'
+          type: 'direct'
+          attribute: 'UNHAPPINESS'
+          value: '-4.0'
     # components:
     #     - name: 'AttributeStatic'
     #       type: 'direct'
