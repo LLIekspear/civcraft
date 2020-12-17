@@ -328,7 +328,7 @@ land_goods:
       value: 250.0
       buffs: 'buff_construction, buff_ine_art'
       material: 1 # light grey dye
-      material_data: polished_granite
+      material_data: 2
       rarity: 0.15
 
     - id: 'good_limestone'
