@@ -243,7 +243,7 @@ land_goods:
       material_data: 0
       rarity: 0.10
 
-   - id: 'good_incense'
+    - id: 'good_incense'
       name: Благовония
       value: 400.0
       buffs: 'buff_fine_art, buff_hedonism, buff_medicine'
