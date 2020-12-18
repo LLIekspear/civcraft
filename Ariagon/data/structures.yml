@@ -657,6 +657,7 @@ structures:
     hammer_cost: 500.0
     points: 500
     max_hitpoints: 250
+    components:
         - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'GROWTH'
