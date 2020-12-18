@@ -884,6 +884,7 @@ structures:
     ignore_floating: false
     tile_improvement: false
     allow_demolish: true
+    components:
         - name: 'AttributeRate'
           attribute: 'TRADE'
           value: '0.10'
