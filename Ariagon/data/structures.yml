@@ -874,9 +874,9 @@ structures:
     update_event:
     onBuild_event:
     limit: 1
-    cost: 50000
-    upkeep: 25000
-    hammer_cost: 1000
+    cost: 50000.0
+    upkeep: 25000.0
+    hammer_cost: 1000.0
     max_hitpoints: 250
     destroyable: true
     allow_outside_town: false
