@@ -1113,7 +1113,7 @@ structures:
         - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'HAMMERS'
-          value: '250'
+          value: '250.0'
         - name: 'AttributeRate'
           attribute: 'TRADE'
           value: '0.05'
