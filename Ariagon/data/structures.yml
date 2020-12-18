@@ -935,7 +935,7 @@ structures:
           type: 'direct'
           attribute: 'BEAKERS'
           value: '50.0'
-         - name: 'AttributeStatic'
+        - name: 'AttributeStatic'
           type: 'direct'
           attribute: 'BEAKERBOOST'
           value: '0.005'
