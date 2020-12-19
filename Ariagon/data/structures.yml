@@ -1377,7 +1377,7 @@ structures:
     displayName: Монумент
     require_upgrade:
     require_tech: 'tech_religion'
-    effect_event: 
+    effect_event: generate_culture:400
     check_event: 
     update_event: 
     onBuild_event:
@@ -1492,7 +1492,7 @@ structures:
     displayName: Радиовышка
     require_upgrade:
     require_tech: 'tech_radio'
-    effect_event:
+    effect_event: temple_Culture
     check_event: 
     update_event: 
     onBuild_event:
