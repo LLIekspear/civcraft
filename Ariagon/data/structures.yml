@@ -789,7 +789,7 @@ structures:
   - id: s_store
     template: store
     template_y_shift: 0
-    displayName: Магазин
+    displayName: Лавка
     require_upgrade:
     require_tech: 'tech_commerce'
     effect_event:
