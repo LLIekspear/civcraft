@@ -605,7 +605,7 @@ structures:
   - id: s_barracks
     template: barracks
     template_y_shift: 0
-    displayName: Бараки
+    displayName: Казарма
     require_upgrade:
     require_tech: 'tech_armory'
     effect_event:
@@ -650,6 +650,7 @@ structures:
     check_event: 
     update_event: trommel_process
     onBuild_event:
+    tile_improvement: true
     limit: 0
     allow_outside_town: true
     cost: 5000.0
