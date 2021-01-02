@@ -1,0 +1,73 @@
+groups:
+  default:
+    options:
+      default: true
+      prefix: '&f'
+    permissions:
+    - -modifyworld.*
+    - chatex.allowchat
+    - chatex.chat.global
+    - -bukkit.command.version
+    - -bukkit.command.plugins
+    - setspawn.spawn
+  Builder:
+    options:
+      default: false
+      prefix: '&8[&eBuilder&8] &e'
+    permissions:
+    - modifyworld.*
+    - setspawn.spawn
+    - chatex.allowchat
+    - chatex.chat.global
+    - -bukkit.command.version
+    - -bukkit.command.plugins
+    - easywarp.command.warp
+    - easywarp.warp.*
+  Builder+:
+    options:
+      default: false
+      prefix: '&8[&6Builder+&8] &6'
+    inheritance:
+    - Builder
+    permissions:
+    - worldedit.*
+    - minecraft.command.tp
+  GBuilder:
+    options:
+      default: false
+      prefix: '&8[&3General Builder&8] &3'
+    inheritance:
+    - Builder
+    - Builder+
+    permissions:
+    - easywarp.command.setwarp
+    - easywarp.command.delwarp
+  Owner:
+    options:
+      default: false
+      prefix: '&8[&4Owner&8] &4'
+    permissions:
+    - '*'
+schema-version: 1
+users:
+  77c90ae9-2ac7-33c4-bb0c-b50f450e1742:
+    group:
+    - Owner
+  37031763-24b2-3b1b-9b03-195e41930f3f:
+    group:
+    - GBuilder
+    options:
+      name: _Ypro_
+  4defe899-fdf4-3171-aad6-086a06ad5551:
+    group:
+    - GBuilder
+  fhforfiretime:
+    group: []
+  fhforfireteam:
+    group:
+    - Owner
+  398e9742-4f55-3b37-b95b-4cd5c1009d97:
+    group:
+    - Builder+
+    options:
+      name: ILoudyI

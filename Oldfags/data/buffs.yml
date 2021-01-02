@@ -1,0 +1,380 @@
+#
+# This files contains defines for buffs which can be applied to bonus goodies.
+# Eventually these buffs may also apply to governments and/or wonders
+#
+#
+
+buffs:
+    - id: 'buff_construction'
+      name: 'Конструкция'
+      description: 'Увеличивается количество молотков на <gold>100<r>. | <green>*Складывается*<r>'
+#      value: '0.25'
+      value: '100'
+      stackable: true
+      parent:
+   
+    - id: 'buff_year_of_plenty'
+      name: 'Год изобилия'
+      description: 'Увеличивается урожайность на <gold>20%<r>. | <green>*Складывается*<r>'
+      value: '0.2'
+      stackable: true
+      parent:
+
+    - id: 'buff_innovation'
+      name: 'Инновации'
+      description: 'Увеличивается количество пробирок на <gold>10%<r>. | <green>*Складывается*<r>'
+      value: '0.1'
+      stackable: true
+      parent:
+
+    - id: 'buff_monopoly'
+      name: 'Монополия'
+      description: 'Увеличивается доход от всех торговых ресурсов на <gold>15%<r>. | <green>*Складывается*<r>'
+      value: '0.15'
+      stackable: true
+      parent:
+    
+    - id: 'buff_preservative'
+      name: 'Консервант'
+      description: 'Коттеджы потребляеют на <gold>50%<r> меньше еды. | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_advanced_tooling'
+      name: 'Улучшенные инструменты'
+      description: 'Шахты вырабатывают на <gold>50%<r> молотков больше. | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: true
+      parent:
+
+    - id: 'buff_barricade'
+      name: 'Ограждение'
+      description: 'Прочность оборонительных сооружений увеличивается на <gold>50%<r>. | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_barter'
+      name: 'Бартер'
+      description: 'Курс обмена ископаемых в банке увеличивается на <gold>5%<r>. | <green>*Складывается*<r>'
+      value: '0.05'
+      stackable: true
+      parent:
+
+    - id: 'buff_fine_art'
+      name: 'Изобразительное искусство'
+      description: 'Прирост культуры увеличивается на <gold>25%<r>. | <red>*Не складывается*<r>'
+      value: '0.25'
+      stackable: false
+      parent:
+
+    - id: 'buff_art_appreciation'
+      name: 'Искусствоведение'
+      description: 'Прирост культуры увеличивается на <gold>20%<r>. | <red>*Не складывается*<r>'
+      value: '0.20'
+      stackable: false
+      parent:
+
+    - id: 'buff_extraction'
+      name: 'Добыча'
+      description: 'Шанс получения ископаемых в дробителе и карьере увеличивается на <gold>50%<r>. | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_fire_bomb'
+      name: 'Зажигательная бомба'
+      description: 'Урон башен лучников и пушкарей увеличивается на <gold>50%<r>. Башни лучников начинат стрелять горящими стрелами. | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_fishing'
+      name: 'Рыбалка'
+      description: 'Сырая рыба может заменять хлеб в амбарах. <gold>1 сырая рыба = 2 хлеба<r> | <red>*Не складывается*<r>'
+      value: '2'
+      stackable: false
+      parent:
+    
+    - id: 'buff_greed'
+      name: 'Greed'
+      description: 'Курс обмена ископаемых в банке увеличивается на <gold>3%<r>. | <green>*Складывается*<r>'
+      value: '0.03'
+      stackable: false
+      parent:
+
+    - id: 'buff_medicine'
+      name: 'Медицина'
+      description: 'Время респавна социвников во время войны уменьшается на <gold>50<r> секунд. | <red>*Не складывается*<r>'
+      value: '50'
+      stackable: false
+      parent:
+    
+    - id: 'buff_dirty_money'
+      name: 'Грязные деньги'
+      description: 'Шанс удачного выполнения шпионской миссии "Воровство казны" возрастает на <gold>50%<r>. | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_espionage'
+      name: 'Качественный яд'
+      description: 'Шанс удачного выполнения шпионской миссии "Отравление амбаров" возрастает на <gold>50%<r>. | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+    
+    - id: 'buff_rush'
+      name: 'Суета'
+      description: 'Цена в монетах и молотках на постройку зданий и чудес света, понижается на <gold>15%<r>. | <red>*Не складывается*<r>'
+      value: '0.15'
+      stackable: false
+      parent:
+
+    - id: 'buff_profit_sharing'
+      name: 'Субсидирование науки'
+      description: 'Исследования стоят на <gold>5%<r> дешевле (в монетах). | <red>*Не складывается*<r>'
+      value: '0.05'
+      stackable: false
+      parent:
+  
+    - id: 'buff_sabotage'
+      name: 'Саботаж'
+      description: 'Шанс удачного выполнения шпионской миссии "Саботаж" возрастает на <gold>50%<r>. | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_hedonism'
+      name: 'Неделя удовольствия'
+      description: 'Бонус к счастью = <gold>3<r>. | <green>*Складывается*<r>'
+      value: '3.0'
+      stackable: true
+      parent:
+
+    - id: 'buff_noanarchy'
+      name: 'Сильная власть'
+      description: 'Цивилизация впадает в анархию только на 50% срока, максимум на 2 часа. | <red>*Не складывается*<r>'
+      value: '0'
+      stackable: false
+      parent:
+
+    - id: 'buff_reduced_anarchy'
+      name: 'Сподвижники власти'
+      description: 'Цивилизация впадает в анархию на срок, рассчитанный из кол-ва жителей. 50% обычного срока/житель (30 минут). | <red>*Не складывается*<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+# PYRAMID BUFFS
+    - id: 'buff_pyramid_cottage_consume'
+      name: 'Pyramid Reduced Bread Consumption'
+      description: 'Reduces cottage bread consumption by 1/4'
+      value: '0.25'
+      stackable: false
+      parent:
+
+    - id: 'buff_pyramid_cottage_bonus'
+      name: 'Pyramid Increased Cottage Output'
+      description: 'Increases cottage income by 10%'
+      value: '1.1'
+      stackable: false
+      parent:
+
+    - id: 'buff_pyramid_culture'
+      name: 'Pyramid Culture Bonus' 
+      description: 'Increases culture output from civilization by 50%'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_pyramid_leech'
+      name: 'Pyramid Leech Culture'
+      description: 'Leeches 1% of the culture output from the nearest civilization.'
+      value: '0.01'
+      stackable: false
+      parent:
+
+    - id: 'debuff_pyramid_leech'
+      name: 'Pyramid Leech Culture'
+      description: 'Leeches 1% of your culture. Gives it to the town with the pyramid.'
+      value: '0.01'
+      stackable: false
+      parent:
+# Great library buffs
+    - id: 'buff_greatlibrary_extra_beakers'
+      name: 'Great Library Extra Beakers'
+      description: 'Grants 10% extra beakers for the civ.'
+      value: '0.1'
+      stackable: false
+      parent:
+
+    - id: 'buff_greatlibrary_double_tax_beakers'
+      name: 'Great Library Double Tax Beakers'
+      description: 'Doubles the effectiveness of tax coins spent on beakers'
+      value: '2'
+      stackable: false
+      parent:
+
+# Hanging Gardens buffs
+    - id: 'buff_hanging_gardens_growth'
+      name: 'Hanging Gardens Growth Bonus'
+      description: 'Grants a 25% bonus to growth rates across the civilization.'
+      value: '0.25'
+      stackable: false
+      parent:
+
+    - id: 'buff_hanging_gardens_regen'
+      name: 'Hanging Gardens Regen Bonus'
+      description: 'Grants a health regen rate of 1/2 heart per second in town.'
+      value: '0.5'
+      stackable: false
+      parent:
+    
+    - id: 'buff_hanging_gardens_additional_growth'
+      name: 'Hanging Gardens Additional Growth'
+      description: 'Grants an additional 10% growth rate for each Grapes good being used by the Civilization'
+      value: '0.1'
+      stackable: false
+      parent:
+
+# Colossus buffs
+    - id: 'debuff_colossus_leech_upkeep'
+      name: 'Colossus Leach Upkeep'
+      description: 'Leeches 2% of your upkeep payments and sends it to the town with the Colossus.'
+      value: '0.02'
+      stackable: false
+      parent:
+
+    - id: 'buff_colossus_reduce_upkeep'
+      name: 'Colossus Reduce Upkeep'
+      description: 'Reduces upkeep of your town by 25%'
+      value: '0.25'
+      stackable: false
+      parent:
+
+    - id: 'buff_colossus_coins_from_culture'
+      name: 'Colossus Coins From Culture'
+      description: 'Grants 5 coins per day to the civilization for every culture chunk owned by it.'
+      value: '5'
+      stackable: false
+      parent:
+# Notre Dame buffs
+    - id: 'buff_notre_dame_no_anarchy'
+      name: 'Notre Dame Reduced Anarchy'
+      description: 'Civilization suffers 1/2 anarchy time during government changes.'
+      value: '0.5'
+      stackable: false
+      parent: 'buff_noanarchy'
+
+    - id: 'buff_notre_dame_coins_from_peace'
+      name: 'Notre Dame Peace Coins'
+      description: 'Civilization collects coins from each town in each civilization not currently at war.'
+      value: '100'
+      stackable: false
+      parent:
+
+    - id: 'buff_notre_dame_extra_war_penalty'
+      name: 'Notre Dame Extra War Penalty'
+      description: 'Aggressors pay 2x war penalties when declaring war on this civilization or its allies.'
+      value: '2'
+      stackable: false
+      parent:
+
+# Chichen Itza buffs
+    - id: 'buff_chichen_itza_tower_hp'
+      name: 'Chichen Itza Tower HP'
+      description: 'Increases HP of towers by 15%'
+      value: '0.15'
+      stackable: false
+      parent:
+
+    - id: 'buff_chichen_itza_regen_rate'
+      name: 'Chichen Itza Regen Rate'
+      description: 'Increases regen rate of all structures by 2 HP per second.'
+      value: '2'
+      stackable: false
+      parent:
+
+    - id: 'buff_chichen_itza_cp_bonus_hp'
+      name: 'Chichen Itza Control Point Bonus HP'
+      description: 'Increase the hitpoints of all Control Points of a town by 10 HP.'
+      value: '10'
+      stackable: false
+      parent:
+
+#Colosseum Buffs
+    - id: 'buff_colosseum_coins_from_towns'
+      name: 'Colosseum Coins From Towns'
+      description: 'Grants 1000 coins per day to the civilization for every town in the world.'
+      value: '1000'
+      stackable: false
+      parent:
+
+#Globe Theatre Buffs
+    - id: 'buff_globe_theatre_culture_from_towns'
+      name: 'Globe Theatre Culture From Towns'
+      description: 'Increase culture by 10 for every town in the world.'
+      value: '10'
+      stackable: false
+      parent:
+
+#Great Lighthouse Buffs
+    - id: 'buff_great_lighthouse_tower_range'
+      name: 'Great Lighthouse Increse Tower Range'
+      description: 'Increase Tower Firing range in this town by 50%'
+      value: '1.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_great_lighthouse_trade_ship_income'
+      name: 'Lighthouse Trade Ship Income'
+      description: 'Trade Ships earn 20% more for selling items'
+      value: '1.2'
+      stackable: false
+      parent:
+
+# Mother Tree buffs
+    - id: 'buff_mother_tree_growth'
+      name: 'Mother Tree Growth Bonus'
+      description: 'Grants a 50% bonus to farm growth rates across the civilization.'
+      value: '0.50'
+      stackable: false
+      parent:
+
+    - id: 'buff_mother_tree_tile_improvement_cost'
+      name: 'Mother Tree Tile Improvment Cost'
+      description: 'Tile Improvements cost 20% less across the civilization.'
+      value: '0.20'
+      stackable: false
+      parent:
+
+    - id: 'buff_mother_tree_tile_improvement_bonus'
+      name: 'Mother Tree Tile Improvment Bonus'
+      description: 'Can build twice as many tile improvments in this town.'
+      value: '0.20'
+      stackable: false
+      parent:
+
+# Grand Ship Ingermanland Buffs
+    - id: 'buff_ingermanland_fishing_boat_immunity'
+      name: 'Ingermanland Fishing Boat Immunity'
+      description: 'Fishing Boats are immune to Espionage missions.'
+      value: '1.0'
+      stackable: false
+      parent:
+
+    - id: 'buff_ingermanland_trade_ship_income'
+      name: 'Ingermanland Trade Ship Income'
+      description: 'Trade Ships earn 30% more for selling items'
+      value: '1.3'
+      stackable: false
+      parent:
+
+    - id: 'buff_ingermanland_water_range'
+      name: 'Ingermanland Navy Range'
+      description: 'Navy Vessels have 50% greater attack range'
+      value: '1.5'
+      stackable: false
+      parent:

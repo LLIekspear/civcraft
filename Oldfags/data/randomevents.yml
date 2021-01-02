@@ -1,0 +1,207 @@
+#w
+#
+# This file allows us to configure random events on the server.
+#
+# The following limitations are being enforced to reduce complexity(for now):
+# - Random events can only have a SUCCESS or FAILURE state, not multiple options.
+# 
+
+# Here is an explaination of the various options
+# id - unquie ID for this event
+# chance - chance for event to occur, out of 1000. 100 = 10% chance.
+# name - display name for the event
+# message - message to display when event occurs.
+# length - amount of time in hours to complete the requirements
+# 
+# The following sections are lists of components. Each represent and AND relationship
+# this means all of them will be executed.
+#
+# actions - list of components that run when this event happens
+# requirements- list of requirements that ALL must be completed to count as successful.
+# success - list of components that run when this event is completed successfully
+# failure - list of components that run when this event is failed.
+#
+#
+# --- Components -----
+# Each component has its own set of properties that are important to it.
+# All component properties are strings and must have quotes around them.
+# All components have a 'name' which must be unquie.
+#
+# I'll attempt to document available components here:
+#
+# SpawnMobs - Spawns in mobs when activated. 
+#     where - location to spawn. Possibilities are TownChunk or CultureChunk
+#     what - Entity name of the mob to spawn.
+#     amount - Number of entities to spawn
+#     spread - how tightly packed they should be when spawned.
+# 
+# KillMobs - Listens on entity death. If its the right entity and the right town, it registers
+#     where: only register if entity is in this area.
+#     what: only check for this entity name;
+#     amount: total needed to be successful.
+#
+
+# World Information
+max_x: 6000
+min_x: -6000
+max_z: 6000
+min_z: -6000
+
+random_events:
+
+# ========= Maintenence Events =========
+
+    - id: 'event_slime_plague'
+      name: 'Слизистая зараза'
+      chance: 50
+      message: 
+        - "О нет! Слизистая зараза приближается к городу, её носители - 40 слизней." 
+        - "Убейте их и обезопасте город от этой болзни, либо получите бонус к несчастью (-3 от счастья). У Вас есть 48 часов."
+      length: 48
+      actions:
+        - name: 'SpawnMobs'
+          where: 'TownChunk'
+          what: 'SLIME'
+          amount: '40'
+          spread: '100'
+      requirements:
+         - name: 'KillMobs'
+           where: 'TownChunk'
+           what: 'SLIME'
+           amount: '4'
+      success:
+         - name: 'MessageTown'
+           message: "Вы побороли носителей заразы! Бонус к несчастью начислен не будет."
+      failure:
+         - name: 'MessageTown'
+           message: "О нет! Вы так и не убли носителей заразы, она распространится на Ваш город! Начислен бонус к несчастью на 48 часов."
+         - name: 'Unhappiness'
+           value: '3'
+           duration: '48'
+
+# ====== Events that Just kinda happen ============
+    # Happiness Events
+    - id: 'event_truffles'
+      name: 'Трюфели'
+      chance: 50
+      message:
+        - "Вблизи города лесники обнаружили поляну с трюфелями - редкими для нашей местности грибами."
+        - "Население счастливо столь изысканному диликатесу. Начислен бонус к счастью (+5 счастья) на трое суток."
+      length: 72
+      actions:
+        - name: 'Happiness'
+          value: '5'
+          duration: '72'
+      requirements:
+      success:
+      failure:
+         - name: 'MessageTown'
+           message: "Жители собрали все трюфели с поляны. Бонус к счастью больше не действует."
+    
+#    - id: 'event_dispute'
+#      name: 'Land Dispute'
+#      chance: 50
+#      message:
+#        - "Two local residents are having a dispute over their property boundaries. The two have managed to"
+#        - "divide the town into two seperate factions, both accusing the other of side of being land thieves."
+#        - "The only way to end the in-fighting is to lay down the heavy hand of the law. Which invariably steps"
+#       - "on peoples toes. Causing unhappiness for the next 3 days."
+#      length: 72
+#      actions:
+#        - name: 'Unhappiness'
+#          value: '5'
+#          duration: '72'
+#      requirements:
+#      success:
+#      failure:
+#         - name: 'MessageTown'
+#           message: "The locals have finally gotten over the silly land dispute and are now going back to their lives as normal"
+      
+    # Hammer Events
+    - id: 'event_productivity'
+      name: 'Производственный взлёт'
+      chance: 50
+      message:
+        - "Ваши жители восхищаются правительством и промышленным развитием страны. Они готовы трудиться лучше."
+        - "Вы получаете бонус к молоткам (+50%) в течение трёх суток."
+                                                                                                            
+      length: 72
+      actions:
+         - name: 'HammerRate'
+           value: '1.5'
+           duration: '72'
+      requirements:
+      success:
+      failure:
+         - name: 'MessageTown'
+           message: "Промышлыенность стала рядовой открослью хозяйства страны. Жители ей теперь не восхищаются. Бонус к счастью болше не начисляется."
+      
+#    - id: 'event_lazy'
+#      name: 'Lazyiness'
+#      chance: 50
+#      message:
+#        - "An air of laziness has struck the town. People just aren't working as hard as they used to."
+#        - "They'd rather relax and drink iced tea in the afternoons. We'll have to crack the whip to get them back to work!"
+#        - "Our town is going to experience decreasted hammer rates for the next 3 days."
+#      length: 72
+#      actions:
+#         - name: 'HammerRate'
+#           value: '0.70'
+#           duration: '72'
+#      requirements:
+#      success:
+#      failure:
+#         - name: 'MessageTown'
+#           message: "The locals are finally back to work. Our hammer rates have returned to normal."
+
+# ========== Opportunities ============
+
+    - id: 'event_herbs'
+      name: 'Травы!'
+      chance: 50
+      message:
+        - "Наши ученые-медики полагают, что они могли бы вылечить одну из многих раздражающих болезней,"
+        - "Которая так долго терзала нашу цивилизацию. Если мы сможем найти травы, наши ученые будут иметь"
+        - " шанс победить эту больезнь. У нас есть 8 часов."
+      length: 8
+      actions:
+        - name: 'PickRandomLocation'
+          varname: 'loc'
+      requirements:
+        - name: 'LocationCheck'
+          varname: 'loc'
+      success:
+         - name: 'MessageTown'
+           message: "Мы нашли травы! Народ радуется!"
+         - name: 'Happiness'
+           value: '5'
+           duration: '120'
+      failure:
+         - name: 'MessageTown'
+           message: "Мы не нашли травы в отведенное время!"
+ 
+    - id: 'event_gold_rush'
+      name: 'Золотая лихорадка!'
+      chance: 50
+      message:
+        - "По городу прошёлся слух, что где-то спрятано сокровище, в котором 75.000 монет."
+        - "Если мы сможем найти блок, спрятанный в определённом чанке, то получим это сокровище."
+        - "На поиски чанка и расскопки есть 12 часов. Действуйте."
+      length: 12
+      actions:
+        - name: 'PickRandomBlock'
+          varname: 'loc'
+      requirements:
+        - name: 'BlockBreak'
+          varname: 'loc'
+          playername_var: 'player'
+      success:
+         - name: 'MessageTown'
+           message: "Что это?! О, да! Это сокровище. Кто-то из нашего города нашёл его."
+         - name: 'PayPlayer'
+           playername_var: 'player'
+           amount: '75000'
+      failure:
+         - name: 'MessageTown'
+           message: "Время вышло, мы так и не нашли сокровища."
+        

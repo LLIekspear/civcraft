@@ -1,0 +1,29 @@
+# 
+# This file contains any custom enchantments used on items
+#
+
+enchants:
+   - id: 'ench_fire_aspect'
+     name: 'Заговор огня'
+     cost: 50000.0
+     description: 'С помощью данного зачарования Ваше ближнее оружие будет поджигать врагов.'
+     enchant_id: 'FIRE_ASPECT'
+
+   - id: 'ench_fire_protection'
+     name: 'Защита от огня'
+     cost: 25000.0
+     description: 'Данное зачарование снизит урон, получаемый от огня и лавы.'
+     enchant_id: 'PROTECTION_FIRE'  
+ 
+   - id: 'ench_flame'
+     name: 'Воспламенение (лук)'
+     cost: 50000.0
+     description: 'Ваши стрелы будут поджигаться.'
+     enchant_id: 'ARROW_FIRE'
+   
+   - id: 'ench_punchout'
+     name: 'Дробление'
+     cost: 20000.0
+     description: 'Имеется некоторый % нанесения дополнительного урона блокам.'
+     enchant_id: 'LoreEnhancementPunchout'
+

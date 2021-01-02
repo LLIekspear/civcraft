@@ -1,0 +1,23 @@
+permissions:
+  disable: false
+teleport:
+  cooldown: 0
+  cooldown_enabled: false
+  everyjoin: false
+messages:
+  spawn: true
+effects:
+  mobspawner: false
+  smoke: true
+  slime: false
+  potion: false
+sound:
+  level: false
+  portal: true
+  enderdragon: false
+  chest_open: false
+  chest_close: false
+  anvil_break: false
+  anvil_land: false
+  anvil_use: false
+  explode: false

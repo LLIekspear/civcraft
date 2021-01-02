@@ -1,0 +1,133 @@
+  #Capitol/Town/Camp/War Camp:
+/control #Control Point-Capitol/Town/Camp
+/respawn #Respawn Point-Town
+  /itemframe
+  id:0-7 #For Trade Goodies-Civ/Town
+/revive #Respawn-Capitol/Town
+  /towerfire
+  id:0-7 #Arrow Towers-Capitol
+    /techbar
+    id:0-9 #Green techBar #Capitol/Town
+/techname #What Tech You Are Researching
+/techdata #What % You Are At
+  /prev #Previous Respawn Point-Capitol
+  /respawndata #Current Respawn point-Capitol
+  /next #Next Respawn Point-Capitol
+
+
+  #War Camp/War Cannon:
+/respawn #Respawn Point-War Camp
+/power #NA-War Cannon
+/fire #Shoot Cannon-War Cannon
+/angle #Change Position-War Cannon
+/cannon #Where Cannon Shoots
+
+
+  #Random:
+/chest
+id:0 #Mine/Barracks/Windmill Chest
+/chest
+id:1 #Granary/Temple Chest
+
+
+  #No-Order:
+/tradeoutpost #Makes Trade Sign
+
+
+  #Barracks:
+/repair #Repair Tools Sign
+/prev #Previous Unit
+/next #Next Unit
+/unitname #Displays Unit
+/train #Makes Unit
+  /progress
+  id:0 #Unit Trained Progress1
+  /progress
+  id:1 #Unit Trained Progress2
+  /progress
+  id:2 #Unit Trained Progress3
+  /progress
+  id:3 #Unit Trained Progress4
+  /progress
+  id:4 #Unit Trained Progress5
+
+
+  #Market:
+    /sellbig
+    id:(Number) #Unit In Market
+  /sell
+  id:(Number) #Unit In Market
+    /buy
+    id:(Number) #Unit In Market
+  /buybig
+  id:(Number) #Unit In Market
+
+
+  #Library/Grocer/Store:
+/sign
+slot:0 #Upgrade1
+/sign
+slot:1 #Upgrade2
+/sign
+slot:2 #Upgrade3
+/sign
+slot:3 #Upgrade4
+
+
+  #Cannon Tower/Arrow Tower:
+/towerfire #Dispensers, Fires The Arrows
+
+
+  #Stables:
+/prev
+id:0 #Previous Items (1nd Floor, Left)
+/item
+id:0 #Current Item (1nd Floor, Left)
+/next
+id:0 #Bext Items (1nd Floor, Left)
+  /prev
+  id:1 #Previous Items (1nd Floor, Right)
+  /item
+  id:1 #Current Item (1nd Floor, Right)
+  /next
+  id:1 #Bext Items (1nd Floor, Right)
+    /prev
+    id:2 #Previous Items (2nd Floor)
+    /item
+    id:2 #Current Item (2nd Floor)
+    /next
+    id:2 #Bext Items (2nd Floor)
+
+
+  #Camp:
+/firefurnace #Furnace To Keep Camp Alive
+  /firepit
+  id:0-9 #Fires To Tell How Alive Camp Is
+/growth #Random Growth Ticks For Camp
+/gardensign #Buy Garden
+  /sifter
+  id:0 #Sifter Input
+    /sifter
+    id:1 #Sifter Output
+/door #Door Into Camp
+/foodinput #Longhouse Chest
+
+
+  #Bank
+/sign
+sell:(ore) #Sells This Ore
+
+
+  #Trommel
+/chest
+id:1 #Deposit
+/chest
+id:2 #Withdraw
+
+
+
+
+
+
+
+

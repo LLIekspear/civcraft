@@ -1,0 +1,173 @@
+#
+# All you wanted to know about espionage. 
+# This file contains mission configuration and general espionage properties
+#
+#
+
+espionage:
+    # Default exposure per second.
+    exposure_per_second: 1
+
+    # Exposure per player nearby
+    exposure_per_player: 2
+
+    # Exposure per scout tower nearby
+    exposure_per_scout: 5
+
+    # Town Warning exposure limit (in percent)
+    # When the exposure level of a spy exceeds this percent, the town is notified they are being spied on.
+    town_exposure_warning: 0.4
+
+    # Town location exposure limit
+    # When the exposure level of a spy exceeds this percent, the town is notified of the position the spy is located at.
+    town_exposure_location: 0.8
+
+    # Town name exposure limit
+    # When the exposure level of the spy exceeds this percent, the town knows who is spying on them.
+    town_exposure_name: 0.9
+
+    # Mission failure limit
+    # If the spy exposure level goves above this, the mission automatically fails.
+    # XXX this is disabled for now by setting it at over 100% exposure. I think it's not needed.
+    # I think we'd rather have players attempt the mission and _have_ to be hunted down.
+    town_exposure_failure: 1.95
+
+    # The number of cottage ticks(aka hours) the granary
+    # will remain poisoned. A random number is selected
+    # between min and max.
+    poison_granary_min_ticks: 3
+    poison_granary_max_ticks: 50
+
+    # Chance that the poison will cause an entire
+    # cottage level to be lost.
+    # Nerfed from 0.2 to 0.05 was way too op, would bring ALL cottages down a level
+    poison_granary_famine_chance: 0.05
+
+    # Number of mins a resident must have registered
+    # before being allowed to use a spy unit.
+    spy_register_time: 1440
+
+    # Number of mins a resident must be online before
+    # being able to use a spy unit.
+    spy_online_time: 10
+
+missions:
+    - id: 'spy_investigate_town'
+      name: 'Обследование города'
+      description: 
+          - 'Шпион пробирается к хранилищу информации и крадёт основную информацию.'
+          - 'После успешного окончания миссии у Вас в инвенторе появится книга с информацией о городе.'
+      cost: 10000.0
+      range: 0.0
+      cooldown: 2.0
+      fail_chance: 0.1
+      compromise_chance: 0.01
+      intel: 0
+      length: 30
+      slot: 1
+
+    - id: 'spy_steal_treasury'
+      name: 'Похищение казны'
+      description: 
+          - 'Кучка шпионов-воров проникает в хранилище казны и крадёт её часть (20%).'
+          - 'Вы должны находится не дальше 50 блоков от главного здания города.'
+          - 'После удачного окончания миссии на Вас счёт перечислится 20% от казны ограбленного города.'                                                                                                                                                                     
+      cost: 20000.0
+      range: 50.0
+      cooldown: 2.0
+      fail_chance: 0.3
+      compromise_chance: 0.25
+      intel: 2
+      length: 140
+      slot: 6
+
+    - id: 'spy_incite_riots'
+      name: 'Антиправительственное движение (беспорядки)'
+      description: 
+          - 'Подпольные шпионы расходятся по барделям и трактирам, клевещат на правительственные лица, что портит настроение города.'
+          - 'Вы должны находится не дальше 50 блоков от главного здания города.'
+          - 'После успешного окончания в городе, в котором проведена миссия, счастье уменьшиться на 5 - 10 единиц.'
+      cost: 50000.0
+      range: 50.0
+      cooldown: 2.0
+      fail_chance: 0.3
+      compromise_chance: 0.25
+      intel: 2
+      length: 120
+      slot: 4
+
+    - id: 'spy_subvert_government'
+      name: 'Революционное движение'
+      description: 
+          - 'Подпольные шпионы начинают пропагандировать революционные взгляды, что побузждает людей к революции.'
+          - 'Вы должны находится не дальше 100 блоков от капитолия.'
+          - 'После успешного окончания миссии цивилизация, подверженная действию шпионов, впадёт в анархию.'                                                                                                                                                                                          
+      cost: 200000.0
+      range: 100.0
+      cooldown: 2.0
+      fail_chance: 0.40
+      compromise_chance: 0.4
+      intel: 2
+      length: 180
+      slot: 5
+      
+    - id: 'spy_poison_granary'
+      name: 'Отправлене амбаров'
+      description: 
+          - 'Шпион с ядом проникает к хранилиам коттеджей и разливает яд на еду.'
+          - 'Вы должны находится не дальше 50 блоков от амбара.'
+          - 'После успешного окончания миссии коттеджи города, где действовал шпион, будут голодать от 3 до 50 часов.'
+          - '5% шанс заставить коттеджи голодать или понизить уровень.'                                                                                                     
+      range: 50.0
+      cost: 20000.0
+      cooldown: 2.0
+      fail_chance: 0.2
+      compromise_chance: 0.1
+      intel: 0
+      length: 60
+      slot: 3
+
+    - id: 'spy_pirate'
+      name: 'Пиратство'
+      description: 
+          - 'Шпион-вор пробирается в торговый пост/лодку цели миссии и крадёт ресурс.'
+          - 'Вы должны находится не дальше 10 блоков от торгового поста/лодки.'
+          - 'После успешного окончания миссии торговый ресурс выпадает из рамки и Вы можете его забрать.'                                                                                                                                              
+      range: 10.0
+      cost: 5000.0
+      cooldown: 2.0
+      fail_chance: 0.2
+      compromise_chance: 0.1
+      intel: 0
+      length: 60
+      slot: 2
+ 
+    - id: 'spy_sabotage'
+      name: 'Диверсия (здания)'
+      description: 
+          - 'Шпион-диверсант проникает в канализацию здания и вылазиет из туалета, изнутри разрушает здание.'
+          - 'Вы должны находится не дальше 50 блоков от здания, которое хотите разрушить.'
+          - 'После успешного окончания миссии здание, которое Вы диверсировали - будет разрушено.'                                                                                                                                                    
+      cost: 250000.0
+      range: 50.0
+      cooldown: 2.0
+      fail_chance: 0.4
+      compromise_chance: 0.5
+      intel: 4
+      length: 300
+      slot: 7
+    
+    - id: 'spy_sabotage_wonder'
+      name: 'Диверся (чудеса света)'
+      description: 
+          - 'Шпион-диверсант выкапывает лопатой себе путь к фундаменту чуда света. Затем, он певрфоратором раздрабливает часть фундамента чуда и оно обрушивается.'
+          - 'Вы должны находится не дальше 50 блоков от чуда, которое хотите разрушить.'
+          - 'После успешного окончания миссии чудо света, которое Вы диверсировали - будет разрушено.'                                                                                                                                                  
+      cost: 500000.0
+      range: 50.0
+      cooldown: 2.0
+      fail_chance: 0.4
+      compromise_chance: 0.5
+      intel: 4
+      length: 300
+      slot: 8

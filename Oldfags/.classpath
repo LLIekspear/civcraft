@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/bonecp.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/dhutils.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/dynmap-api.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/guava.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/Herochat.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/HolographicDisplays.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/json.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/MobLib.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/mockito-all-1.9.5.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/NametagEdit.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/NoCheatPlus.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/PermissionsEx-1.23.4.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/slf4j-simple.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/spigot-1.8.8.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/VanishNoPacket.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/Vault.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/WorldBorder.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/TagAPI-1.1.8.jar"/>
+	<classpathentry kind="lib" path="/home/ellidey/workspace/Oldfags/lib/TitleAPI.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

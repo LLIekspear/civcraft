@@ -1,0 +1,91 @@
+############################
+##  === [ EASY WARP ] === ##
+############################
+
+# Name displayed in messages sent to player from plugin.
+# ex. [server-name] You have been warped.
+server-name: "&7[&3EasyWarp&7]"
+
+# Delay (in seconds) before a person is warped.
+warp-delay: 0
+
+
+#============================================================================================================================#
+#============================================================================================================================#
+#============================================================================================================================#
+
+
+#Variables:
+#{server}
+#{delay}
+#{name}
+#{display}
+#{node}
+#{command}
+
+#{page}
+#{pages}
+
+#{target}
+
+#Messages to be sent
+messages:
+  warp:
+    other: "{server} &aВы переместили игрока &e{target} &aна варп &e{warp}&a."
+    cancelled: "{server} &cТелепортация на варп остановлена..."
+    completed: "{server} &a You have been warped to &c{warp}."
+    delayed: "{server} &aYou will be warped in &c{delay}&a seconds."
+    removed: "{server} &aВарп &e{warp} &aбыл успешно удалён."
+    set: "{server} &aВарп &e{warp} &aбыл успешно установлен."
+    list: "{server} &fСписок варпов: ({page}/{pages})"
+    no-permission: "&7[&cОшибка&7] &fУ Вас недостаточно прав для совершения данного действия."
+  error:
+    illegal-char: "&7[&cОшибка&7] &fВы использовали недопустимый символ."
+    no-warp: "&7[&cОшибка&7] &fДанного варпа не существует."
+    no-warp-given:
+    - "&7[&cОшибка&7] &fИспользуйте &e/warp [название варпа]&f, чтобы отправиться на вар самому."
+    - "&7[&cОшибка&7] &fИспользуйте &e/warp [игрок] [название варпа]&f, чтобы отправить на варп игрока."
+    - "&7[&cОшибка&7] &fЧтобы просмотреть список варпов, используйте команду &e/warps [номер страницы]"
+    no-permission: "&7[&cОшибка&7] &fУ Вас недостаточно прав для совершения данного действия."
+    no-page: "&7[&cОшибка&7] &fИспользуйте &e/{command} [номер страницы]"
+    no-player: "&7[&cОшибка&7] &fИгрок не найден."
+    not-player: "&7[&cОшибка&7] &fТолько игрок может выполнить данное действие."
+    cannot-overwrite: "&7[&cОшибка&7] &fТакое название варпа уже используется."
+  config:
+    reloaded: "&7[&5EasyWarp&7] {server} &aКонфигурации плагина успешно перезагружены."
+
+#Example of multi-lined message
+#  example:
+#  - This line comes first
+#  - Then this one
+
+
+#============================================================================================================================#
+#============================================================================================================================#
+#============================================================================================================================#
+
+
+# If set to true, a person needs permissions for 'easywarp.warp.<warpname>' to use a warp or 'easywarp.warp.*' to use all warps.
+per-warp-permissions: true
+
+# If set to true, a person needs permissions for 'easywarp.sign.use' to use warp signs
+signs-require-permissions: true
+
+# If set to true, a person needs per-warp permissions to use warp signs, even if per-warp-permissions is set to false above.
+# It is recommended you leave this 'false'
+signs-per-warp-permissions: false
+
+# If set to true, a person bypasses any warp delay if the have permissions for 'easywarp.delay.bypass'
+permissions-bypass-delay: true
+
+# If set to true, a person bypasses any warp delay if they are ops.
+ops-bypass-delay: true
+
+# If set to true, when warping another player (/warp player warp) the player will bypass the delay
+warp-other-bypass-delay: false
+
+# If set to true, when warping using a sign the player will bypass the delay
+signs-bypass-delay: false
+
+# If set to false, you will receive an error when trying to /setwarp an existing warp
+allow-warp-overwrite: false

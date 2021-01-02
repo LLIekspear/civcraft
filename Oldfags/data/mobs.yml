@@ -1,0 +1,410 @@
+﻿mobs:
+
+
+#######################    Классы мобов     #######################
+
+
+
+    - id: 'yobo'
+      name: 'ДиректорШколы'
+      class: 'com.avrgaming.civcraft.mobs.Yobo'
+    
+    - id: 'angry'
+      name: 'Учителя'
+      class: 'com.avrgaming.civcraft.mobs.AngryYobo'  
+            
+    - id: 'Behemoth'
+      name: 'МарьИвановна'
+      class: 'com.avrgaming.civcraft.mobs.Behemoth'
+      
+    - id: 'Savage'
+      name: 'ТетяЗина'
+      class: 'com.avrgaming.civcraft.mobs.Savage' 
+      
+    - id: 'Ruffian'
+      name: 'ДядьВаля'
+      class: 'com.avrgaming.civcraft.mobs.Ruffian'  
+ 
+
+
+ 
+#######################    уровни мобов     #######################
+    - id: 'Lesser'
+      name: 'неудачник'
+      
+    - id: 'Greater'
+      name: 'неудачник_v2.0'
+  
+    - id: 'Elite'
+      name: 'Пацик'
+  
+    - id: 'Brutal'
+      name: 'ЧеткийПацик'
+      
+    - id: 'Extra'
+      name: 'ЕкстраЧеткийПацик'
+      
+    - id: 'Super'
+      name: 'ГлаваПациков'
+
+#######################    Дропы мобов     #######################
+drops:
+
+#########   YOBO   #########
+
+   - id: 'Lesser_yobo'
+     CoinsMax: 40
+     CoinsMin: 5
+     modifySpeed: 1.4
+     Attack: 8.0
+     MaxHealth: 40.0
+     drop:
+        - 'mat_forged_clay'
+        - 0.1
+        - 'mat_crafted_reeds'
+        - 0.1
+        - 'mat_crafted_sticks'
+        - 0.1
+     
+   - id: 'Greater_yobo'
+     CoinsMax: 80
+     CoinsMin: 40
+     modifySpeed: 1.5
+     Attack: 18.0
+     MaxHealth: 50.0
+     drop:
+        - 'mat_clay_steel_cast'
+        - 0.05
+        - 'mat_leather_straps'
+        - 0.05
+        - 'mat_steel_ingot'
+        - 0.05
+        - 'mat_varnish'
+        - 0.01
+        - 'mat_sticky_resin'
+        - 0.01
+      
+   - id: 'Elite_yobo'
+     CoinsMax: 120
+     CoinsMin: 80
+     modifySpeed: 1.6
+     Attack: 24.0
+     MaxHealth: 60.0
+     drop:
+        - 'mat_clay_steel_cast'
+        - 0.05
+        - 'mat_reinforced_braid'
+        - 0.05
+        - 'mat_carbide_steel_ingot'
+        - 0.05
+        - 'mat_sticky_resin'
+        - 0.1
+        - 'mat_smithy_resin'
+        - 0.01
+     
+   - id: 'Brutal_yobo'
+     CoinsMax: 150
+     CoinsMin: 120
+     modifySpeed: 1.7
+     Attack: 30.0
+     MaxHealth: 80.0
+     drop:
+        - 'mat_clay_tungsten_casting'
+        - 0.05
+        - 'mat_artisan_leather'
+        - 0.05
+        - 'mat_tungsten_ingot'
+        - 0.05
+        - 'mat_sticky_resin'
+        - 0.1
+        - 'mat_smithy_resin'
+        - 0.01
+ 
+#########   ANGRY_YOBO   #########
+
+   - id: 'Lesser_angry'
+     CoinsMax: 10
+     CoinsMin: 2
+     modifySpeed: 1.4
+     Attack: 8.0
+     MaxHealth: 30.0
+     drop:
+        - 'mat_forged_clay'
+        - 0.1
+        - 'mat_crafted_reeds'
+        - 0.1
+        - 'mat_crafted_sticks'
+        - 0.1
+     
+   - id: 'Greater_angry'
+     CoinsMax: 20
+     CoinsMin: 10
+     modifySpeed: 1.5
+     Attack: 18.0
+     MaxHealth: 45.0
+     drop:
+        - 'mat_clay_steel_cast'
+        - 0.05
+        - 'mat_steel_ingot'
+        - 0.05
+        - 'mat_varnish'
+        - 0.01
+        - 'mat_sticky_resin'
+        - 0.01
+      
+   - id: 'Elite_angry'
+     CoinsMax: 30
+     CoinsMin: 20
+     modifySpeed: 1.6
+     Attack: 24.0
+     MaxHealth: 50.0
+     drop:
+        - 'mat_clay_steel_cast'
+        - 0.05
+        - 'mat_carbide_steel_ingot'
+        - 0.05
+        - 'mat_sticky_resin'
+        - 0.1
+        - 'mat_smithy_resin'
+        - 0.01
+     
+   - id: 'Brutal_angry'
+     CoinsMax: 40
+     CoinsMin: 30
+     modifySpeed: 1.7
+     Attack: 30.0
+     MaxHealth: 75.0
+     drop:
+        - 'mat_tungsten_ingot'
+        - 0.05
+        - 'mat_clay_tungsten_casting'
+        - 0.05
+        - 'mat_sticky_resin'
+        - 0.1
+        - 'mat_smithy_resin'
+        - 0.01
+        
+#########   BEHEMOTH   #########
+
+   - id: 'Lesser_Behemoth'
+     CoinsMax: 50
+     CoinsMin: 5
+     modifySpeed: 1.4
+     Attack: 12.0
+     MaxHealth: 75.0
+     drop:
+        - 'mat_forged_clay'
+        - 0.1
+        - 'mat_crafted_reeds'
+        - 0.1
+        - 'mat_crafted_sticks'
+        - 0.1
+        
+   - id: 'Greater_Behemoth'
+     CoinsMax: 100
+     CoinsMin: 50
+     modifySpeed: 1.5
+     Attack: 18.0
+     MaxHealth: 125.0
+     drop:
+        - 'mat_steel_plate'
+        - 0.1
+        - 'mat_steel_ingot'
+        - 0.05 
+        - 'mat_clay_molding'
+        - 0.05 
+        - 'mat_varnish'
+        - 0.01 
+        - 'mat_sticky_resin'
+        - 0.05 
+        
+   - id: 'Elite_Behemoth'
+     CoinsMax: 150
+     CoinsMin: 100
+     modifySpeed: 1.6
+     Attack: 24.0
+     MaxHealth: 150.0
+     drop:
+        - 'mat_carbide_steel_plate'
+        - 0.1
+        - 'mat_carbide_steel_ingot'
+        - 0.05
+        - 'mat_clay_molding'
+        - 0.05
+        - 'mat_sticky_resin'
+        - 0.1
+        - 'mat_smithy_resin'
+        - 0.05
+        
+   - id: 'Brutal_Behemoth'
+     CoinsMax: 200
+     CoinsMin: 150
+     modifySpeed: 1.7
+     Attack: 30.0
+     MaxHealth: 160.0
+     drop:
+        - 'mat_tungsten_plate'
+        - 0.1
+        - 'mat_tungsten_ingot'
+        - 0.05
+        - 'mat_clay_tungsten_casting'
+        - 0.05
+        - 'mat_sticky_resin'
+        - 0.1
+        - 'mat_smithy_resin'
+        - 0.05
+        
+ 
+#########   SAVAGE   #########
+
+   - id: 'Lesser_Savage'
+     CoinsMax: 20
+     CoinsMin: 5
+     modifySpeed: 1.8
+     Attack: 8.0
+     MaxHealth: 12.0
+     drop:
+        - 'mat_forged_clay'
+        - 0.1
+        - 'mat_crafted_reeds'
+        - 0.1
+        - 'mat_crafted_sticks'
+        - 0.1
+        
+   - id: 'Greater_Savage'
+     CoinsMax: 40
+     CoinsMin: 20
+     modifySpeed: 1.9
+     Attack: 18.0
+     MaxHealth: 18.0
+     drop:
+        - 'mat_aged_wood_stave'
+        - 0.1
+        - 'mat_crafted_string'
+        - 0.05
+        - 'mat_varnish'
+        - 0.01
+        - 'mat_sticky_resin'
+        - 0.01
+        
+   - id: 'Elite_Savage'
+     CoinsMax: 80
+     CoinsMin: 40
+     modifySpeed: 2.0
+     Attack: 24.0
+     MaxHealth: 40.0
+     drop:
+        - 'mat_aged_wood_stave'
+        - 0.1
+        - 'mat_varnish'
+        - 0.05
+        - 'mat_woven_threading'
+        - 0.1
+        - 'mat_sticky_resin'
+        - 0.1
+        - 'mat_smithy_resin'
+        - 0.01
+        
+   - id: 'Brutal_Savage'
+     CoinsMax: 60
+     CoinsMin: 40
+     modifySpeed: 1.8
+     Attack: 8.0
+     MaxHealth: 12.0
+     drop:
+        - 'mat_longbow_stave'
+        - 0.1
+        - 'mat_reinforced_braid'
+        - 0.15
+        - 'mat_leather_straps'
+        - 0.1
+        - 'mat_sticky_resin'
+        - 0.1
+        - 'mat_smithy_resin'
+        - 0.01
+     
+#########   RUFFIAN   #########
+
+   - id: 'Lesser_Ruffian'
+     CoinsMax: 25
+     CoinsMin: 1
+     modifySpeed: 1.8
+     Attack: 15.0
+     MaxHealth: 10.0
+     drop:
+        - 'mat_ionic_crystal_fragment_1'
+        - 0.05
+        - 'mat_forged_clay'
+        - 0.1
+        - 'mat_crafted_reeds'
+        - 0.1
+        - 'mat_crafted_sticks'
+        - 0.1
+        - 'mat_refined_sulphur'
+        - 0.15
+          
+   - id: 'Greater_Ruffian'
+     CoinsMax: 50
+     CoinsMin: 10
+     modifySpeed: 1.9
+     Attack: 20.0
+     MaxHealth: 15.0
+     drop:
+        - 'mat_ionic_crystal_fragment_2'
+        - 0.05
+        - 'mat_carved_leather'
+        - 0.1
+        - 'mat_crafted_string'
+        - 0.03
+        - 'mat_refined_slime'
+        - 0.05
+        - 'mat_varnish'
+        - 0.01
+        - 'mat_sticky_resin'
+        - 0.01
+        - 'mat_refined_sulphur'
+        - 0.25
+      
+   - id: 'Elite_Ruffian'
+     CoinsMax: 80
+     CoinsMin: 20
+     modifySpeed: 2.0
+     Attack: 25.0
+     MaxHealth: 20.0
+     drop:
+        - 'mat_ionic_crystal_fragment_3'
+        - 0.05
+        - 'mat_leather_straps'
+        - 0.1
+        - 'mat_crafted_string'
+        - 0.05
+        - 'mat_refined_slime'
+        - 0.05
+        - 'mat_varnish'
+        - 0.01
+        - 'mat_sticky_resin'
+        - 0.01
+        - 'mat_refined_sulphur'
+        - 0.35
+        
+   - id: 'Brutal_Ruffian'
+     CoinsMax: 150
+     CoinsMin: 20
+     modifySpeed: 2.0
+     Attack: 32.0
+     MaxHealth: 30.0
+     drop:
+        - 'mat_ionic_crystal_fragment_4'
+        - 0.05
+        - 'mat_artisan_leather'
+        - 0.1
+        - 'mat_crafted_string'
+        - 0.1
+        - 'mat_refined_slime'
+        - 0.05
+        - 'mat_varnish'
+        - 0.01
+        - 'mat_sticky_resin'
+        - 0.01
+        - 'mat_refined_sulphur'
+        - 0.5

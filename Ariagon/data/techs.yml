@@ -103,7 +103,7 @@ techs:
       era: 1
 
     - id: 'tech_productivity'
-      name: 'Производительность'
+      name: 'Производство'
       beaker_cost: 1000.0
       cost: 7500.0
       points: 250

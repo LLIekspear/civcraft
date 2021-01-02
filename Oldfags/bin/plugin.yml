@@ -1,0 +1,53 @@
+name: CivCraft
+main: com.avrgaming.civcraft.main.CivCraft
+softdepends: [TitleAPI]
+version: 1.76.5new
+authors: [AvRGaming, Constellation - Minecraft Project]
+
+commands:
+    town:
+        aliases: [t, tn,е, ещцт, ет]
+    plot:
+        aliases: [p, pt, здще, з, зе]
+    resident:
+        aliases: [res, rt, куышвуте, куы, ке]
+    dbg:
+        aliases: []
+    accept:
+        aliases: [yes, фссузе, нуы]
+    deny:
+        aliases: [no, тщ, вутн]
+    civ:
+        aliases: [civilization, cn, сшм, сшмшдшяфешщт, ст]
+    tc:
+        aliases: [ес]
+    cc:
+        aliases: [сс]
+    ac:
+        aliases: [фс]
+    gc:
+        aliases: [пс]
+    ad:
+        aliases: [фв]
+    build:
+        aliases: [b, bd, игшдв, и, ив]
+    market:
+        aliases: [m, mt, ь, ье]
+    select:
+        aliases: [ыудусе]
+    econ:
+        aliases: [money, усщт, ьщтун]
+    pay:
+        aliases: [зфн]
+    here:
+        aliases: [руку]
+    camp:
+        aliases: [cp, сфьз, сз]
+    report:
+        aliases: [кузщке]
+    kill:
+        aliases: [k, suicide, л, ыгшсшву]
+    team:
+        aliases: [tm, еуфь, еь]
+    sb:
+        aliases: [ыи]
