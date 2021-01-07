@@ -77,7 +77,7 @@ materials:
         - id: 'mat_carved_leather'
           item_id: 334
           item_data: 0
-          name: 'Резная кожа'
+          name: 'Т1 Обработанная кожа'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -90,7 +90,7 @@ materials:
         - id: 'mat_refined_stone'
           item_id: 1
           item_data: 0
-          name: 'Изысканный камень'
+          name: 'T1 Очищенный камень'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -103,7 +103,7 @@ materials:
         - id: 'mat_refined_stone_alt0'
           item_id: 1
           item_data: 0
-          name: 'T1 Refined Stone'
+          name: 'T1 Очищенный камень'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -116,7 +116,7 @@ materials:
         - id: 'mat_refined_stone_alt1'
           item_id: 1
           item_data: 0
-          name: 'T1 Refined Stone'
+          name: 'T1 Очищенный камень'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -129,7 +129,7 @@ materials:
         - id: 'mat_refined_stone_alt2'
           item_id: 1
           item_data: 0
-          name: 'T1 Refined Stone'
+          name: 'T1 Очищенный камень'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -155,7 +155,7 @@ materials:
         - id: 'mat_refined_feathers'
           item_id: 406
           item_data: 0
-          name: 'Плотное перо'
+          name: 'T1 Обработанные перья'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -168,7 +168,7 @@ materials:
         - id: 'mat_crafted_string'
           item_id: 287
           item_data: 0
-          name: 'Искусственная нить'
+          name: 'T1 Обработанная нить'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -181,7 +181,7 @@ materials:
         - id: 'mat_refined_slime'
           item_id: 341
           item_data: 0
-          name: 'Очищенная слизь'
+          name: 'T1 Очищенная слизь'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -208,7 +208,7 @@ materials:
         - id: 'mat_crafted_reeds'
           item_id: 338
           item_data: 0
-          name: 'Искусственный тростник'
+          name: 'T1 Обработанный тростник'
           craftable: true
           shaped: false
           tradeable: true
@@ -236,7 +236,7 @@ materials:
         - id: 'mat_crafted_sticks'
           item_id: 280
           item_data: 0
-          name: 'Обработанные палки'
+          name: 'T1 Обработанная палка'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -249,7 +249,7 @@ materials:
         - id: 'mat_refined_sulphur'
           item_id: 289
           item_data: 0
-          name: 'Очищенная сера'
+          name: 'T1 Очищенный порох'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -261,7 +261,7 @@ materials:
         - id: 'mat_compacted_sand'
           item_id: 24
           item_data: 1
-          name: 'Плотный песок'
+          name: 'T1 Очищенный песок'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -274,7 +274,7 @@ materials:
         - id: 'mat_forged_clay'
           item_id: 336
           item_data: 0
-          name: 'Глина'
+          name: 'T1 Закалённая клина'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -287,7 +287,7 @@ materials:
         - id: 'mat_refined_sugar'
           item_id: 353
           item_data: 0
-          name: 'Рафинированный сахар'
+          name: 'T1 Рафинированный сахар'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -300,7 +300,7 @@ materials:
         - id: 'mat_refined_wart'
           item_id: 372
           item_data: 0
-          name: 'Очищенная бородавка'
+          name: 'T1 Редкий нарост'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -313,7 +313,7 @@ materials:
         - id: 'mat_forged_chromium'
           item_id: 265
           item_data: 0
-          name: 'Очищенный хром'
+          name: 'T1 Кованый хром'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -327,7 +327,7 @@ materials:
         - id: 'mat_forged_tungsten'
           item_id: 133
           item_data: 0
-          name: 'Очищенный вольфрам'
+          name: 'T1 Кованый вольфрам'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -341,7 +341,7 @@ materials:
         - id: 'mat_refined_wood'
           item_id: 126
           item_data: 0
-          name: 'Древесина'
+          name: 'T1 Обработанная древесина'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'
@@ -354,7 +354,7 @@ materials:
         - id: 'mat_refined_wood_alt2'
           item_id: 126
           item_data: 0
-          name: 'Древесина'
+          name: 'T1 Обработанная древесина'
           craftable: true
           shaped: false
           category: '<lightgreen>1 Уровень материалов'

@@ -7,7 +7,7 @@
 buffs:
     - id: 'buff_construction'
       name: 'Хороший материал'
-      description: 'Количество молотков увеличивается на <lightgreen>100<r>. <gold>Складывается<r>'
+      description: 'Количество молотков увеличивается на <lightgreen>100<r>. <green>*Складывается*<r>'
 #      value: '0.25'
       value: '100'
       stackable: true
@@ -15,14 +15,14 @@ buffs:
    
     - id: 'buff_year_of_plenty'
       name: 'Легкообрабатываемая культура'
-      description: 'Растительность увеличивается на <lightgreen>20%<r>. <gold>Складывается<r>'
+      description: 'Растительность увеличивается на <lightgreen>20%<r>. <green>Складывается<r>'
       value: '0.2'
       stackable: true
       parent:
 
     - id: 'buff_monopoly'
       name: 'Монополия'
-      description: 'Доход с торговых ресурсов увеличивается <lightgreen>15%<r> <gold>Складывается<r>'
+      description: 'Доход с торговых ресурсов увеличивается <lightgreen>15%<r> <green>Складывается<r>'
       value: '0.15'
       stackable: true
       parent:
@@ -36,7 +36,7 @@ buffs:
 
     - id: 'buff_advanced_tooling'
       name: 'Обновление способа добычи'
-      description: 'Молотки, добываемые шахтами,увеличиваются на <lightgreen>50%<r> <gold>Складывается<r>'
+      description: 'Молотки, добываемые шахтами,увеличиваются на <lightgreen>50%<r> <green>Складывается<r>'
       value: '0.5'
       stackable: true
       parent:
@@ -50,7 +50,7 @@ buffs:
 
     - id: 'buff_barter'
       name: 'Бартер'
-      description: 'Курс обмена полезных ископаемых в банке увличивается нахождение <lightgreen>5%<r> <gold>Складывается<r>'
+      description: 'Курс обмена полезных ископаемых в банке увличивается нахождение <lightgreen>5%<r> <green>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
@@ -134,21 +134,21 @@ buffs:
 
     - id: 'buff_profit_sharing'
       name: 'Инновационное открытие'
-      description: 'Количество пробирок, необходимых для изучения техологий, уменьшается на <lightgreen>5%<r> <gold>Складывается<r>'
+      description: 'Количество пробирок, необходимых для изучения техологий, уменьшается на <lightgreen>5%<r> <green>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
 
     - id: 'buff_innovation'
       name: 'Предмет для исследования'
-      description: 'Количество монет, необходимых для изучения технологий, уменьшается на<lightgreen>5%<r> <gold>Складывается<r>'
+      description: 'Количество монет, необходимых для изучения технологий, уменьшается на<lightgreen>5%<r> <green>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
 
     - id: 'buff_hedonism'
       name: 'Изысканный предмет'
-      description: 'Количество счастья увеличивается на <lightgreen>3<r> <gold>Складывается<r>'
+      description: 'Количество счастья увеличивается на <lightgreen>3<r> <green>Складывается<r>'
       value: '3.0'
       stackable: true
       parent:

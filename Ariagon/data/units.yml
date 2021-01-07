@@ -46,7 +46,7 @@ units:
     require_tech: 'tech_nationalism'
     require_struct:
     require_upgrade:
-    cost: 5000.0
+    cost: 15000.0
     hammer_cost: 500.0
     limit: 1
     item_id: 381

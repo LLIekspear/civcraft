@@ -12,7 +12,7 @@ town:
     min_town_distance: 150.0
     
     # Min distance from another town that is your enemy
-    min_town_distance_enemy: 300.0
+    min_town_distance_enemy: 250.0
 
     # Cost to claim an outpost.
     outpost_cost: 5000.0
@@ -46,7 +46,7 @@ town:
     buildable_refresh_cooldown: 30
     
     # Number of days a mayor must be inactive before being able to be reclaimed
-    mayor_inactive_days: 7
+    mayor_inactive_days: 5
 
     # The Lighthouse Trade ship coin boost (Default 1.2 [20%])
     lighthouse_trade_ship_boost: 1.2
@@ -68,60 +68,56 @@ town_levels:
       tile_improvements: 4
 
     - level: 2
-      title: 'Село'
-      upkeep: 750.0
+      title: 'Посёлок'
+      upkeep: 1000.0
       plots: 64
       plot_cost: 1000.0
       tile_improvements: 6
 
     - level: 3
-      title: 'Деревня'
-      upkeep: 1250.0
+      title: 'Село'
+      upkeep: 1500.0
       plots: 80
       plot_cost: 2000.0
       tile_improvements: 8
     
     - level: 4
-      title: 'Большая деревня'
-      upkeep: 2000.0
+      title: 'Деревушка'
+      upkeep: 3000.0
       plots: 128
       plot_cost: 3500.0
       tile_improvements: 12
 
     - level: 5
-      title: 'Городок'
-      upkeep: 3500.0
+      title: 'Деревня'
+      upkeep: 5000.0
       plots: 256
       plot_cost: 5000.0
       tile_improvements: 15
 
-
     - level: 6
-      title: 'Большой городок'
-      upkeep: 5500.0
+      title: 'Небольшой город'
+      upkeep: 7500.0
       plots: 512
       plot_cost: 7500.0
       tile_improvements: 17
 
-
     - level: 7
       title: 'Город'
-      upkeep: 7000.0
+      upkeep: 10000.0
       plots: 1024
       plot_cost: 15000.0
       tile_improvements: 20
 
-
     - level: 8
       title: 'Большой город'
-      upkeep: 8000.0
+      upkeep: 15000.0
       plots: 2048
       plot_cost: 20000.0
       tile_improvements: 25
 
-
     - level: 9
-      title: 'Метрополис'
+      title: 'Мегаполис'
       upkeep: 25000.0
       plots: 4096
       plot_cost: 30000.0
@@ -140,7 +136,7 @@ town_levels:
 
 upgrades:
     - id: 'upgrade_town_level_2'
-      name: 'Село'
+      name: 'Посёлок'
       cost: 10000.0
       action: 'set_town_level,2'
       require_upgrade:
@@ -148,7 +144,7 @@ upgrades:
       category: 'Город'
       
     - id: 'upgrade_town_level_3'
-      name: 'Деревня'
+      name: 'Село'
       cost: 20000.0
       action: 'set_town_level,3'
       require_upgrade: 'upgrade_town_level_2'
@@ -156,7 +152,7 @@ upgrades:
       category: 'Город'
 
     - id: 'upgrade_town_level_4'
-      name: 'Большая деревня'
+      name: 'Деревушка'
       cost: 30000.0
       action: 'set_town_level,4'
       require_upgrade: 'upgrade_town_level_3'
@@ -164,7 +160,7 @@ upgrades:
       category: 'Город'
 
     - id: 'upgrade_town_level_5'
-      name: 'Городок'
+      name: 'Деревня'
       cost: 50000.0
       action: 'set_town_level,5'
       require_upgrade: 'upgrade_town_level_4'
@@ -172,7 +168,7 @@ upgrades:
       category: 'Город'
 
     - id: 'upgrade_town_level_6'
-      name: 'Большой городок'
+      name: 'Небольшой город'
       cost: 125000.0
       action: 'set_town_level,6'
       require_upgrade: 'upgrade_town_level_5'
@@ -196,7 +192,7 @@ upgrades:
       category: 'Город'
 
     - id: 'upgrade_town_level_9'
-      name: 'Метрополис'
+      name: 'Мегаполис'
       cost: 1000000.0
       action: 'set_town_level,9'
       require_upgrade: 'upgrade_town_level_8'
@@ -206,7 +202,7 @@ upgrades:
    
     # Bank Upgrades 
     - id: 'upgrade_bank_level_2'
-      name: 'Банк 2 уровня'
+      name: 'Банк 2'
       cost: 4000.0
       action: 'set_bank_level,2'
       require_upgrade:
@@ -215,7 +211,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_level_3'
-      name: 'Банк 3 уровня'
+      name: 'Банк 3'
       cost: 6000.0
       action: 'set_bank_level,3'
       require_upgrade: 'upgrade_bank_level_2'
@@ -224,7 +220,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_level_4'
-      name: 'Банк 4 уровня'
+      name: 'Банк 4'
       cost: 12000.0
       action: 'set_bank_level,4'
       require_upgrade: 'upgrade_bank_level_3'
@@ -233,7 +229,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_level_5'
-      name: 'Банк 5 уровня'
+      name: 'Банк 5'
       cost: 14000.0
       action: 'set_bank_level,5'
       require_upgrade: 'upgrade_bank_level_4'
@@ -242,7 +238,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_level_6'
-      name: 'Банк 6 уровня'
+      name: 'Банк 6'
       cost: 16000.0
       action: 'set_bank_level,6'
       require_upgrade: 'upgrade_bank_level_5'
@@ -251,7 +247,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_level_7'
-      name: 'Банк 7 уровня'
+      name: 'Банк 7'
       cost: 18000.0
       action: 'set_bank_level,7'
       require_upgrade: 'upgrade_bank_level_6'
@@ -260,7 +256,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_level_8'
-      name: 'Банк 8 уровня'
+      name: 'Банк 8'
       cost: 20000.0
       action: 'set_bank_level,8'
       require_upgrade: 'upgrade_bank_level_7'
@@ -269,7 +265,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_level_9'
-      name: 'Банк 9 уровня'
+      name: 'Банк 9'
       cost: 22000.0
       action: 'set_bank_level,9'
       require_upgrade: 'upgrade_bank_level_8'
@@ -278,7 +274,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_level_10'
-      name: 'Банк 10 уровня'
+      name: 'Банк 10'
       cost: 24000.0
       action: 'set_bank_level,10'
       require_upgrade: 'upgrade_bank_level_9'
@@ -287,7 +283,7 @@ upgrades:
       category: 'Банк'
 
     - id: 'upgrade_bank_interest_level_1'
-      name: 'Банковский процент I'
+      name: 'Интересы банка 1'
       cost: 2000.0
       action: 'set_bank_interest,0.0075'
       require_upgrade: 'upgrade_bank_level_2'
@@ -296,7 +292,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_interest_level_2'
-      name: 'Банковский процент II'
+      name: 'Интересы банка 2'
       cost: 4000.0
       action: 'set_bank_interest,0.0100'
       require_upgrade: 'upgrade_bank_interest_level_1'
@@ -305,7 +301,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_interest_level_3'
-      name: 'Банковский процент III'
+      name: 'Интересы банка 3'
       cost: 8000.0
       action: 'set_bank_interest,0.0150'
       require_upgrade: 'upgrade_bank_interest_level_2'
@@ -314,7 +310,7 @@ upgrades:
       category: 'Банк'
     
     - id: 'upgrade_bank_interest_level_4'
-      name: 'Банковский процент IV'
+      name: 'Интересы банка 4'
       cost: 16000.0
       action: 'set_bank_interest,0.0250'
       require_upgrade: 'upgrade_bank_interest_level_3'
@@ -342,7 +338,7 @@ upgrades:
    # TODO might not need 4 store levels.
    #
     - id: 'upgrade_store_material_soul_sand'
-      name: 'Магазин с песком душ'
+      name: 'Песок душ'
       action: 'set_store_material, 88, 0, Soul Sand, 320'
       cost: 350.0
       require_upgrade:
@@ -351,7 +347,7 @@ upgrades:
       category: 'Магазин'
 
     - id: 'upgrade_store_material_netherrack'
-      name: 'Магазин с адским камнем'
+      name: 'Адский камент'
       action: 'set_store_material, 87, 0, Netherrack, 320'
       cost: 350.0
       require_upgrade:
@@ -362,7 +358,7 @@ upgrades:
     
     # XXX This is the Single bricks. 
     - id: 'upgrade_store_material_nether_brick'
-      name: 'Магазин с адским кирпичем'
+      name: 'Адский кирпич'
       action: 'set_store_material, 405, 0, Nether Brick, 250'
       cost: 350.0
       require_upgrade:
@@ -371,7 +367,7 @@ upgrades:
       category: 'Магазин'
     
     - id: 'upgrade_store_material_quartz'
-      name: 'Магазин с квартцем'
+      name: 'Кварц'
       action: 'set_store_material, 406, 0, Quartz, 320'
       cost: 350.0
       require_upgrade:
@@ -380,7 +376,7 @@ upgrades:
       category: 'Магазин'
     
     - id: 'upgrade_store_material_blaze_rod'
-      name: 'Магазин с палками ифрита'
+      name: 'Стержень ифрита'
       action: 'set_store_material, 369, 0, Blaze Rod, 3000'
       cost: 350.0
       require_upgrade:
@@ -389,7 +385,7 @@ upgrades:
       category: 'Магазин' 
    
     - id: 'upgrade_store_material_magma_cream'
-      name: 'Магазин с сгустоком магмы'
+      name: 'Сгусток магмы'
       action: 'set_store_material, 378, 0, Magma Cream, 4500'
       cost: 350.0
       require_tech:
@@ -397,7 +393,7 @@ upgrades:
       category: 'Магазин'
  
     - id: 'upgrade_store_material_glowstone_dust'
-      name: 'Магазин с светящаюся пылью'
+      name: 'Святящаяся пыль'
       action: 'set_store_material, 348, 0, Glowstone Dust, 2500'
       cost: 350.0
       require_upgrade:
@@ -411,7 +407,7 @@ upgrades:
 # Library Upgrades
 
     - id: 'upgrade_library_level_2'
-      name: 'Библиотека 2 уровня'
+      name: 'Библиотека 2'
       action: 'set_library_level, 2'
       cost: 5000.0
       require_upgrade:
@@ -420,7 +416,7 @@ upgrades:
       category: 'Библиотека'
   
     - id: 'upgrade_library_level_3'
-      name: 'Библиотека 3 уровня'
+      name: 'Библиотека 3'
       action: 'set_library_level, 3'
       cost: 10000.0
       require_upgrade: 'upgrade_library_level_2'
@@ -429,7 +425,7 @@ upgrades:
       category: 'Библиотека'
   
     - id: 'upgrade_library_level_4'
-      name: 'Библиотека 4 уровня'
+      name: 'Библиотека 4'
       action: 'set_library_level, 4'
       cost: 15000.0
       require_upgrade: 'upgrade_library_level_3'
@@ -519,7 +515,7 @@ upgrades:
       category: 'Библиотека'
     
     - id: 'research_soulbound'
-      name: 'Печать души'
+      name: 'Невыпадение'
       action: 'enable_library_enchantment, LoreEnhancementSoulBound, 1, 30000'
       cost: 2500.0
       require_upgrade: 'upgrade_library_level_2'
@@ -538,7 +534,7 @@ upgrades:
 
 # Grocer upgrades
     - id: 'upgrade_grocer_level_2'
-      name: 'Бакалея 2 уровня'
+      name: 'Бакалея 2'
       action: 'set_grocer_level, 2'
       cost: 2500.0
       require_upgrade:
@@ -547,7 +543,7 @@ upgrades:
       category: 'Бакалея'
 
     - id: 'upgrade_grocer_level_3'
-      name: 'Бакалея 3 уровня'
+      name: 'Бакалея 3'
       action: 'set_grocer_level, 3'
       cost: 3000.0
       require_upgrade: 'upgrade_grocer_level_2'
@@ -556,7 +552,7 @@ upgrades:
       category: 'Бакалея'
 
     - id: 'upgrade_grocer_level_4'
-      name: 'Бакалея 4 уровня'
+      name: 'Бакалея 4'
       action: 'set_grocer_level, 4'
       cost: 5000.0
       require_upgrade: 'upgrade_grocer_level_3'
@@ -628,7 +624,7 @@ upgrades:
       require_upgrade:
       require_tech: 'tech_currency'
       require_structure: 'ti_fish_hatchery'
-      category: 'Рыбная Ферма'
+      category: 'Рыбная ферма'
 
     - id: 'upgrade_fish_hatchery_level_3'
       name: 'Бассейн рыбной фермы 3'
@@ -637,7 +633,7 @@ upgrades:
       require_upgrade: 'upgrade_fish_hatchery_level_2'
       require_tech: 'tech_apprenticeship'
       require_structure: 'ti_fish_hatchery'
-      category: 'Рыбная Ферма'
+      category: 'Рыбная ферма'
 
     - id: 'upgrade_fish_hatchery_level_4'
       name: 'Бассейн рыбной фермы 4'
@@ -646,51 +642,51 @@ upgrades:
       require_upgrade: 'upgrade_fish_hatchery_level_3'
       require_tech: 'tech_mass_production'
       require_structure: 'ti_fish_hatchery'
-      category: 'Рыбная Ферма'
+      category: 'Рыбная ферма'
 
 # Trade Ship Upgrades
 
     - id: 'upgrade_tradeship_level_2'
-      name: 'Торговое судно 2 уровня'
+      name: 'Торговый корабль 2 '
       action: 'set_tradeship_upgrade_level, 2'
       cost: 50000.0
       require_upgrade:
       require_tech: 'tech_cartography'
       require_structure: 'ti_trade_ship'
-      category: 'Торговое судно'
+      category: 'Торговый корабль'
   
     - id: 'upgrade_tradeship_level_3'
-      name: 'Торговое судно 3 уровня'
+      name: 'Торговый корабль 3'
       action: 'set_tradeship_upgrade_level, 3'
       cost: 100000.0
       require_upgrade: 'upgrade_tradeship_level_2'
       require_tech: 'tech_square_rigging'
       require_structure: 'ti_trade_ship'
-      category: 'Торговое судно'
+      category: 'Торговый корабль'
   
     - id: 'upgrade_tradeship_level_4'
-      name: 'Торговое судно 4 уровня'
+      name: 'Торговый корабль 4'
       action: 'set_tradeship_upgrade_level, 4'
       cost: 250000.0
       require_upgrade: 'upgrade_tradeship_level_3'
       require_tech: 'tech_steam_power'
       require_structure: 'ti_trade_ship'
-      category: 'Торговое судно'
+      category: 'Торговый корабль'
   
     - id: 'upgrade_tradeship_level_5'
-      name: 'Торговое судно 5 уровня'
+      name: 'Торговый корабль 5'
       action: 'set_tradeship_upgrade_level, 5'
       cost: 500000.0
       require_upgrade: 'upgrade_tradeship_level_4'
       require_tech: 'tech_electricity'
       require_structure: 'ti_trade_ship'
-      category: 'Торговое судно'
+      category: 'Торговый корабль'
   
     - id: 'upgrade_tradeship_level_6'
-      name: 'Торговое судно 6 уровня'
+      name: 'Торговый корабль 6'
       action: 'set_tradeship_upgrade_level, 6'
       cost: 1000000.0
       require_upgrade: 'upgrade_tradeship_level_5'
       require_tech: 'tech_telecommunications'
       require_structure: 'ti_trade_ship'
-      category: 'Торговое судно'
+      category: 'Торговый корабль'
