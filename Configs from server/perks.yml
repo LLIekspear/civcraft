@@ -65,15 +65,15 @@ perks:
             template: 'camp'
             id: 'camp'
 
-    # - id: 'perk_viking_camp'
-    #   display_name: 'Лагерь викингов'
-    #   item_id: 170
-    #   data: 0
-    #   components:
-    #       - name: 'CustomPersonalTemplate'
-    #         theme: 'viking'
-    #         template: 'camp'
-    #         id: 'camp'
+    - id: 'perk_viking_camp'
+      display_name: 'Лагерь викингов'
+      item_id: 170
+      data: 0
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'viking'
+            template: 'camp'
+            id: 'camp'
 
 # ===== Lightz TEMPLATES
     - id: 'perk_lightz_monument'
@@ -188,6 +188,13 @@ perks:
       components:
           - name: 'CustomTemplate'
 
+    - id: 'template_japanese'
+      display_name: 'Восточный стиль'
+      simple_name: "japanese"
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
 ############ ARCTIC THEME
     - id: 'tpl_arctic_camp'
       display_name: 'Арктический лагерь'
@@ -2230,4 +2237,152 @@ perks:
       components:
           - name: 'CustomTemplate'
             theme: 'medieval'
+            template: 'windmill'
+# # ===== Japanese TEMPLATES
+
+    - id: 'tpl_japanese_arrow_tower'
+      display_name: 'Восточная башня лучников'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'arrow_tower'
+
+    - id: 'tpl_japanese_bank'
+      display_name: 'Восточный банк'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'bank'
+
+    - id: 'tpl_japanese_cannon_tower'
+      display_name: 'Восточная башня пушкарей'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'cannon_tower'
+
+    - id: 'tpl_japanese_capitol'
+      display_name: 'Восточный капитолий'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'japanese'
+            template: 'capitol'
+            id: 's_capitol'
+
+    - id: 'tpl_japanese_cottage'
+      display_name: 'Восточный коттедж'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'cottage'
+
+    - id: 'tpl_japanese_granary'
+      display_name: 'Восточный амбар'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'granary'
+
+#    - id: 'tpl_medieval_grocer'
+#      display_name: 'Средневековая бакалея'
+#      item_id: 267
+#      data: 0
+#      components:
+#          - name: 'CustomTemplate'
+#            theme: 'medieval'
+#            template: 'grocer'
+
+    - id: 'tpl_japanese_library'
+      display_name: 'Восточная библиотека'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'library'
+
+    - id: 'tpl_japanese_mine'
+      display_name: 'Восточная шахта'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'mine'
+
+
+    - id: 'tpl_japanese_monument'
+      display_name: 'Восточный монумент'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'monument'
+
+    - id: 'tpl_japanese_scout_tower'
+      display_name: 'Восточная башня скаутов'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'scout_tower'
+
+    - id: 'tpl_japanese_temple'
+      display_name: 'Восточный храм'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'temple'
+
+    - id: 'tpl_japanese_town_hall'
+      display_name: 'Восточная ратуша'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomPersonalTemplate'
+            theme: 'japanese'
+            template: 'town_hall'
+            id: 's_townhall'
+
+    - id: 'tpl_japanese_trade_outpost'
+      display_name: 'Восточный торгоый пост'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'trade_outpost'
+
+    - id: 'tpl_japanese_trommel'
+      display_name: 'Восточная дробилка'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
+            template: 'trommel'
+
+    - id: 'tpl_japanese_windmill'
+      display_name: 'Восточная мельница'
+      item_id: 168
+      data: 2
+      components:
+          - name: 'CustomTemplate'
+            theme: 'japanese'
             template: 'windmill'

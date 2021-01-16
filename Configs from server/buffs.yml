@@ -1,0 +1,401 @@
+#
+# This files contains defines for buffs which can be applied to bonus goodies.
+# Eventually these buffs may also apply to governments and/or wonders
+#
+#
+
+buffs:
+    - id: 'buff_construction'
+      name: 'Хороший материал'
+      description: 'Количество молотков увеличивается на <lightgreen>100<r>. <gold>Складывается<r>'
+#      value: '0.25'
+      value: '100'
+      stackable: true
+      parent:
+   
+    - id: 'buff_year_of_plenty'
+      name: 'Легкообрабатываемая культура'
+      description: 'Растительность увеличивается на <lightgreen>20%<r>. <gold>Складывается<r>'
+      value: '0.2'
+      stackable: true
+      parent:
+
+    - id: 'buff_monopoly'
+      name: 'Монополия'
+      description: 'Доход с торговых ресурсов увеличивается <lightgreen>15%<r> <gold>Складывается<r>'
+      value: '0.15'
+      stackable: true
+      parent:
+    
+    - id: 'buff_preservative'
+      name: 'Консервант'
+      description: 'Потребление еды коттеджами уменьшается на <lightgreen>50%<r> <red>Не складывается<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_advanced_tooling'
+      name: 'Обновление способа добычи'
+      description: 'Молотки, добываемые шахтами,увеличиваются на <lightgreen>50%<r> <gold>Складывается<r>'
+      value: '0.5'
+      stackable: true
+      parent:
+
+    - id: 'buff_barricade'
+      name: 'Баррикады'
+      description: 'Прочность оборонительных строений увеличивается на <lightgreen>50%<r> <red>Не складывается<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_barter'
+      name: 'Бартер'
+      description: 'Курс обмена полезных ископаемых в банке увличивается нахождение <lightgreen>5%<r> <gold>Складывается<r>'
+      value: '0.05'
+      stackable: true
+      parent:
+
+    - id: 'buff_fine_art'
+      name: 'Предмет для вдохновления'
+      description: 'Прирост культуры увеличивается на <lightgreen>25%<r> <red>Не складывается<r>'
+      value: '0.25'
+      stackable: false
+      parent:
+
+    - id: 'buff_art_appreciation'
+      name: 'Оценка искусства'
+      description: 'Увеличивает производство культуры города на <lightgreen>20%<r> <red>Не складывается<r>'
+      value: '0.20'
+      stackable: false
+      parent:
+
+    - id: 'buff_extraction'
+      name: 'Обновление для инструмента'
+      description: 'Добыча полезных ископаемых дробилкой и карьером увеличивается на <lightgreen>50%<r> <red>Не складывается<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_fire_bomb'
+      name: 'Воспламеняющееся вещество'
+      description: 'Урон от башен и кораблей лучников и пушкарей увеличивается на<lightgreen>50%<r> Стрелы от башен и кораблей лучников воспламеняются. <red>Не складывается<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_fishing'
+      name: 'Рыбалка'
+      description: 'Возможность заменить потребление коттеджами хлеба на потребление рыбы по курсу: <lightgreen>1 рыба = 2 хлеба<r> <red>Не складывается<r>'
+      value: '2'
+      stackable: false
+      parent:
+    
+    - id: 'buff_greed'
+      name: 'Алчность'
+      description: 'Увеличивает процентные ставки на <lightgreen>3%<r> <red>Не складывается<r>'
+      value: '0.03'
+      stackable: false
+      parent:
+
+    - id: 'buff_medicine'
+      name: 'Лечебные свойства'
+      description: 'Время для возможности возрождения во время войны уменьшается на <lightgreen>50<r> секунд<r> <red>Не складывается<r>'
+      value: '50'
+      stackable: false
+      parent:
+    
+    - id: 'buff_dirty_money'
+      name: 'Средство проникновения'
+      description: 'Increases the chances of Steal Treasury by <lightgreen>50%<r> <red>Not Stackable<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_espionage'
+      name: 'Яд'
+      description: 'Увеличивает шанс успешного выполнения миссии "Отравление амбара" на <lightgreen>50%<r> <red>Не cкладывается<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_sabotage'
+      name: 'Инструмент эффективного разрушения'
+      description: 'Увеличивает шанс успешного выполнения миссии "Саботаж" на <lightgreen>50%<r> <red>Не складывается<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+    
+    - id: 'buff_rush'
+      name: 'Энергетик'
+      description: 'Количество молотков, необходимых для постройки Чудес Света и строений, уменьшается на <lightgreen>15%<r> <red>Не складывается<r>'
+      value: '0.15'
+      stackable: false
+      parent:
+
+    - id: 'buff_profit_sharing'
+      name: 'Инновационное открытие'
+      description: 'Количество пробирок, необходимых для изучения техологий, уменьшается на <lightgreen>5%<r> <gold>Складывается<r>'
+      value: '0.05'
+      stackable: true
+      parent:
+
+    - id: 'buff_innovation'
+      name: 'Предмет для исследования'
+      description: 'Количество монет, необходимых для изучения технологий, уменьшается на<lightgreen>5%<r> <gold>Складывается<r>'
+      value: '0.05'
+      stackable: true
+      parent:
+
+    - id: 'buff_hedonism'
+      name: 'Изысканный предмет'
+      description: 'Количество счастья увеличивается на <lightgreen>3<r> <gold>Складывается<r>'
+      value: '3.0'
+      stackable: true
+      parent:
+
+    - id: 'buff_noanarchy'
+      name: 'Нет анархии'
+      description: 'Цивилизация уменьшает на 50% времени нахождения в анархии, макс. 2ч.<r> <red>Не складывается<r>'
+      value: '0'
+      stackable: false
+      parent:
+
+    - id: 'buff_reduced_anarchy'
+      name: 'Анархия'
+      description: 'Цивилизация увеличивает нахождение в анархии на 50%.<r> <red>Не складывается<r>'
+      value: '0.5'
+      stackable: false
+      parent:
+
+# PYRAMID BUFFS
+    - id: 'buff_pyramid_cottage_consume'
+      name: 'Пирамида уменьшает потребление хлеба'
+      description: 'Сокращает потребление хлеба 1/4'
+      value: '0.25'
+      stackable: false
+      parent:
+
+    - id: 'buff_pyramid_cottage_bonus'
+      name: 'Пирамида увеличивает выпуск коттеджей'
+      description: 'Увеличивает доход от коттеджа на 10%'
+      value: '1.1'
+      stackable: false
+      parent:
+
+    - id: 'buff_pyramid_culture'
+      name: 'Бонус культуры за пирамиды' 
+      description: 'Увеличивает культурную отдачу от цивилизации на 50%'
+      value: '0.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_pyramid_leech'
+      name: 'Бонус культуры от других цивилизаций'
+      description: '1% культуры получают из ближайшей цивилизации.'
+      value: '0.01'
+      stackable: false
+      parent:
+
+    - id: 'debuff_pyramid_leech'
+      name: 'Бонус культуры от других цивилизаций'
+      description: '1% получает культуры. Дает его городу с пирамидой.'
+      value: '0.01'
+      stackable: false
+      parent:
+# Great library buffs
+    - id: 'buff_greatlibrary_extra_beakers'
+      name: 'Наука от Великой библиотеки'
+      description: 'Предоставляет 10% дополнительных очков исследований для цивилизации.'
+      value: '0.1'
+      stackable: false
+      parent:
+
+    - id: 'buff_greatlibrary_double_tax_beakers'
+      name: 'Великая библиотека увеличивает эффективность'
+      description: 'Удваивает эффективность налоговых монет, потраченных на очки исследований'
+      value: '2'
+      stackable: false
+      parent:
+
+# Hanging Gardens buffs
+    - id: 'buff_hanging_gardens_growth'
+      name: 'Висячие Сады бонус роста'
+      description: 'Дает 25% бонус к темпам роста всей цивилизации.'
+      value: '0.25'
+      stackable: false
+      parent:
+
+    - id: 'buff_hanging_gardens_regen'
+      name: 'Висячие Сады бонус восстановления'
+      description: 'Дает скорость восстановления здоровья 1/2 hp в секунду в городе.'
+      value: '0.5'
+      stackable: false
+      parent:
+    
+    - id: 'buff_hanging_gardens_additional_growth'
+      name: 'Висячие Сады дополнительного роста'
+      description: 'Предоставляет дополнительный 10% темп роста для каждого винограда, который используется цивилизацией'
+      value: '0.1'
+      stackable: false
+      parent:
+
+# Colossus buffs
+    - id: 'debuff_colossus_leech_upkeep'
+      name: 'Содеражние Колосса'
+      description: 'Забирают 2% от вашего содержания платежей и отправляет его в город с Колоссом.'
+      value: '0.02'
+      stackable: false
+      parent:
+
+    - id: 'buff_colossus_reduce_upkeep'
+      name: 'Снизить содержание Колосса'
+      description: 'Уменьшает содержание вашего города на 25%'
+      value: '0.25'
+      stackable: false
+      parent:
+
+    - id: 'buff_colossus_coins_from_culture'
+      name: 'Монеты колосса из культуры'
+      description: 'Дает 5 монет в день цивилизации за каждый культурную территорию, принадлежащий ей.'
+      value: '5'
+      stackable: false
+      parent:
+# Notre Dame buffs
+    - id: 'buff_notre_dame_no_anarchy'
+      name: 'Нотр-Дам уменьшает анархию'
+      description: 'Цивилизация страдает меньше на 1/2 во время анархии и правительственных изменений.'
+      value: '0.5'
+      stackable: false
+      parent: 'buff_noanarchy'
+
+    - id: 'buff_notre_dame_coins_from_peace'
+      name: 'Монеты мира Нотр-Дам'
+      description: 'Цивилизация собирает монеты из каждого города в каждой цивилизации, которая в настоящее время не находится в состоянии войны.'
+      value: '2000'
+      stackable: false
+      parent:
+
+    - id: 'buff_notre_dame_extra_war_penalty'
+      name: 'Нотр-Дам Дополнительная военная казнь'
+      description: 'Агрессоры платят 2x военные штрафы при объявлении войны этой цивилизации или ее союзникам.'
+      value: '2'
+      stackable: false
+      parent:
+
+# Chichen Itza buffs
+    - id: 'buff_chichen_itza_tower_hp'
+      name: 'Чичен-Ица башня HP'
+      description: 'Увеличивает HP башен на 15%'
+      value: '0.15'
+      stackable: false
+      parent:
+
+    - id: 'buff_chichen_itza_regen_rate'
+      name: 'Чичен-Ица восстановления'
+      description: 'Увеличивает скорость восстановления всех структур на 2 hp в секунду.'
+      value: '2'
+      stackable: false
+      parent:
+
+    - id: 'buff_chichen_itza_cp_bonus_hp'
+      name: 'Бонус HP контрольной точки Чичен-Ица'
+      description: 'Увеличивает hp всех контрольных точек города на 10.'
+      value: '10'
+      stackable: false
+      parent:
+
+#Colosseum Buffs
+    - id: 'buff_colosseum_coins_from_towns'
+      name: 'Колизей монеты из городов'
+      description: 'Приносит 2000 монет в день цивилизации за каждый город в мире.'
+      value: '2000'
+      stackable: false
+      parent:
+
+#Globe Theatre Buffs
+    - id: 'buff_globe_theatre_culture_from_towns'
+      name: 'Театр "Глобус" культура из городов'
+      description: 'Увеличение культуры на 100 для каждого города в мире.'
+      value: '100'
+      stackable: false
+      parent:
+
+#Great Lighthouse Buffs
+    - id: 'buff_great_lighthouse_tower_range'
+      name: 'Александрийский маяк дальность'
+      description: 'Увеличить дальность стрельбы башни в этом городе на 50%'
+      value: '1.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_great_lighthouse_trade_ship_income'
+      name: 'Александрийский маяк доходы'
+      description: 'Торговые суда зарабатывают на 20% больше за продажу предметов'
+      value: '1.2'
+      stackable: false
+      parent:
+
+# Mother Tree buffs
+    - id: 'buff_mother_tree_growth'
+      name: 'Бонус роста Материнского дерева'
+      description: 'Дает бонус 50% к темпам роста фермы по всей цивилизации.'
+      value: '0.50'
+      stackable: false
+      parent:
+
+    - id: 'buff_mother_tree_tile_improvement_cost'
+      name: 'Mother Tree Tile Improvment Cost'
+      description: 'Tile Improvements cost 20% less across the civilization.'
+      value: '0.20'
+      stackable: false
+      parent:
+
+    - id: 'buff_mother_tree_tile_improvement_bonus'
+      name: 'Материнское дерево бонус плитки совершенствование'
+      description: 'В этом городе можно построить в два раза больше улучшений плитки.'
+      value: '0.20'
+      stackable: false
+      parent:
+
+# Grand Ship Ingermanland Buffs
+    - id: 'buff_ingermanland_fishing_boat_immunity'
+      name: 'Ингерманландский иммунитет рыбацкой лодке'
+      description: 'Рыбацкие лодки невосприимчивы к шпионским миссиям.'
+      value: '1.0'
+      stackable: false
+      parent:
+
+    - id: 'buff_ingermanland_trade_ship_income'
+      name: 'Ингерманландский доход торгового судна'
+      description: 'Trade Ships earn 30% more for selling items'
+      value: '1.3'
+      stackable: false
+      parent:
+
+    - id: 'buff_ingermanland_water_range'
+      name: 'Ингерманландский военно-морской флот дальность'
+      description: 'Военно-морские корабли имеют на 50% большую дальность атаки'
+      value: '1.5'
+      stackable: false
+      parent:
+
+    - id: 'buff_oracle_spy'
+      name: 'Оракул'
+      description: 'Все шпионские миссии противника теряют 50% успеха.'
+      value: '1.0'
+      stackable: false
+      parent:
+
+    - id: 'buff_tokyo_tower_spy'
+      name: 'Телевизионная башня Токио - шпионаж'
+      description: 'Все шпионские миссии получают на 50% больше успеха.'
+      value: '1.0'
+      stackable: false
+      parent:
+
+    - id: 'buff_tokyo_tower_radio'
+      name: 'Телевизионная башня Токио - радиовышки'
+      description: 'Все радиовышки приносят на 100% больше культуры городу.'
+      value: '1.0'
+      stackable: false
+      parent:

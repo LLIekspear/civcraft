@@ -7,7 +7,7 @@
 # Secondary Materials
 # Weapons
 # Armors
-# Special (camps, civs, etc)
+# Специальные (camps, civs, etc)
 #
 # We will be able to attach components to these items which
 # will passed in-game events such as onItemPickup() and onItemUse()
@@ -80,7 +80,7 @@ materials:
           name: 'Т1 Обработанная кожа'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 334
                 data: 0
@@ -93,7 +93,7 @@ materials:
           name: 'T1 Очищенный камень'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 4
                 data: 0
@@ -106,7 +106,7 @@ materials:
           name: 'T1 Очищенный камень'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 1
                 data: 1
@@ -119,7 +119,7 @@ materials:
           name: 'T1 Очищенный камень'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 1
                 data: 3
@@ -132,7 +132,7 @@ materials:
           name: 'T1 Очищенный камень'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 1
                 data: 5
@@ -145,7 +145,7 @@ materials:
 #          name: 'Refined Gold'
 #          craftable: true
 #          shaped: false
-#          category: '<lightgreen>Tier 1 Materials'
+#          category: '<lightgreen>1 Уровень материалов'
 #          ingredients:
 #              - type_id: 266
 #                data: 0
@@ -158,7 +158,7 @@ materials:
           name: 'T1 Обработанные перья'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 288
                 data: 0
@@ -171,7 +171,7 @@ materials:
           name: 'T1 Обработанная нить'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 287
                 data: 0
@@ -184,7 +184,7 @@ materials:
           name: 'T1 Очищенная слизь'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 341 
                 custom_id: 'mat_vanilla_slime'
@@ -198,7 +198,7 @@ materials:
 #          name: 'Forged Iron Ingot'
 #          craftable: true
 #          shaped: false
-#          category: '<lightgreen>Tier 1 Materials'
+#          category: '<lightgreen>1 Уровень материалов'
 #          ingredients:
 #              - type_id: 265
 #                data: 0
@@ -213,7 +213,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 0.5
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 338
                 data: 0
@@ -226,7 +226,7 @@ materials:
 #          name: 'Refined Coal'
 #          craftable: true
 #          shaped: false
-#          category: '<lightgreen>Tier 1 Materials'
+#          category: '<lightgreen>1 Уровень материалов'
 #          ingredients:
 #              - type_id: 263
 #                data: 0
@@ -239,7 +239,7 @@ materials:
           name: 'T1 Обработанная палка'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 280
                 data: 0
@@ -252,7 +252,7 @@ materials:
           name: 'T1 Очищенный порох'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 289
                 data: 0
@@ -264,7 +264,7 @@ materials:
           name: 'T1 Очищенный песок'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 12
                 data: -1
@@ -277,7 +277,7 @@ materials:
           name: 'T1 Закалённая клина'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 337
                 data: 0
@@ -290,7 +290,7 @@ materials:
           name: 'T1 Рафинированный сахар'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 353
                 data: 0
@@ -303,7 +303,7 @@ materials:
           name: 'T1 Редкий нарост'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 372
                 data: 0
@@ -316,7 +316,7 @@ materials:
           name: 'T1 Кованый хром'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 0
                 data: 0
@@ -330,7 +330,7 @@ materials:
           name: 'T1 Кованый вольфрам'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 0
                 data: 0
@@ -344,7 +344,7 @@ materials:
           name: 'T1 Обработанная древесина'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 17
                 data: -1
@@ -357,7 +357,7 @@ materials:
           name: 'T1 Обработанная древесина'
           craftable: true
           shaped: false
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 162
                 data: -1
@@ -370,7 +370,7 @@ materials:
 #          name: 'Refined Diamonds'
 #          craftable: true
 #          shaped: false
-#          category: '<lightgreen>Tier 1 Materials'
+#          category: '<lightgreen>1 Уровень материалов'
 #          ingredients:
 #              - type_id: 264 
 #                data: 0
@@ -388,7 +388,7 @@ materials:
               - name: 'NoRightClick'
           craftable: false
           shaped: true
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
         
           # XXX Statically coded to drop from trommel 
         # Checked 10/8/13
@@ -400,7 +400,7 @@ materials:
           name: 'Хромовая руда'
           craftable: false
           shaped: true
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
 
 
 
@@ -416,7 +416,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_carved_leather'
@@ -436,7 +436,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 57
                 data: 0
@@ -451,7 +451,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_refined_stone'
@@ -468,7 +468,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1400.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 41
                 data: 0
@@ -483,7 +483,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_refined_wood'
@@ -499,7 +499,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_crafted_string'
@@ -523,7 +523,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 400.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 42
                 data: 0
@@ -545,7 +545,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -571,7 +571,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -596,7 +596,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_forged_clay'
@@ -621,7 +621,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 2.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_forged_chromium'
@@ -648,7 +648,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_crafted_sticks'
@@ -672,7 +672,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 1.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -692,7 +692,7 @@ materials:
           name: 'Стальное лезвие'
           craftable: true
           shaped: false
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_steel_ingot'
@@ -711,7 +711,7 @@ materials:
           name: 'Стальной эфес'
           craftable: true
           shaped: false
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_steel_ingot'
@@ -739,7 +739,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 400.0
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_steel_ingot'
@@ -756,7 +756,7 @@ materials:
 
 
 
-# <lightpurple>Tier 3 Materials =======================================================
+# <lightpurple>3 Уровень материалов =======================================================
 
 
         # Checked 10/8/13
@@ -768,7 +768,7 @@ materials:
           tradeable: true
           tradeValue: 5.0
           shaped: false
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_crafted_leather'
@@ -788,7 +788,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -818,7 +818,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_woven_threading'
@@ -842,7 +842,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 800.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_steel_ingot'
@@ -864,7 +864,7 @@ materials:
           name: 'Основа лука'
           craftable: true
           shaped: false
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_aged_wood_stave'
@@ -884,7 +884,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_woven_mesh_patch'
@@ -908,7 +908,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -934,7 +934,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_sticky_resin'
@@ -957,7 +957,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -982,7 +982,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -1009,7 +1009,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_sticky_resin'
@@ -1027,7 +1027,7 @@ materials:
           name: 'Королевская корона'
           craftable: true
           shaped: false
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'NoDurability'
           ingredients:
@@ -1050,7 +1050,7 @@ materials:
           name: 'Доказательство лидерства'
           craftable: true
           shaped: false
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'Tagged'
           ingredients:
@@ -1065,7 +1065,7 @@ materials:
           name: 'Знак лидера'
           craftable: true
           shaped: false
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'Tagged'
           ingredients:
@@ -1080,7 +1080,7 @@ materials:
           name: 'Жетон лидера'
           craftable: false
           shaped: false
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'Tagged'
          
@@ -1091,7 +1091,7 @@ materials:
           name: 'Шапка вождя'
           craftable: true
           shaped: false
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'NoDurability'
           ingredients:
@@ -1113,7 +1113,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_crushed_stone'
@@ -1127,7 +1127,7 @@ materials:
           name: 'Карбидовый эфес'
           craftable: true
           shaped: false
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_clay_steel_cast'
@@ -1154,7 +1154,7 @@ materials:
           name: 'Карбидное лезвие'
           craftable: true
           shaped: false
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_clay_steel_cast'
@@ -1178,7 +1178,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 800.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_sticky_resin'
@@ -1205,7 +1205,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 10.0
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_leather_straps'
@@ -1225,7 +1225,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 10.0
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_clay_tungsten_casting'
@@ -1247,7 +1247,7 @@ materials:
           name: 'Вольфрамовое лезвие'
           craftable: true
           shaped: false
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_clay_tungsten_casting'
@@ -1269,7 +1269,7 @@ materials:
           name: 'Вольфрамовый эфес'
           craftable: true
           shaped: false
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_clay_tungsten_casting'
@@ -1295,7 +1295,7 @@ materials:
           name: 'Композитная основа лука'
           craftable: true
           shaped: false
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_longbow_stave'
@@ -1317,7 +1317,7 @@ materials:
           name: 'Композитная нить'
           craftable: true
           shaped: false
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_smithy_resin'
@@ -1337,7 +1337,7 @@ materials:
           shaped: false
           tradeable: true
           tradeValue: 10.0
-          category: '<gold>Tier 3 Materials'
+          category: '<gold>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_milled_lumber'
@@ -1352,7 +1352,7 @@ materials:
           shaped: true
           tradeable: true
           tradeValue: 10.0
-          category: '<gold>Tier 3 Materials'
+          category: '<gold>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 data: 0
@@ -1363,7 +1363,7 @@ materials:
               - "ppp"
               - " p "
 
-# Special Recipes  ===========================================            
+# Специальные Recipes  ===========================================            
         # Checked 10/8/13
         - id: 'mat_found_civ'
           item_id: 425
@@ -1371,7 +1371,7 @@ materials:
           name: 'Флаг основания цивилизации'
           craftable: true
           shaped: true
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'FoundCivilization'
           ingredients:
@@ -1401,7 +1401,7 @@ materials:
           name: 'Костровище установки лагеря'
           craftable: true
           shaped: true
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'FoundCamp'
           ingredients:
@@ -1428,7 +1428,7 @@ materials:
           craftable: true
           shaped: true
           required_techs: 'tech_machinery'
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'FoundWarCamp'
           ingredients:
@@ -1456,7 +1456,7 @@ materials:
           craftable: true
           shaped: true
           required_techs: 'tech_advanced_artillery'
-          category: 'Special'
+          category: 'Специальные'
           components:
               - name: 'BuildCannon'
               - name: 'NoRightClick'
@@ -1483,7 +1483,7 @@ materials:
           name: 'Деревянный меч'
           craftable: true
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'Attack'
                 value: '4'
@@ -1509,7 +1509,7 @@ materials:
           name: 'Кожаный шлем'
           craftable: true
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'NoVanillaDurability'
               - name: 'DurabilityOnDeath'
@@ -1530,7 +1530,7 @@ materials:
           name: 'Кожаный нагрудник'
           craftable: true
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'NoVanillaDurability'
               - name: 'DurabilityOnDeath'
@@ -1551,7 +1551,7 @@ materials:
           name: 'Кожаные штаны'
           craftable: true
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'NoVanillaDurability'
               - name: 'DurabilityOnDeath'
@@ -1572,7 +1572,7 @@ materials:
           name: 'Кожаные ботинки'
           craftable: true
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'NoVanillaDurability'
               - name: 'DurabilityOnDeath'
@@ -1596,7 +1596,7 @@ materials:
           craftable: true
           required_techs: 'tech_leather_refinement'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Defense'
                 value: '2.5'
@@ -1624,7 +1624,7 @@ materials:
           craftable: true
           required_techs: 'tech_leather_refinement'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Defense'
                 value: '3.5'
@@ -1652,7 +1652,7 @@ materials:
           craftable: true
           required_techs: 'tech_leather_refinement'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Defense'
                 value: '2.5'
@@ -1680,7 +1680,7 @@ materials:
           craftable: true
           required_techs: 'tech_leather_refinement'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Defense'
                 value: '2.5'
@@ -1824,7 +1824,7 @@ materials:
           craftable: true
           required_techs: 'tech_composites'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Defense'
                 value: '4.5'
@@ -1852,7 +1852,7 @@ materials:
           craftable: true
           required_techs: 'tech_composites'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Defense'
                 value: '6.5'
@@ -1880,7 +1880,7 @@ materials:
           craftable: true
           required_techs: 'tech_composites'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Defense'
                 value: '4.5'
@@ -1908,7 +1908,7 @@ materials:
           craftable: true
           required_techs: 'tech_composites'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Defense'
                 value: '4.0'
@@ -1938,7 +1938,7 @@ materials:
           craftable: true
           required_techs: 'tech_archery'
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'RangedAttack'
                 value: '18'
@@ -1965,7 +1965,7 @@ materials:
           craftable: true
           required_techs: 'tech_fletching'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'RangedAttack'
                 value: '24'
@@ -2023,7 +2023,7 @@ materials:
           craftable: true
           required_techs: 'tech_laminates'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'RangedAttack'
                 value: '36'
@@ -2053,7 +2053,7 @@ materials:
           name: 'Каменный меч'
           craftable: true
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'Attack'
                 value: '5'
@@ -2082,7 +2082,7 @@ materials:
           craftable: true
           required_techs: 'tech_metal_casting'
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'Attack'
                 value: '12'
@@ -2109,7 +2109,7 @@ materials:
           craftable: true
           required_techs: 'tech_blacksmithing'
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'Defense'
                 value: '1.0'
@@ -2133,7 +2133,7 @@ materials:
           craftable: true
           required_techs: 'tech_blacksmithing'
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'Defense'
                 value: '2.0'
@@ -2157,7 +2157,7 @@ materials:
           craftable: true
           required_techs: 'tech_blacksmithing'
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'Defense'
                 value: '1.0'
@@ -2182,7 +2182,7 @@ materials:
           craftable: true
           required_techs: 'tech_blacksmithing'
           shaped: true
-          category: '<lightgreen>Gear Tier 1'
+          category: '<lightgreen>Механизм 1 уровня'
           components:
               - name: 'Defense'
                 value: '1.0'
@@ -2209,7 +2209,7 @@ materials:
           craftable: true
           required_techs: 'tech_alloys'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Defense'
                 value: '3.0'
@@ -2234,7 +2234,7 @@ materials:
           craftable: true
           required_techs: 'tech_alloys'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Defense'
                 value: '2.5'
@@ -2259,7 +2259,7 @@ materials:
           craftable: true
           required_techs: 'tech_alloys'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Defense'
                 value: '3.5'
@@ -2284,7 +2284,7 @@ materials:
           craftable: true
           required_techs: 'tech_alloys'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Defense'
                 value: '3.0' 
@@ -2309,7 +2309,7 @@ materials:
           craftable: true
           required_techs: 'tech_sword_smithing'
           shaped: true
-          category: '<lightblue>Gear Tier 2'
+          category: '<lightblue>Механизм 2 уровня'
           components:
               - name: 'Attack'
                 value: '18'
@@ -2472,7 +2472,7 @@ materials:
           craftable: true
           required_techs: 'tech_tempering'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Attack'
                 value: '30'
@@ -2501,7 +2501,7 @@ materials:
           craftable: true
           required_techs: 'tech_forging'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Defense'
                 value: '5.5'
@@ -2526,7 +2526,7 @@ materials:
           craftable: true
           required_techs: 'tech_forging'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Defense'
                 value: '6.5'
@@ -2551,7 +2551,7 @@ materials:
           craftable: true
           required_techs: 'tech_forging'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Defense'
                 value: '5.5'
@@ -2576,7 +2576,7 @@ materials:
           craftable: true
           required_techs: 'tech_forging'
           shaped: true
-          category: '<gold>Gear Tier 4'
+          category: '<gold>Механизм 4 уровня'
           components:
               - name: 'Defense'
                 value: '4.5'
@@ -2601,7 +2601,7 @@ materials:
         #   name: 'Тренировочный топор'
         #   craftable: true
         #   shaped: true
-        #   category: '<lightgreen>Gear Tier 1'
+        #   category: '<lightgreen>Механизм 1 уровня'
         #   components:
         #       - name: 'Attack'
         #         value: '5'
@@ -2626,7 +2626,7 @@ materials:
         #   name: 'Каменное рубило'
         #   craftable: true
         #   shaped: true
-        #   category: '<lightgreen>Gear Tier 1'
+        #   category: '<lightgreen>Механизм 1 уровня'
         #   components:
         #       - name: 'Attack'
         #         value: '6'
@@ -2639,7 +2639,7 @@ materials:
         #   craftable: true
         #   required_techs: 'tech_metal_casting'
         #   shaped: true
-        #   category: '<lightgreen>Gear Tier 1'
+        #   category: '<lightgreen>Механизм 1 уровня'
         #   components:
         #       - name: 'Attack'
         #         value: '12'
@@ -2665,7 +2665,7 @@ materials:
         #   craftable: true
         #   required_techs: 'tech_military_tactics'
         #   shaped: true
-        #   category: '<lightblue>Gear Tier 2'
+        #   category: '<lightblue>Механизм 2 уровня'
         #   components:
         #       - name: 'Attack'
         #         value: '20'
@@ -2721,7 +2721,7 @@ materials:
         #   craftable: true
         #   required_techs: 'tech_guidance_systems'
         #   shaped: true
-        #   category: '<gold>Gear Tier 4'
+        #   category: '<gold>Механизм 4 уровня'
         #   components:
         #       - name: 'Attack'
         #         value: '32'
@@ -2741,18 +2741,18 @@ materials:
         #       - "bbb"
         #       - "bhb"
         #       - " h "
-          ingredients:
-              - type_id: 4
-                data: 0
-                letter: 'c'
-              - type_id: 280
-                data: 0
-                letter: 's'
-          shape:
-              - "ccc"
-              - "csc"
-              - " s "
-              
+        #  ingredients:
+        #      - type_id: 4
+        #        data: 0
+        #        letter: 'c'
+        #      - type_id: 280
+        #        data: 0
+        #        letter: 's'
+        #  shape:
+        #      - "ccc"
+        #      - "csc"
+        #      - " s "
+               
 
               
         - id: 'mat_skeklo'
@@ -2762,9 +2762,9 @@ materials:
           craftable: true
           shaped: false
           tradeable: true
-          required_techs: 'tech_engineering'
+          required_techs: 'tech_alchemy'
           tradeValue: 5.0
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -2788,7 +2788,7 @@ materials:
           craftable: true
           shaped: true
           vanilla: false
-          required_techs: 'tech_education'
+          required_techs: 'tech_exploration'
           components:
               - name: 'AllowBlockPlace'
           ingredients:
@@ -2818,7 +2818,7 @@ materials:
           name: 'Обычный фрагмент металлического кристалла'
           shaped: false
           craftable: true
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_chromium_ore'
@@ -2834,7 +2834,7 @@ materials:
           name: 'Обычный металлический кристалл'
           shaped: false
           craftable: true
-          category: '<lightgreen>Tier 1 Materials'
+          category: '<lightgreen>1 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -2849,7 +2849,7 @@ materials:
           name: 'Необычный фрагмент металлического кристалла'
           shaped: false
           craftable: true
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_forged_chromium'
@@ -2865,7 +2865,7 @@ materials:
           name: 'Необычный металлический кристалл'
           shaped: false
           craftable: true
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -2880,7 +2880,7 @@ materials:
           name: 'Редкий фрагмент металлического кристалла'
           shaped: false
           craftable: true
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_forged_chromium'
@@ -2896,7 +2896,7 @@ materials:
           name: 'Редкий металлический кристалл'
           shaped: false
           craftable: true
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -2911,7 +2911,7 @@ materials:
           name: 'Легендарный фрагмент металлического кристалла'
           shaped: false
           craftable: true
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_forged_chromium'
@@ -2927,7 +2927,7 @@ materials:
           name: 'Легендарный металлический кристалл'
           shaped: false
           craftable: true
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -2978,7 +2978,7 @@ materials:
           craftable: true
           components:
               - name: 'NoRightClick'
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_forged_tungsten'
@@ -2994,7 +2994,7 @@ materials:
           name: 'Необычный ионный кристалл'
           shaped: false
           craftable: true
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -3011,7 +3011,7 @@ materials:
           craftable: true
           components:
               - name: 'NoRightClick'
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_forged_tungsten'
@@ -3027,7 +3027,7 @@ materials:
           name: 'Редкий ионный кристалл'
           shaped: false
           craftable: true
-          category: '<lightpurple>Tier 3 Materials'
+          category: '<lightpurple>3 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -3044,7 +3044,7 @@ materials:
           craftable: true
           components:
               - name: 'NoRightClick'
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           ingredients:
               - type_id: 0
                 custom_id: 'mat_forged_tungsten'
@@ -3060,7 +3060,7 @@ materials:
           name: 'Легендарный ионный кристалл'
           shaped: false
           craftable: true
-          category: '<gold>Tier 4 Materials'
+          category: '<gold>4 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -4120,7 +4120,7 @@ materials:
           name: 'Меркурийная ванна'
           shaped: false
           craftable: true
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -4135,7 +4135,7 @@ materials:
           name: 'Промышленный алмаз'
           shaped: false
           craftable: true
-          category: '<lightblue>Tier 2 Materials'
+          category: '<lightblue>2 Уровень материалов'
           components:
               - name: 'NoRightClick'
           ingredients:
@@ -4407,7 +4407,7 @@ materials:
 
 #  Именные предметы Recipes -------------------------------------------------
 
-#  Special Item Recipes -------------------------------------------------
+#  Специальные Item Recipes -------------------------------------------------
         
         - id: 'mat_tutorial_book'
           item_id: 340
