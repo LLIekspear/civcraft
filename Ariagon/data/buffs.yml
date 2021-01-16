@@ -22,7 +22,7 @@ buffs:
 
     - id: 'buff_monopoly'
       name: 'Монополия'
-      description: 'Доход с торговых ресурсов увеличивается <lightgreen>15%<r> <green>Складывается<r>'
+      description: 'Доход с торговых ресурсов увеличивается на <lightgreen>15%<r> <green>Складывается<r>'
       value: '0.15'
       stackable: true
       parent:
@@ -36,7 +36,7 @@ buffs:
 
     - id: 'buff_advanced_tooling'
       name: 'Обновление способа добычи'
-      description: 'Молотки, добываемые шахтами,увеличиваются на <lightgreen>50%<r> <green>Складывается<r>'
+      description: 'Молотки, добываемые шахтами увеличиваются на <lightgreen>50%<r> <green>Складывается<r>'
       value: '0.5'
       stackable: true
       parent:
@@ -50,7 +50,7 @@ buffs:
 
     - id: 'buff_barter'
       name: 'Бартер'
-      description: 'Курс обмена полезных ископаемых в банке увличивается нахождение <lightgreen>5%<r> <green>Складывается<r>'
+      description: 'Курс обмена полезных ископаемых в банке увеличивается на <lightgreen>5%<r> <green>Складывается<r>'
       value: '0.05'
       stackable: true
       parent:
