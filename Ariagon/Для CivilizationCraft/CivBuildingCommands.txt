@@ -1,6 +1,6 @@
   #Capitol/Town/Camp/War Camp:
 /control #Control Point-Capitol/Town/Camp
-/respawn #Respawn Point-Town
+/respawn #Respond Point-Town
   /itemframe
   id:0-7 #For Trade Goodies-Civ/Town
 /revive #Respawn-Capitol/Town
